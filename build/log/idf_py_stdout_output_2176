@@ -1,0 +1,3102 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 27 2024 21:48:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=098ech ( 39148) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019914 vaddr=3ffb0000 size=0230ch (  8972) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001bc28 vaddr=40080000 size=043f0h ( 17392) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1459ch ( 83356) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=000345c4 vaddr=400843f0 size=08680h ( 34432) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (181) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (204) app_init: Project name:     task-scheduling[0m
+[0;32mI (210) app_init: App version:      1[0m
+[0;32mI (214) app_init: Compile time:     Aug 27 2024 21:47:42[0m
+[0;32mI (220) app_init: ELF file SHA256:  8a2d6a522...[0m
+[0;32mI (226) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (231) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (235) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (240) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2C08 len 0002D3F8 (180 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008CA70 len 00013590 (77 KiB): IRAM[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (292) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+[0;32mI (316) app_main: Task has been dispatched for execution.[0m
+[0;32mI (326) addition_task_worker: The item is: 1[0m
+[0;32mI (326) addition_task_worker: The item is: 2[0m
+[0;32mI (326) addition_task_worker: The item is: 3[0m
+[0;32mI (326) addition_task_worker: The item is: 4[0m
+[0;32mI (346) addition_task_worker: The item is: 5[0m
+[0;32mI (346) app_main: Task has finished its execution.[0m
+[0;32mI (1346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (1346) addition_task_worker: The item is: 1[0m
+[0;32mI (1346) addition_task_worker: The item is: 2[0m
+[0;32mI (1346) addition_task_worker: The item is: 3[0m
+[0;32mI (1356) addition_task_worker: The item is: 4[0m
+[0;32mI (1366) addition_task_worker: The item is: 5[0m
+[0;32mI (1366) app_main: Task has finished its execution.[0m
+[0;32mI (2366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (2366) addition_task_worker: The item is: 1[0m
+[0;32mI (2366) addition_task_worker: The item is: 2[0m
+[0;32mI (2366) addition_task_worker: The item is: 3[0m
+[0;32mI (2376) addition_task_worker: The item is: 4[0m
+[0;32mI (2386) addition_task_worker: The item is: 5[0m
+[0;32mI (2386) app_main: Task has finished its execution.[0m
+[0;32mI (3386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (3386) addition_task_worker: The item is: 1[0m
+[0;32mI (3386) addition_task_worker: The item is: 2[0m
+[0;32mI (3386) addition_task_worker: The item is: 3[0m
+[0;32mI (3396) addition_task_worker: The item is: 4[0m
+[0;32mI (3406) addition_task_worker: The item is: 5[0m
+[0;32mI (3406) app_main: Task has finished its execution.[0m
+[0;32mI (4406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (4406) addition_task_worker: The item is: 1[0m
+[0;32mI (4406) addition_task_worker: The item is: 2[0m
+[0;32mI (4406) addition_task_worker: The item is: 3[0m
+[0;32mI (4416) addition_task_worker: The item is: 4[0m
+[0;32mI (4426) addition_task_worker: The item is: 5[0m
+[0;32mI (4426) app_main: Task has finished its execution.[0m
+[0;32mI (5426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (5426) addition_task_worker: The item is: 1[0m
+[0;32mI (5426) addition_task_worker: The item is: 2[0m
+[0;32mI (5426) addition_task_worker: The item is: 3[0m
+[0;32mI (5436) addition_task_worker: The item is: 4[0m
+[0;32mI (5446) addition_task_worker: The item is: 5[0m
+[0;32mI (5446) app_main: Task has finished its execution.[0m
+[0;32mI (6446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (6446) addition_task_worker: The item is: 1[0m
+[0;32mI (6446) addition_task_worker: The item is: 2[0m
+[0;32mI (6446) addition_task_worker: The item is: 3[0m
+[0;32mI (6456) addition_task_worker: The item is: 4[0m
+[0;32mI (6466) addition_task_worker: The item is: 5[0m
+[0;32mI (6466) app_main: Task has finished its execution.[0m
+[0;32mI (7466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (7466) addition_task_worker: The item is: 1[0m
+[0;32mI (7466) addition_task_worker: The item is: 2[0m
+[0;32mI (7466) addition_task_worker: The item is: 3[0m
+[0;32mI (7476) addition_task_worker: The item is: 4[0m
+[0;32mI (7486) addition_task_worker: The item is: 5[0m
+[0;32mI (7486) app_main: Task has finished its execution.[0m
+[0;32mI (8486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (8486) addition_task_worker: The item is: 1[0m
+[0;32mI (8486) addition_task_worker: The item is: 2[0m
+[0;32mI (8486) addition_task_worker: The item is: 3[0m
+[0;32mI (8496) addition_task_worker: The item is: 4[0m
+[0;32mI (8506) addition_task_worker: The item is: 5[0m
+[0;32mI (8506) app_main: Task has finished its execution.[0m
+[0;32mI (9506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (9506) addition_task_worker: The item is: 1[0m
+[0;32mI (9506) addition_task_worker: The item is: 2[0m
+[0;32mI (9506) addition_task_worker: The item is: 3[0m
+[0;32mI (9516) addition_task_worker: The item is: 4[0m
+[0;32mI (9526) addition_task_worker: The item is: 5[0m
+[0;32mI (9526) app_main: Task has finished its execution.[0m
+[0;32mI (10526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (10526) addition_task_worker: The item is: 1[0m
+[0;32mI (10526) addition_task_worker: The item is: 2[0m
+[0;32mI (10526) addition_task_worker: The item is: 3[0m
+[0;32mI (10536) addition_task_worker: The item is: 4[0m
+[0;32mI (10546) addition_task_worker: The item is: 5[0m
+[0;32mI (10546) app_main: Task has finished its execution.[0m
+[0;32mI (11546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (11546) addition_task_worker: The item is: 1[0m
+[0;32mI (11546) addition_task_worker: The item is: 2[0m
+[0;32mI (11546) addition_task_worker: The item is: 3[0m
+[0;32mI (11556) addition_task_worker: The item is: 4[0m
+[0;32mI (11566) addition_task_worker: The item is: 5[0m
+[0;32mI (11566) app_main: Task has finished its execution.[0m
+[0;32mI (12566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (12566) addition_task_worker: The item is: 1[0m
+[0;32mI (12566) addition_task_worker: The item is: 2[0m
+[0;32mI (12566) addition_task_worker: The item is: 3[0m
+[0;32mI (12576) addition_task_worker: The item is: 4[0m
+[0;32mI (12586) addition_task_worker: The item is: 5[0m
+[0;32mI (12586) app_main: Task has finished its execution.[0m
+[0;32mI (13586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (13586) addition_task_worker: The item is: 1[0m
+[0;32mI (13586) addition_task_worker: The item is: 2[0m
+[0;32mI (13586) addition_task_worker: The item is: 3[0m
+[0;32mI (13596) addition_task_worker: The item is: 4[0m
+[0;32mI (13606) addition_task_worker: The item is: 5[0m
+[0;32mI (13606) app_main: Task has finished its execution.[0m
+[0;32mI (14606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (14606) addition_task_worker: The item is: 1[0m
+[0;32mI (14606) addition_task_worker: The item is: 2[0m
+[0;32mI (14606) addition_task_worker: The item is: 3[0m
+[0;32mI (14616) addition_task_worker: The item is: 4[0m
+[0;32mI (14626) addition_task_worker: The item is: 5[0m
+[0;32mI (14626) app_main: Task has finished its execution.[0m
+[0;32mI (15626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (15626) addition_task_worker: The item is: 1[0m
+[0;32mI (15626) addition_task_worker: The item is: 2[0m
+[0;32mI (15626) addition_task_worker: The item is: 3[0m
+[0;32mI (15636) addition_task_worker: The item is: 4[0m
+[0;32mI (15646) addition_task_worker: The item is: 5[0m
+[0;32mI (15646) app_main: Task has finished its execution.[0m
+[0;32mI (16646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (16646) addition_task_worker: The item is: 1[0m
+[0;32mI (16646) addition_task_worker: The item is: 2[0m
+[0;32mI (16646) addition_task_worker: The item is: 3[0m
+[0;32mI (16656) addition_task_worker: The item is: 4[0m
+[0;32mI (16666) addition_task_worker: The item is: 5[0m
+[0;32mI (16666) app_main: Task has finished its execution.[0m
+[0;32mI (17666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (17666) addition_task_worker: The item is: 1[0m
+[0;32mI (17666) addition_task_worker: The item is: 2[0m
+[0;32mI (17666) addition_task_worker: The item is: 3[0m
+[0;32mI (17676) addition_task_worker: The item is: 4[0m
+[0;32mI (17686) addition_task_worker: The item is: 5[0m
+[0;32mI (17686) app_main: Task has finished its execution.[0m
+[0;32mI (18686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (18686) addition_task_worker: The item is: 1[0m
+[0;32mI (18686) addition_task_worker: The item is: 2[0m
+[0;32mI (18686) addition_task_worker: The item is: 3[0m
+[0;32mI (18696) addition_task_worker: The item is: 4[0m
+[0;32mI (18706) addition_task_worker: The item is: 5[0m
+[0;32mI (18706) app_main: Task has finished its execution.[0m
+[0;32mI (19706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (19706) addition_task_worker: The item is: 1[0m
+[0;32mI (19706) addition_task_worker: The item is: 2[0m
+[0;32mI (19706) addition_task_worker: The item is: 3[0m
+[0;32mI (19716) addition_task_worker: The item is: 4[0m
+[0;32mI (19726) addition_task_worker: The item is: 5[0m
+[0;32mI (19726) app_main: Task has finished its execution.[0m
+[0;32mI (20726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (20726) addition_task_worker: The item is: 1[0m
+[0;32mI (20726) addition_task_worker: The item is: 2[0m
+[0;32mI (20726) addition_task_worker: The item is: 3[0m
+[0;32mI (20736) addition_task_worker: The item is: 4[0m
+[0;32mI (20746) addition_task_worker: The item is: 5[0m
+[0;32mI (20746) app_main: Task has finished its execution.[0m
+[0;32mI (21746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (21746) addition_task_worker: The item is: 1[0m
+[0;32mI (21746) addition_task_worker: The item is: 2[0m
+[0;32mI (21746) addition_task_worker: The item is: 3[0m
+[0;32mI (21756) addition_task_worker: The item is: 4[0m
+[0;32mI (21766) addition_task_worker: The item is: 5[0m
+[0;32mI (21766) app_main: Task has finished its execution.[0m
+[0;32mI (22766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (22766) addition_task_worker: The item is: 1[0m
+[0;32mI (22766) addition_task_worker: The item is: 2[0m
+[0;32mI (22766) addition_task_worker: The item is: 3[0m
+[0;32mI (22776) addition_task_worker: The item is: 4[0m
+[0;32mI (22786) addition_task_worker: The item is: 5[0m
+[0;32mI (22786) app_main: Task has finished its execution.[0m
+[0;32mI (23786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (23786) addition_task_worker: The item is: 1[0m
+[0;32mI (23786) addition_task_worker: The item is: 2[0m
+[0;32mI (23786) addition_task_worker: The item is: 3[0m
+[0;32mI (23796) addition_task_worker: The item is: 4[0m
+[0;32mI (23806) addition_task_worker: The item is: 5[0m
+[0;32mI (23806) app_main: Task has finished its execution.[0m
+[0;32mI (24806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (24806) addition_task_worker: The item is: 1[0m
+[0;32mI (24806) addition_task_worker: The item is: 2[0m
+[0;32mI (24806) addition_task_worker: The item is: 3[0m
+[0;32mI (24816) addition_task_worker: The item is: 4[0m
+[0;32mI (24826) addition_task_worker: The item is: 5[0m
+[0;32mI (24826) app_main: Task has finished its execution.[0m
+[0;32mI (25826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (25826) addition_task_worker: The item is: 1[0m
+[0;32mI (25826) addition_task_worker: The item is: 2[0m
+[0;32mI (25826) addition_task_worker: The item is: 3[0m
+[0;32mI (25836) addition_task_worker: The item is: 4[0m
+[0;32mI (25846) addition_task_worker: The item is: 5[0m
+[0;32mI (25846) app_main: Task has finished its execution.[0m
+[0;32mI (26846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (26846) addition_task_worker: The item is: 1[0m
+[0;32mI (26846) addition_task_worker: The item is: 2[0m
+[0;32mI (26846) addition_task_worker: The item is: 3[0m
+[0;32mI (26856) addition_task_worker: The item is: 4[0m
+[0;32mI (26866) addition_task_worker: The item is: 5[0m
+[0;32mI (26866) app_main: Task has finished its execution.[0m
+[0;32mI (27866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (27866) addition_task_worker: The item is: 1[0m
+[0;32mI (27866) addition_task_worker: The item is: 2[0m
+[0;32mI (27866) addition_task_worker: The item is: 3[0m
+[0;32mI (27876) addition_task_worker: The item is: 4[0m
+[0;32mI (27886) addition_task_worker: The item is: 5[0m
+[0;32mI (27886) app_main: Task has finished its execution.[0m
+[0;32mI (28886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (28886) addition_task_worker: The item is: 1[0m
+[0;32mI (28886) addition_task_worker: The item is: 2[0m
+[0;32mI (28886) addition_task_worker: The item is: 3[0m
+[0;32mI (28896) addition_task_worker: The item is: 4[0m
+[0;32mI (28906) addition_task_worker: The item is: 5[0m
+[0;32mI (28906) app_main: Task has finished its execution.[0m
+[0;32mI (29906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (29906) addition_task_worker: The item is: 1[0m
+[0;32mI (29906) addition_task_worker: The item is: 2[0m
+[0;32mI (29906) addition_task_worker: The item is: 3[0m
+[0;32mI (29916) addition_task_worker: The item is: 4[0m
+[0;32mI (29926) addition_task_worker: The item is: 5[0m
+[0;32mI (29926) app_main: Task has finished its execution.[0m
+[0;32mI (30926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (30926) addition_task_worker: The item is: 1[0m
+[0;32mI (30926) addition_task_worker: The item is: 2[0m
+[0;32mI (30926) addition_task_worker: The item is: 3[0m
+[0;32mI (30936) addition_task_worker: The item is: 4[0m
+[0;32mI (30946) addition_task_worker: The item is: 5[0m
+[0;32mI (30946) app_main: Task has finished its execution.[0m
+[0;32mI (31946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (31946) addition_task_worker: The item is: 1[0m
+[0;32mI (31946) addition_task_worker: The item is: 2[0m
+[0;32mI (31946) addition_task_worker: The item is: 3[0m
+[0;32mI (31956) addition_task_worker: The item is: 4[0m
+[0;32mI (31966) addition_task_worker: The item is: 5[0m
+[0;32mI (31966) app_main: Task has finished its execution.[0m
+[0;32mI (32966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (32966) addition_task_worker: The item is: 1[0m
+[0;32mI (32966) addition_task_worker: The item is: 2[0m
+[0;32mI (32966) addition_task_worker: The item is: 3[0m
+[0;32mI (32976) addition_task_worker: The item is: 4[0m
+[0;32mI (32986) addition_task_worker: The item is: 5[0m
+[0;32mI (32986) app_main: Task has finished its execution.[0m
+[0;32mI (33986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (33986) addition_task_worker: The item is: 1[0m
+[0;32mI (33986) addition_task_worker: The item is: 2[0m
+[0;32mI (33986) addition_task_worker: The item is: 3[0m
+[0;32mI (33996) addition_task_worker: The item is: 4[0m
+[0;32mI (34006) addition_task_worker: The item is: 5[0m
+[0;32mI (34006) app_main: Task has finished its execution.[0m
+[0;32mI (35006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (35006) addition_task_worker: The item is: 1[0m
+[0;32mI (35006) addition_task_worker: The item is: 2[0m
+[0;32mI (35006) addition_task_worker: The item is: 3[0m
+[0;32mI (35016) addition_task_worker: The item is: 4[0m
+[0;32mI (35026) addition_task_worker: The item is: 5[0m
+[0;32mI (35026) app_main: Task has finished its execution.[0m
+[0;32mI (36026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (36026) addition_task_worker: The item is: 1[0m
+[0;32mI (36026) addition_task_worker: The item is: 2[0m
+[0;32mI (36026) addition_task_worker: The item is: 3[0m
+[0;32mI (36036) addition_task_worker: The item is: 4[0m
+[0;32mI (36046) addition_task_worker: The item is: 5[0m
+[0;32mI (36046) app_main: Task has finished its execution.[0m
+[0;32mI (37046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (37046) addition_task_worker: The item is: 1[0m
+[0;32mI (37046) addition_task_worker: The item is: 2[0m
+[0;32mI (37046) addition_task_worker: The item is: 3[0m
+[0;32mI (37056) addition_task_worker: The item is: 4[0m
+[0;32mI (37066) addition_task_worker: The item is: 5[0m
+[0;32mI (37066) app_main: Task has finished its execution.[0m
+[0;32mI (38066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (38066) addition_task_worker: The item is: 1[0m
+[0;32mI (38066) addition_task_worker: The item is: 2[0m
+[0;32mI (38066) addition_task_worker: The item is: 3[0m
+[0;32mI (38076) addition_task_worker: The item is: 4[0m
+[0;32mI (38086) addition_task_worker: The item is: 5[0m
+[0;32mI (38086) app_main: Task has finished its execution.[0m
+[0;32mI (39086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (39086) addition_task_worker: The item is: 1[0m
+[0;32mI (39086) addition_task_worker: The item is: 2[0m
+[0;32mI (39086) addition_task_worker: The item is: 3[0m
+[0;32mI (39096) addition_task_worker: The item is: 4[0m
+[0;32mI (39106) addition_task_worker: The item is: 5[0m
+[0;32mI (39106) app_main: Task has finished its execution.[0m
+[0;32mI (40106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (40106) addition_task_worker: The item is: 1[0m
+[0;32mI (40106) addition_task_worker: The item is: 2[0m
+[0;32mI (40106) addition_task_worker: The item is: 3[0m
+[0;32mI (40116) addition_task_worker: The item is: 4[0m
+[0;32mI (40126) addition_task_worker: The item is: 5[0m
+[0;32mI (40126) app_main: Task has finished its execution.[0m
+[0;32mI (41126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (41126) addition_task_worker: The item is: 1[0m
+[0;32mI (41126) addition_task_worker: The item is: 2[0m
+[0;32mI (41126) addition_task_worker: The item is: 3[0m
+[0;32mI (41136) addition_task_worker: The item is: 4[0m
+[0;32mI (41146) addition_task_worker: The item is: 5[0m
+[0;32mI (41146) app_main: Task has finished its execution.[0m
+[0;32mI (42146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (42146) addition_task_worker: The item is: 1[0m
+[0;32mI (42146) addition_task_worker: The item is: 2[0m
+[0;32mI (42146) addition_task_worker: The item is: 3[0m
+[0;32mI (42156) addition_task_worker: The item is: 4[0m
+[0;32mI (42166) addition_task_worker: The item is: 5[0m
+[0;32mI (42166) app_main: Task has finished its execution.[0m
+[0;32mI (43166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (43166) addition_task_worker: The item is: 1[0m
+[0;32mI (43166) addition_task_worker: The item is: 2[0m
+[0;32mI (43166) addition_task_worker: The item is: 3[0m
+[0;32mI (43176) addition_task_worker: The item is: 4[0m
+[0;32mI (43186) addition_task_worker: The item is: 5[0m
+[0;32mI (43186) app_main: Task has finished its execution.[0m
+[0;32mI (44186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (44186) addition_task_worker: The item is: 1[0m
+[0;32mI (44186) addition_task_worker: The item is: 2[0m
+[0;32mI (44186) addition_task_worker: The item is: 3[0m
+[0;32mI (44196) addition_task_worker: The item is: 4[0m
+[0;32mI (44206) addition_task_worker: The item is: 5[0m
+[0;32mI (44206) app_main: Task has finished its execution.[0m
+[0;32mI (45206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (45206) addition_task_worker: The item is: 1[0m
+[0;32mI (45206) addition_task_worker: The item is: 2[0m
+[0;32mI (45206) addition_task_worker: The item is: 3[0m
+[0;32mI (45216) addition_task_worker: The item is: 4[0m
+[0;32mI (45226) addition_task_worker: The item is: 5[0m
+[0;32mI (45226) app_main: Task has finished its execution.[0m
+[0;32mI (46226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (46226) addition_task_worker: The item is: 1[0m
+[0;32mI (46226) addition_task_worker: The item is: 2[0m
+[0;32mI (46226) addition_task_worker: The item is: 3[0m
+[0;32mI (46236) addition_task_worker: The item is: 4[0m
+[0;32mI (46246) addition_task_worker: The item is: 5[0m
+[0;32mI (46246) app_main: Task has finished its execution.[0m
+[0;32mI (47246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (47246) addition_task_worker: The item is: 1[0m
+[0;32mI (47246) addition_task_worker: The item is: 2[0m
+[0;32mI (47246) addition_task_worker: The item is: 3[0m
+[0;32mI (47256) addition_task_worker: The item is: 4[0m
+[0;32mI (47266) addition_task_worker: The item is: 5[0m
+[0;32mI (47266) app_main: Task has finished its execution.[0m
+[0;32mI (48266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (48266) addition_task_worker: The item is: 1[0m
+[0;32mI (48266) addition_task_worker: The item is: 2[0m
+[0;32mI (48266) addition_task_worker: The item is: 3[0m
+[0;32mI (48276) addition_task_worker: The item is: 4[0m
+[0;32mI (48286) addition_task_worker: The item is: 5[0m
+[0;32mI (48286) app_main: Task has finished its execution.[0m
+[0;32mI (49286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (49286) addition_task_worker: The item is: 1[0m
+[0;32mI (49286) addition_task_worker: The item is: 2[0m
+[0;32mI (49286) addition_task_worker: The item is: 3[0m
+[0;32mI (49296) addition_task_worker: The item is: 4[0m
+[0;32mI (49306) addition_task_worker: The item is: 5[0m
+[0;32mI (49306) app_main: Task has finished its execution.[0m
+[0;32mI (50306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (50306) addition_task_worker: The item is: 1[0m
+[0;32mI (50306) addition_task_worker: The item is: 2[0m
+[0;32mI (50306) addition_task_worker: The item is: 3[0m
+[0;32mI (50316) addition_task_worker: The item is: 4[0m
+[0;32mI (50326) addition_task_worker: The item is: 5[0m
+[0;32mI (50326) app_main: Task has finished its execution.[0m
+[0;32mI (51326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (51326) addition_task_worker: The item is: 1[0m
+[0;32mI (51326) addition_task_worker: The item is: 2[0m
+[0;32mI (51326) addition_task_worker: The item is: 3[0m
+[0;32mI (51336) addition_task_worker: The item is: 4[0m
+[0;32mI (51346) addition_task_worker: The item is: 5[0m
+[0;32mI (51346) app_main: Task has finished its execution.[0m
+[0;32mI (52346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (52346) addition_task_worker: The item is: 1[0m
+[0;32mI (52346) addition_task_worker: The item is: 2[0m
+[0;32mI (52346) addition_task_worker: The item is: 3[0m
+[0;32mI (52356) addition_task_worker: The item is: 4[0m
+[0;32mI (52366) addition_task_worker: The item is: 5[0m
+[0;32mI (52366) app_main: Task has finished its execution.[0m
+[0;32mI (53366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (53366) addition_task_worker: The item is: 1[0m
+[0;32mI (53366) addition_task_worker: The item is: 2[0m
+[0;32mI (53366) addition_task_worker: The item is: 3[0m
+[0;32mI (53376) addition_task_worker: The item is: 4[0m
+[0;32mI (53386) addition_task_worker: The item is: 5[0m
+[0;32mI (53386) app_main: Task has finished its execution.[0m
+[0;32mI (54386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (54386) addition_task_worker: The item is: 1[0m
+[0;32mI (54386) addition_task_worker: The item is: 2[0m
+[0;32mI (54386) addition_task_worker: The item is: 3[0m
+[0;32mI (54396) addition_task_worker: The item is: 4[0m
+[0;32mI (54406) addition_task_worker: The item is: 5[0m
+[0;32mI (54406) app_main: Task has finished its execution.[0m
+[0;32mI (55406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (55406) addition_task_worker: The item is: 1[0m
+[0;32mI (55406) addition_task_worker: The item is: 2[0m
+[0;32mI (55406) addition_task_worker: The item is: 3[0m
+[0;32mI (55416) addition_task_worker: The item is: 4[0m
+[0;32mI (55426) addition_task_worker: The item is: 5[0m
+[0;32mI (55426) app_main: Task has finished its execution.[0m
+[0;32mI (56426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (56426) addition_task_worker: The item is: 1[0m
+[0;32mI (56426) addition_task_worker: The item is: 2[0m
+[0;32mI (56426) addition_task_worker: The item is: 3[0m
+[0;32mI (56436) addition_task_worker: The item is: 4[0m
+[0;32mI (56446) addition_task_worker: The item is: 5[0m
+[0;32mI (56446) app_main: Task has finished its execution.[0m
+[0;32mI (57446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (57446) addition_task_worker: The item is: 1[0m
+[0;32mI (57446) addition_task_worker: The item is: 2[0m
+[0;32mI (57446) addition_task_worker: The item is: 3[0m
+[0;32mI (57456) addition_task_worker: The item is: 4[0m
+[0;32mI (57466) addition_task_worker: The item is: 5[0m
+[0;32mI (57466) app_main: Task has finished its execution.[0m
+[0;32mI (58466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (58466) addition_task_worker: The item is: 1[0m
+[0;32mI (58466) addition_task_worker: The item is: 2[0m
+[0;32mI (58466) addition_task_worker: The item is: 3[0m
+[0;32mI (58476) addition_task_worker: The item is: 4[0m
+[0;32mI (58486) addition_task_worker: The item is: 5[0m
+[0;32mI (58486) app_main: Task has finished its execution.[0m
+[0;32mI (59486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (59486) addition_task_worker: The item is: 1[0m
+[0;32mI (59486) addition_task_worker: The item is: 2[0m
+[0;32mI (59486) addition_task_worker: The item is: 3[0m
+[0;32mI (59496) addition_task_worker: The item is: 4[0m
+[0;32mI (59506) addition_task_worker: The item is: 5[0m
+[0;32mI (59506) app_main: Task has finished its execution.[0m
+[0;32mI (60506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (60506) addition_task_worker: The item is: 1[0m
+[0;32mI (60506) addition_task_worker: The item is: 2[0m
+[0;32mI (60506) addition_task_worker: The item is: 3[0m
+[0;32mI (60516) addition_task_worker: The item is: 4[0m
+[0;32mI (60526) addition_task_worker: The item is: 5[0m
+[0;32mI (60526) app_main: Task has finished its execution.[0m
+[0;32mI (61526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (61526) addition_task_worker: The item is: 1[0m
+[0;32mI (61526) addition_task_worker: The item is: 2[0m
+[0;32mI (61526) addition_task_worker: The item is: 3[0m
+[0;32mI (61536) addition_task_worker: The item is: 4[0m
+[0;32mI (61546) addition_task_worker: The item is: 5[0m
+[0;32mI (61546) app_main: Task has finished its execution.[0m
+[0;32mI (62546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (62546) addition_task_worker: The item is: 1[0m
+[0;32mI (62546) addition_task_worker: The item is: 2[0m
+[0;32mI (62546) addition_task_worker: The item is: 3[0m
+[0;32mI (62556) addition_task_worker: The item is: 4[0m
+[0;32mI (62566) addition_task_worker: The item is: 5[0m
+[0;32mI (62566) app_main: Task has finished its execution.[0m
+[0;32mI (63566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (63566) addition_task_worker: The item is: 1[0m
+[0;32mI (63566) addition_task_worker: The item is: 2[0m
+[0;32mI (63566) addition_task_worker: The item is: 3[0m
+[0;32mI (63576) addition_task_worker: The item is: 4[0m
+[0;32mI (63586) addition_task_worker: The item is: 5[0m
+[0;32mI (63586) app_main: Task has finished its execution.[0m
+[0;32mI (64586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (64586) addition_task_worker: The item is: 1[0m
+[0;32mI (64586) addition_task_worker: The item is: 2[0m
+[0;32mI (64586) addition_task_worker: The item is: 3[0m
+[0;32mI (64596) addition_task_worker: The item is: 4[0m
+[0;32mI (64606) addition_task_worker: The item is: 5[0m
+[0;32mI (64606) app_main: Task has finished its execution.[0m
+[0;32mI (65606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (65606) addition_task_worker: The item is: 1[0m
+[0;32mI (65606) addition_task_worker: The item is: 2[0m
+[0;32mI (65606) addition_task_worker: The item is: 3[0m
+[0;32mI (65616) addition_task_worker: The item is: 4[0m
+[0;32mI (65626) addition_task_worker: The item is: 5[0m
+[0;32mI (65626) app_main: Task has finished its execution.[0m
+[0;32mI (66626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (66626) addition_task_worker: The item is: 1[0m
+[0;32mI (66626) addition_task_worker: The item is: 2[0m
+[0;32mI (66626) addition_task_worker: The item is: 3[0m
+[0;32mI (66636) addition_task_worker: The item is: 4[0m
+[0;32mI (66646) addition_task_worker: The item is: 5[0m
+[0;32mI (66646) app_main: Task has finished its execution.[0m
+[0;32mI (67646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (67646) addition_task_worker: The item is: 1[0m
+[0;32mI (67646) addition_task_worker: The item is: 2[0m
+[0;32mI (67646) addition_task_worker: The item is: 3[0m
+[0;32mI (67656) addition_task_worker: The item is: 4[0m
+[0;32mI (67666) addition_task_worker: The item is: 5[0m
+[0;32mI (67666) app_main: Task has finished its execution.[0m
+[0;32mI (68666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (68666) addition_task_worker: The item is: 1[0m
+[0;32mI (68666) addition_task_worker: The item is: 2[0m
+[0;32mI (68666) addition_task_worker: The item is: 3[0m
+[0;32mI (68676) addition_task_worker: The item is: 4[0m
+[0;32mI (68686) addition_task_worker: The item is: 5[0m
+[0;32mI (68686) app_main: Task has finished its execution.[0m
+[0;32mI (69686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (69686) addition_task_worker: The item is: 1[0m
+[0;32mI (69686) addition_task_worker: The item is: 2[0m
+[0;32mI (69686) addition_task_worker: The item is: 3[0m
+[0;32mI (69696) addition_task_worker: The item is: 4[0m
+[0;32mI (69706) addition_task_worker: The item is: 5[0m
+[0;32mI (69706) app_main: Task has finished its execution.[0m
+[0;32mI (70706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (70706) addition_task_worker: The item is: 1[0m
+[0;32mI (70706) addition_task_worker: The item is: 2[0m
+[0;32mI (70706) addition_task_worker: The item is: 3[0m
+[0;32mI (70716) addition_task_worker: The item is: 4[0m
+[0;32mI (70726) addition_task_worker: The item is: 5[0m
+[0;32mI (70726) app_main: Task has finished its execution.[0m
+[0;32mI (71726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (71726) addition_task_worker: The item is: 1[0m
+[0;32mI (71726) addition_task_worker: The item is: 2[0m
+[0;32mI (71726) addition_task_worker: The item is: 3[0m
+[0;32mI (71736) addition_task_worker: The item is: 4[0m
+[0;32mI (71746) addition_task_worker: The item is: 5[0m
+[0;32mI (71746) app_main: Task has finished its execution.[0m
+[0;32mI (72746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (72746) addition_task_worker: The item is: 1[0m
+[0;32mI (72746) addition_task_worker: The item is: 2[0m
+[0;32mI (72746) addition_task_worker: The item is: 3[0m
+[0;32mI (72756) addition_task_worker: The item is: 4[0m
+[0;32mI (72766) addition_task_worker: The item is: 5[0m
+[0;32mI (72766) app_main: Task has finished its execution.[0m
+[0;32mI (73766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (73766) addition_task_worker: The item is: 1[0m
+[0;32mI (73766) addition_task_worker: The item is: 2[0m
+[0;32mI (73766) addition_task_worker: The item is: 3[0m
+[0;32mI (73776) addition_task_worker: The item is: 4[0m
+[0;32mI (73786) addition_task_worker: The item is: 5[0m
+[0;32mI (73786) app_main: Task has finished its execution.[0m
+[0;32mI (74786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (74786) addition_task_worker: The item is: 1[0m
+[0;32mI (74786) addition_task_worker: The item is: 2[0m
+[0;32mI (74786) addition_task_worker: The item is: 3[0m
+[0;32mI (74796) addition_task_worker: The item is: 4[0m
+[0;32mI (74806) addition_task_worker: The item is: 5[0m
+[0;32mI (74806) app_main: Task has finished its execution.[0m
+[0;32mI (75806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (75806) addition_task_worker: The item is: 1[0m
+[0;32mI (75806) addition_task_worker: The item is: 2[0m
+[0;32mI (75806) addition_task_worker: The item is: 3[0m
+[0;32mI (75816) addition_task_worker: The item is: 4[0m
+[0;32mI (75826) addition_task_worker: The item is: 5[0m
+[0;32mI (75826) app_main: Task has finished its execution.[0m
+[0;32mI (76826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (76826) addition_task_worker: The item is: 1[0m
+[0;32mI (76826) addition_task_worker: The item is: 2[0m
+[0;32mI (76826) addition_task_worker: The item is: 3[0m
+[0;32mI (76836) addition_task_worker: The item is: 4[0m
+[0;32mI (76846) addition_task_worker: The item is: 5[0m
+[0;32mI (76846) app_main: Task has finished its execution.[0m
+[0;32mI (77846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (77846) addition_task_worker: The item is: 1[0m
+[0;32mI (77846) addition_task_worker: The item is: 2[0m
+[0;32mI (77846) addition_task_worker: The item is: 3[0m
+[0;32mI (77856) addition_task_worker: The item is: 4[0m
+[0;32mI (77866) addition_task_worker: The item is: 5[0m
+[0;32mI (77866) app_main: Task has finished its execution.[0m
+[0;32mI (78866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (78866) addition_task_worker: The item is: 1[0m
+[0;32mI (78866) addition_task_worker: The item is: 2[0m
+[0;32mI (78866) addition_task_worker: The item is: 3[0m
+[0;32mI (78876) addition_task_worker: The item is: 4[0m
+[0;32mI (78886) addition_task_worker: The item is: 5[0m
+[0;32mI (78886) app_main: Task has finished its execution.[0m
+[0;32mI (79886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (79886) addition_task_worker: The item is: 1[0m
+[0;32mI (79886) addition_task_worker: The item is: 2[0m
+[0;32mI (79886) addition_task_worker: The item is: 3[0m
+[0;32mI (79896) addition_task_worker: The item is: 4[0m
+[0;32mI (79906) addition_task_worker: The item is: 5[0m
+[0;32mI (79906) app_main: Task has finished its execution.[0m
+[0;32mI (80906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (80906) addition_task_worker: The item is: 1[0m
+[0;32mI (80906) addition_task_worker: The item is: 2[0m
+[0;32mI (80906) addition_task_worker: The item is: 3[0m
+[0;32mI (80916) addition_task_worker: The item is: 4[0m
+[0;32mI (80926) addition_task_worker: The item is: 5[0m
+[0;32mI (80926) app_main: Task has finished its execution.[0m
+[0;32mI (81926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (81926) addition_task_worker: The item is: 1[0m
+[0;32mI (81926) addition_task_worker: The item is: 2[0m
+[0;32mI (81926) addition_task_worker: The item is: 3[0m
+[0;32mI (81936) addition_task_worker: The item is: 4[0m
+[0;32mI (81946) addition_task_worker: The item is: 5[0m
+[0;32mI (81946) app_main: Task has finished its execution.[0m
+[0;32mI (82946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (82946) addition_task_worker: The item is: 1[0m
+[0;32mI (82946) addition_task_worker: The item is: 2[0m
+[0;32mI (82946) addition_task_worker: The item is: 3[0m
+[0;32mI (82956) addition_task_worker: The item is: 4[0m
+[0;32mI (82966) addition_task_worker: The item is: 5[0m
+[0;32mI (82966) app_main: Task has finished its execution.[0m
+[0;32mI (83966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (83966) addition_task_worker: The item is: 1[0m
+[0;32mI (83966) addition_task_worker: The item is: 2[0m
+[0;32mI (83966) addition_task_worker: The item is: 3[0m
+[0;32mI (83976) addition_task_worker: The item is: 4[0m
+[0;32mI (83986) addition_task_worker: The item is: 5[0m
+[0;32mI (83986) app_main: Task has finished its execution.[0m
+[0;32mI (84986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (84986) addition_task_worker: The item is: 1[0m
+[0;32mI (84986) addition_task_worker: The item is: 2[0m
+[0;32mI (84986) addition_task_worker: The item is: 3[0m
+[0;32mI (84996) addition_task_worker: The item is: 4[0m
+[0;32mI (85006) addition_task_worker: The item is: 5[0m
+[0;32mI (85006) app_main: Task has finished its execution.[0m
+[0;32mI (86006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (86006) addition_task_worker: The item is: 1[0m
+[0;32mI (86006) addition_task_worker: The item is: 2[0m
+[0;32mI (86006) addition_task_worker: The item is: 3[0m
+[0;32mI (86016) addition_task_worker: The item is: 4[0m
+[0;32mI (86026) addition_task_worker: The item is: 5[0m
+[0;32mI (86026) app_main: Task has finished its execution.[0m
+[0;32mI (87026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (87026) addition_task_worker: The item is: 1[0m
+[0;32mI (87026) addition_task_worker: The item is: 2[0m
+[0;32mI (87026) addition_task_worker: The item is: 3[0m
+[0;32mI (87036) addition_task_worker: The item is: 4[0m
+[0;32mI (87046) addition_task_worker: The item is: 5[0m
+[0;32mI (87046) app_main: Task has finished its execution.[0m
+[0;32mI (88046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (88046) addition_task_worker: The item is: 1[0m
+[0;32mI (88046) addition_task_worker: The item is: 2[0m
+[0;32mI (88046) addition_task_worker: The item is: 3[0m
+[0;32mI (88056) addition_task_worker: The item is: 4[0m
+[0;32mI (88066) addition_task_worker: The item is: 5[0m
+[0;32mI (88066) app_main: Task has finished its execution.[0m
+[0;32mI (89066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (89066) addition_task_worker: The item is: 1[0m
+[0;32mI (89066) addition_task_worker: The item is: 2[0m
+[0;32mI (89066) addition_task_worker: The item is: 3[0m
+[0;32mI (89076) addition_task_worker: The item is: 4[0m
+[0;32mI (89086) addition_task_worker: The item is: 5[0m
+[0;32mI (89086) app_main: Task has finished its execution.[0m
+[0;32mI (90086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (90086) addition_task_worker: The item is: 1[0m
+[0;32mI (90086) addition_task_worker: The item is: 2[0m
+[0;32mI (90086) addition_task_worker: The item is: 3[0m
+[0;32mI (90096) addition_task_worker: The item is: 4[0m
+[0;32mI (90106) addition_task_worker: The item is: 5[0m
+[0;32mI (90106) app_main: Task has finished its execution.[0m
+[0;32mI (91106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (91106) addition_task_worker: The item is: 1[0m
+[0;32mI (91106) addition_task_worker: The item is: 2[0m
+[0;32mI (91106) addition_task_worker: The item is: 3[0m
+[0;32mI (91116) addition_task_worker: The item is: 4[0m
+[0;32mI (91126) addition_task_worker: The item is: 5[0m
+[0;32mI (91126) app_main: Task has finished its execution.[0m
+[0;32mI (92126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (92126) addition_task_worker: The item is: 1[0m
+[0;32mI (92126) addition_task_worker: The item is: 2[0m
+[0;32mI (92126) addition_task_worker: The item is: 3[0m
+[0;32mI (92136) addition_task_worker: The item is: 4[0m
+[0;32mI (92146) addition_task_worker: The item is: 5[0m
+[0;32mI (92146) app_main: Task has finished its execution.[0m
+[0;32mI (93146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (93146) addition_task_worker: The item is: 1[0m
+[0;32mI (93146) addition_task_worker: The item is: 2[0m
+[0;32mI (93146) addition_task_worker: The item is: 3[0m
+[0;32mI (93156) addition_task_worker: The item is: 4[0m
+[0;32mI (93166) addition_task_worker: The item is: 5[0m
+[0;32mI (93166) app_main: Task has finished its execution.[0m
+[0;32mI (94166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (94166) addition_task_worker: The item is: 1[0m
+[0;32mI (94166) addition_task_worker: The item is: 2[0m
+[0;32mI (94166) addition_task_worker: The item is: 3[0m
+[0;32mI (94176) addition_task_worker: The item is: 4[0m
+[0;32mI (94186) addition_task_worker: The item is: 5[0m
+[0;32mI (94186) app_main: Task has finished its execution.[0m
+[0;32mI (95186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (95186) addition_task_worker: The item is: 1[0m
+[0;32mI (95186) addition_task_worker: The item is: 2[0m
+[0;32mI (95186) addition_task_worker: The item is: 3[0m
+[0;32mI (95196) addition_task_worker: The item is: 4[0m
+[0;32mI (95206) addition_task_worker: The item is: 5[0m
+[0;32mI (95206) app_main: Task has finished its execution.[0m
+[0;32mI (96206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (96206) addition_task_worker: The item is: 1[0m
+[0;32mI (96206) addition_task_worker: The item is: 2[0m
+[0;32mI (96206) addition_task_worker: The item is: 3[0m
+[0;32mI (96216) addition_task_worker: The item is: 4[0m
+[0;32mI (96226) addition_task_worker: The item is: 5[0m
+[0;32mI (96226) app_main: Task has finished its execution.[0m
+[0;32mI (97226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (97226) addition_task_worker: The item is: 1[0m
+[0;32mI (97226) addition_task_worker: The item is: 2[0m
+[0;32mI (97226) addition_task_worker: The item is: 3[0m
+[0;32mI (97236) addition_task_worker: The item is: 4[0m
+[0;32mI (97246) addition_task_worker: The item is: 5[0m
+[0;32mI (97246) app_main: Task has finished its execution.[0m
+[0;32mI (98246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (98246) addition_task_worker: The item is: 1[0m
+[0;32mI (98246) addition_task_worker: The item is: 2[0m
+[0;32mI (98246) addition_task_worker: The item is: 3[0m
+[0;32mI (98256) addition_task_worker: The item is: 4[0m
+[0;32mI (98266) addition_task_worker: The item is: 5[0m
+[0;32mI (98266) app_main: Task has finished its execution.[0m
+[0;32mI (99266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (99266) addition_task_worker: The item is: 1[0m
+[0;32mI (99266) addition_task_worker: The item is: 2[0m
+[0;32mI (99266) addition_task_worker: The item is: 3[0m
+[0;32mI (99276) addition_task_worker: The item is: 4[0m
+[0;32mI (99286) addition_task_worker: The item is: 5[0m
+[0;32mI (99286) app_main: Task has finished its execution.[0m
+[0;32mI (100286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (100286) addition_task_worker: The item is: 1[0m
+[0;32mI (100286) addition_task_worker: The item is: 2[0m
+[0;32mI (100286) addition_task_worker: The item is: 3[0m
+[0;32mI (100306) addition_task_worker: The item is: 4[0m
+[0;32mI (100306) addition_task_worker: The item is: 5[0m
+[0;32mI (100306) app_main: Task has finished its execution.[0m
+[0;32mI (101306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (101306) addition_task_worker: The item is: 1[0m
+[0;32mI (101306) addition_task_worker: The item is: 2[0m
+[0;32mI (101306) addition_task_worker: The item is: 3[0m
+[0;32mI (101326) addition_task_worker: The item is: 4[0m
+[0;32mI (101326) addition_task_worker: The item is: 5[0m
+[0;32mI (101326) app_main: Task has finished its execution.[0m
+[0;32mI (102326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (102326) addition_task_worker: The item is: 1[0m
+[0;32mI (102326) addition_task_worker: The item is: 2[0m
+[0;32mI (102326) addition_task_worker: The item is: 3[0m
+[0;32mI (102346) addition_task_worker: The item is: 4[0m
+[0;32mI (102346) addition_task_worker: The item is: 5[0m
+[0;32mI (102346) app_main: Task has finished its execution.[0m
+[0;32mI (103346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (103346) addition_task_worker: The item is: 1[0m
+[0;32mI (103346) addition_task_worker: The item is: 2[0m
+[0;32mI (103346) addition_task_worker: The item is: 3[0m
+[0;32mI (103366) addition_task_worker: The item is: 4[0m
+[0;32mI (103366) addition_task_worker: The item is: 5[0m
+[0;32mI (103366) app_main: Task has finished its execution.[0m
+[0;32mI (104366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (104366) addition_task_worker: The item is: 1[0m
+[0;32mI (104366) addition_task_worker: The item is: 2[0m
+[0;32mI (104366) addition_task_worker: The item is: 3[0m
+[0;32mI (104386) addition_task_worker: The item is: 4[0m
+[0;32mI (104386) addition_task_worker: The item is: 5[0m
+[0;32mI (104386) app_main: Task has finished its execution.[0m
+[0;32mI (105386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (105386) addition_task_worker: The item is: 1[0m
+[0;32mI (105386) addition_task_worker: The item is: 2[0m
+[0;32mI (105386) addition_task_worker: The item is: 3[0m
+[0;32mI (105406) addition_task_worker: The item is: 4[0m
+[0;32mI (105406) addition_task_worker: The item is: 5[0m
+[0;32mI (105406) app_main: Task has finished its execution.[0m
+[0;32mI (106406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (106406) addition_task_worker: The item is: 1[0m
+[0;32mI (106406) addition_task_worker: The item is: 2[0m
+[0;32mI (106406) addition_task_worker: The item is: 3[0m
+[0;32mI (106426) addition_task_worker: The item is: 4[0m
+[0;32mI (106426) addition_task_worker: The item is: 5[0m
+[0;32mI (106426) app_main: Task has finished its execution.[0m
+[0;32mI (107426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (107426) addition_task_worker: The item is: 1[0m
+[0;32mI (107426) addition_task_worker: The item is: 2[0m
+[0;32mI (107426) addition_task_worker: The item is: 3[0m
+[0;32mI (107446) addition_task_worker: The item is: 4[0m
+[0;32mI (107446) addition_task_worker: The item is: 5[0m
+[0;32mI (107446) app_main: Task has finished its execution.[0m
+[0;32mI (108446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (108446) addition_task_worker: The item is: 1[0m
+[0;32mI (108446) addition_task_worker: The item is: 2[0m
+[0;32mI (108446) addition_task_worker: The item is: 3[0m
+[0;32mI (108466) addition_task_worker: The item is: 4[0m
+[0;32mI (108466) addition_task_worker: The item is: 5[0m
+[0;32mI (108466) app_main: Task has finished its execution.[0m
+[0;32mI (109466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (109466) addition_task_worker: The item is: 1[0m
+[0;32mI (109466) addition_task_worker: The item is: 2[0m
+[0;32mI (109466) addition_task_worker: The item is: 3[0m
+[0;32mI (109486) addition_task_worker: The item is: 4[0m
+[0;32mI (109486) addition_task_worker: The item is: 5[0m
+[0;32mI (109486) app_main: Task has finished its execution.[0m
+[0;32mI (110486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (110486) addition_task_worker: The item is: 1[0m
+[0;32mI (110486) addition_task_worker: The item is: 2[0m
+[0;32mI (110486) addition_task_worker: The item is: 3[0m
+[0;32mI (110506) addition_task_worker: The item is: 4[0m
+[0;32mI (110506) addition_task_worker: The item is: 5[0m
+[0;32mI (110506) app_main: Task has finished its execution.[0m
+[0;32mI (111506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (111506) addition_task_worker: The item is: 1[0m
+[0;32mI (111506) addition_task_worker: The item is: 2[0m
+[0;32mI (111506) addition_task_worker: The item is: 3[0m
+[0;32mI (111526) addition_task_worker: The item is: 4[0m
+[0;32mI (111526) addition_task_worker: The item is: 5[0m
+[0;32mI (111526) app_main: Task has finished its execution.[0m
+[0;32mI (112526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (112526) addition_task_worker: The item is: 1[0m
+[0;32mI (112526) addition_task_worker: The item is: 2[0m
+[0;32mI (112526) addition_task_worker: The item is: 3[0m
+[0;32mI (112546) addition_task_worker: The item is: 4[0m
+[0;32mI (112546) addition_task_worker: The item is: 5[0m
+[0;32mI (112546) app_main: Task has finished its execution.[0m
+[0;32mI (113546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (113546) addition_task_worker: The item is: 1[0m
+[0;32mI (113546) addition_task_worker: The item is: 2[0m
+[0;32mI (113546) addition_task_worker: The item is: 3[0m
+[0;32mI (113566) addition_task_worker: The item is: 4[0m
+[0;32mI (113566) addition_task_worker: The item is: 5[0m
+[0;32mI (113566) app_main: Task has finished its execution.[0m
+[0;32mI (114566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (114566) addition_task_worker: The item is: 1[0m
+[0;32mI (114566) addition_task_worker: The item is: 2[0m
+[0;32mI (114566) addition_task_worker: The item is: 3[0m
+[0;32mI (114586) addition_task_worker: The item is: 4[0m
+[0;32mI (114586) addition_task_worker: The item is: 5[0m
+[0;32mI (114586) app_main: Task has finished its execution.[0m
+[0;32mI (115586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (115586) addition_task_worker: The item is: 1[0m
+[0;32mI (115586) addition_task_worker: The item is: 2[0m
+[0;32mI (115586) addition_task_worker: The item is: 3[0m
+[0;32mI (115606) addition_task_worker: The item is: 4[0m
+[0;32mI (115606) addition_task_worker: The item is: 5[0m
+[0;32mI (115606) app_main: Task has finished its execution.[0m
+[0;32mI (116606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (116606) addition_task_worker: The item is: 1[0m
+[0;32mI (116606) addition_task_worker: The item is: 2[0m
+[0;32mI (116606) addition_task_worker: The item is: 3[0m
+[0;32mI (116626) addition_task_worker: The item is: 4[0m
+[0;32mI (116626) addition_task_worker: The item is: 5[0m
+[0;32mI (116626) app_main: Task has finished its execution.[0m
+[0;32mI (117626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (117626) addition_task_worker: The item is: 1[0m
+[0;32mI (117626) addition_task_worker: The item is: 2[0m
+[0;32mI (117626) addition_task_worker: The item is: 3[0m
+[0;32mI (117646) addition_task_worker: The item is: 4[0m
+[0;32mI (117646) addition_task_worker: The item is: 5[0m
+[0;32mI (117646) app_main: Task has finished its execution.[0m
+[0;32mI (118646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (118646) addition_task_worker: The item is: 1[0m
+[0;32mI (118646) addition_task_worker: The item is: 2[0m
+[0;32mI (118646) addition_task_worker: The item is: 3[0m
+[0;32mI (118666) addition_task_worker: The item is: 4[0m
+[0;32mI (118666) addition_task_worker: The item is: 5[0m
+[0;32mI (118666) app_main: Task has finished its execution.[0m
+[0;32mI (119666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (119666) addition_task_worker: The item is: 1[0m
+[0;32mI (119666) addition_task_worker: The item is: 2[0m
+[0;32mI (119666) addition_task_worker: The item is: 3[0m
+[0;32mI (119686) addition_task_worker: The item is: 4[0m
+[0;32mI (119686) addition_task_worker: The item is: 5[0m
+[0;32mI (119686) app_main: Task has finished its execution.[0m
+[0;32mI (120686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (120686) addition_task_worker: The item is: 1[0m
+[0;32mI (120686) addition_task_worker: The item is: 2[0m
+[0;32mI (120686) addition_task_worker: The item is: 3[0m
+[0;32mI (120706) addition_task_worker: The item is: 4[0m
+[0;32mI (120706) addition_task_worker: The item is: 5[0m
+[0;32mI (120706) app_main: Task has finished its execution.[0m
+[0;32mI (121706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (121706) addition_task_worker: The item is: 1[0m
+[0;32mI (121706) addition_task_worker: The item is: 2[0m
+[0;32mI (121706) addition_task_worker: The item is: 3[0m
+[0;32mI (121726) addition_task_worker: The item is: 4[0m
+[0;32mI (121726) addition_task_worker: The item is: 5[0m
+[0;32mI (121726) app_main: Task has finished its execution.[0m
+[0;32mI (122726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (122726) addition_task_worker: The item is: 1[0m
+[0;32mI (122726) addition_task_worker: The item is: 2[0m
+[0;32mI (122726) addition_task_worker: The item is: 3[0m
+[0;32mI (122746) addition_task_worker: The item is: 4[0m
+[0;32mI (122746) addition_task_worker: The item is: 5[0m
+[0;32mI (122746) app_main: Task has finished its execution.[0m
+[0;32mI (123746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (123746) addition_task_worker: The item is: 1[0m
+[0;32mI (123746) addition_task_worker: The item is: 2[0m
+[0;32mI (123746) addition_task_worker: The item is: 3[0m
+[0;32mI (123766) addition_task_worker: The item is: 4[0m
+[0;32mI (123766) addition_task_worker: The item is: 5[0m
+[0;32mI (123766) app_main: Task has finished its execution.[0m
+[0;32mI (124766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (124766) addition_task_worker: The item is: 1[0m
+[0;32mI (124766) addition_task_worker: The item is: 2[0m
+[0;32mI (124766) addition_task_worker: The item is: 3[0m
+[0;32mI (124786) addition_task_worker: The item is: 4[0m
+[0;32mI (124786) addition_task_worker: The item is: 5[0m
+[0;32mI (124786) app_main: Task has finished its execution.[0m
+[0;32mI (125786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (125786) addition_task_worker: The item is: 1[0m
+[0;32mI (125786) addition_task_worker: The item is: 2[0m
+[0;32mI (125786) addition_task_worker: The item is: 3[0m
+[0;32mI (125806) addition_task_worker: The item is: 4[0m
+[0;32mI (125806) addition_task_worker: The item is: 5[0m
+[0;32mI (125806) app_main: Task has finished its execution.[0m
+[0;32mI (126806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (126806) addition_task_worker: The item is: 1[0m
+[0;32mI (126806) addition_task_worker: The item is: 2[0m
+[0;32mI (126806) addition_task_worker: The item is: 3[0m
+[0;32mI (126826) addition_task_worker: The item is: 4[0m
+[0;32mI (126826) addition_task_worker: The item is: 5[0m
+[0;32mI (126826) app_main: Task has finished its execution.[0m
+[0;32mI (127826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (127826) addition_task_worker: The item is: 1[0m
+[0;32mI (127826) addition_task_worker: The item is: 2[0m
+[0;32mI (127826) addition_task_worker: The item is: 3[0m
+[0;32mI (127846) addition_task_worker: The item is: 4[0m
+[0;32mI (127846) addition_task_worker: The item is: 5[0m
+[0;32mI (127846) app_main: Task has finished its execution.[0m
+[0;32mI (128846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (128846) addition_task_worker: The item is: 1[0m
+[0;32mI (128846) addition_task_worker: The item is: 2[0m
+[0;32mI (128846) addition_task_worker: The item is: 3[0m
+[0;32mI (128866) addition_task_worker: The item is: 4[0m
+[0;32mI (128866) addition_task_worker: The item is: 5[0m
+[0;32mI (128866) app_main: Task has finished its execution.[0m
+[0;32mI (129866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (129866) addition_task_worker: The item is: 1[0m
+[0;32mI (129866) addition_task_worker: The item is: 2[0m
+[0;32mI (129866) addition_task_worker: The item is: 3[0m
+[0;32mI (129886) addition_task_worker: The item is: 4[0m
+[0;32mI (129886) addition_task_worker: The item is: 5[0m
+[0;32mI (129886) app_main: Task has finished its execution.[0m
+[0;32mI (130886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (130886) addition_task_worker: The item is: 1[0m
+[0;32mI (130886) addition_task_worker: The item is: 2[0m
+[0;32mI (130886) addition_task_worker: The item is: 3[0m
+[0;32mI (130906) addition_task_worker: The item is: 4[0m
+[0;32mI (130906) addition_task_worker: The item is: 5[0m
+[0;32mI (130906) app_main: Task has finished its execution.[0m
+[0;32mI (131906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (131906) addition_task_worker: The item is: 1[0m
+[0;32mI (131906) addition_task_worker: The item is: 2[0m
+[0;32mI (131906) addition_task_worker: The item is: 3[0m
+[0;32mI (131926) addition_task_worker: The item is: 4[0m
+[0;32mI (131926) addition_task_worker: The item is: 5[0m
+[0;32mI (131926) app_main: Task has finished its execution.[0m
+[0;32mI (132926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (132926) addition_task_worker: The item is: 1[0m
+[0;32mI (132926) addition_task_worker: The item is: 2[0m
+[0;32mI (132926) addition_task_worker: The item is: 3[0m
+[0;32mI (132946) addition_task_worker: The item is: 4[0m
+[0;32mI (132946) addition_task_worker: The item is: 5[0m
+[0;32mI (132946) app_main: Task has finished its execution.[0m
+[0;32mI (133946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (133946) addition_task_worker: The item is: 1[0m
+[0;32mI (133946) addition_task_worker: The item is: 2[0m
+[0;32mI (133946) addition_task_worker: The item is: 3[0m
+[0;32mI (133966) addition_task_worker: The item is: 4[0m
+[0;32mI (133966) addition_task_worker: The item is: 5[0m
+[0;32mI (133966) app_main: Task has finished its execution.[0m
+[0;32mI (134966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (134966) addition_task_worker: The item is: 1[0m
+[0;32mI (134966) addition_task_worker: The item is: 2[0m
+[0;32mI (134966) addition_task_worker: The item is: 3[0m
+[0;32mI (134986) addition_task_worker: The item is: 4[0m
+[0;32mI (134986) addition_task_worker: The item is: 5[0m
+[0;32mI (134986) app_main: Task has finished its execution.[0m
+[0;32mI (135986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (135986) addition_task_worker: The item is: 1[0m
+[0;32mI (135986) addition_task_worker: The item is: 2[0m
+[0;32mI (135986) addition_task_worker: The item is: 3[0m
+[0;32mI (136006) addition_task_worker: The item is: 4[0m
+[0;32mI (136006) addition_task_worker: The item is: 5[0m
+[0;32mI (136006) app_main: Task has finished its execution.[0m
+[0;32mI (137006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (137006) addition_task_worker: The item is: 1[0m
+[0;32mI (137006) addition_task_worker: The item is: 2[0m
+[0;32mI (137006) addition_task_worker: The item is: 3[0m
+[0;32mI (137026) addition_task_worker: The item is: 4[0m
+[0;32mI (137026) addition_task_worker: The item is: 5[0m
+[0;32mI (137026) app_main: Task has finished its execution.[0m
+[0;32mI (138026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (138026) addition_task_worker: The item is: 1[0m
+[0;32mI (138026) addition_task_worker: The item is: 2[0m
+[0;32mI (138026) addition_task_worker: The item is: 3[0m
+[0;32mI (138046) addition_task_worker: The item is: 4[0m
+[0;32mI (138046) addition_task_worker: The item is: 5[0m
+[0;32mI (138046) app_main: Task has finished its execution.[0m
+[0;32mI (139046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (139046) addition_task_worker: The item is: 1[0m
+[0;32mI (139046) addition_task_worker: The item is: 2[0m
+[0;32mI (139046) addition_task_worker: The item is: 3[0m
+[0;32mI (139066) addition_task_worker: The item is: 4[0m
+[0;32mI (139066) addition_task_worker: The item is: 5[0m
+[0;32mI (139066) app_main: Task has finished its execution.[0m
+[0;32mI (140066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (140066) addition_task_worker: The item is: 1[0m
+[0;32mI (140066) addition_task_worker: The item is: 2[0m
+[0;32mI (140066) addition_task_worker: The item is: 3[0m
+[0;32mI (140086) addition_task_worker: The item is: 4[0m
+[0;32mI (140086) addition_task_worker: The item is: 5[0m
+[0;32mI (140086) app_main: Task has finished its execution.[0m
+[0;32mI (141086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (141086) addition_task_worker: The item is: 1[0m
+[0;32mI (141086) addition_task_worker: The item is: 2[0m
+[0;32mI (141086) addition_task_worker: The item is: 3[0m
+[0;32mI (141106) addition_task_worker: The item is: 4[0m
+[0;32mI (141106) addition_task_worker: The item is: 5[0m
+[0;32mI (141106) app_main: Task has finished its execution.[0m
+[0;32mI (142106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (142106) addition_task_worker: The item is: 1[0m
+[0;32mI (142106) addition_task_worker: The item is: 2[0m
+[0;32mI (142106) addition_task_worker: The item is: 3[0m
+[0;32mI (142126) addition_task_worker: The item is: 4[0m
+[0;32mI (142126) addition_task_worker: The item is: 5[0m
+[0;32mI (142126) app_main: Task has finished its execution.[0m
+[0;32mI (143126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (143126) addition_task_worker: The item is: 1[0m
+[0;32mI (143126) addition_task_worker: The item is: 2[0m
+[0;32mI (143126) addition_task_worker: The item is: 3[0m
+[0;32mI (143146) addition_task_worker: The item is: 4[0m
+[0;32mI (143146) addition_task_worker: The item is: 5[0m
+[0;32mI (143146) app_main: Task has finished its execution.[0m
+[0;32mI (144146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (144146) addition_task_worker: The item is: 1[0m
+[0;32mI (144146) addition_task_worker: The item is: 2[0m
+[0;32mI (144146) addition_task_worker: The item is: 3[0m
+[0;32mI (144166) addition_task_worker: The item is: 4[0m
+[0;32mI (144166) addition_task_worker: The item is: 5[0m
+[0;32mI (144166) app_main: Task has finished its execution.[0m
+[0;32mI (145166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (145166) addition_task_worker: The item is: 1[0m
+[0;32mI (145166) addition_task_worker: The item is: 2[0m
+[0;32mI (145166) addition_task_worker: The item is: 3[0m
+[0;32mI (145186) addition_task_worker: The item is: 4[0m
+[0;32mI (145186) addition_task_worker: The item is: 5[0m
+[0;32mI (145186) app_main: Task has finished its execution.[0m
+[0;32mI (146186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (146186) addition_task_worker: The item is: 1[0m
+[0;32mI (146186) addition_task_worker: The item is: 2[0m
+[0;32mI (146186) addition_task_worker: The item is: 3[0m
+[0;32mI (146206) addition_task_worker: The item is: 4[0m
+[0;32mI (146206) addition_task_worker: The item is: 5[0m
+[0;32mI (146206) app_main: Task has finished its execution.[0m
+[0;32mI (147206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (147206) addition_task_worker: The item is: 1[0m
+[0;32mI (147206) addition_task_worker: The item is: 2[0m
+[0;32mI (147206) addition_task_worker: The item is: 3[0m
+[0;32mI (147226) addition_task_worker: The item is: 4[0m
+[0;32mI (147226) addition_task_worker: The item is: 5[0m
+[0;32mI (147226) app_main: Task has finished its execution.[0m
+[0;32mI (148226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (148226) addition_task_worker: The item is: 1[0m
+[0;32mI (148226) addition_task_worker: The item is: 2[0m
+[0;32mI (148226) addition_task_worker: The item is: 3[0m
+[0;32mI (148246) addition_task_worker: The item is: 4[0m
+[0;32mI (148246) addition_task_worker: The item is: 5[0m
+[0;32mI (148246) app_main: Task has finished its execution.[0m
+[0;32mI (149246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (149246) addition_task_worker: The item is: 1[0m
+[0;32mI (149246) addition_task_worker: The item is: 2[0m
+[0;32mI (149246) addition_task_worker: The item is: 3[0m
+[0;32mI (149266) addition_task_worker: The item is: 4[0m
+[0;32mI (149266) addition_task_worker: The item is: 5[0m
+[0;32mI (149266) app_main: Task has finished its execution.[0m
+[0;32mI (150266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (150266) addition_task_worker: The item is: 1[0m
+[0;32mI (150266) addition_task_worker: The item is: 2[0m
+[0;32mI (150266) addition_task_worker: The item is: 3[0m
+[0;32mI (150286) addition_task_worker: The item is: 4[0m
+[0;32mI (150286) addition_task_worker: The item is: 5[0m
+[0;32mI (150286) app_main: Task has finished its execution.[0m
+[0;32mI (151286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (151286) addition_task_worker: The item is: 1[0m
+[0;32mI (151286) addition_task_worker: The item is: 2[0m
+[0;32mI (151286) addition_task_worker: The item is: 3[0m
+[0;32mI (151306) addition_task_worker: The item is: 4[0m
+[0;32mI (151306) addition_task_worker: The item is: 5[0m
+[0;32mI (151306) app_main: Task has finished its execution.[0m
+[0;32mI (152306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (152306) addition_task_worker: The item is: 1[0m
+[0;32mI (152306) addition_task_worker: The item is: 2[0m
+[0;32mI (152306) addition_task_worker: The item is: 3[0m
+[0;32mI (152326) addition_task_worker: The item is: 4[0m
+[0;32mI (152326) addition_task_worker: The item is: 5[0m
+[0;32mI (152326) app_main: Task has finished its execution.[0m
+[0;32mI (153326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (153326) addition_task_worker: The item is: 1[0m
+[0;32mI (153326) addition_task_worker: The item is: 2[0m
+[0;32mI (153326) addition_task_worker: The item is: 3[0m
+[0;32mI (153346) addition_task_worker: The item is: 4[0m
+[0;32mI (153346) addition_task_worker: The item is: 5[0m
+[0;32mI (153346) app_main: Task has finished its execution.[0m
+[0;32mI (154346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (154346) addition_task_worker: The item is: 1[0m
+[0;32mI (154346) addition_task_worker: The item is: 2[0m
+[0;32mI (154346) addition_task_worker: The item is: 3[0m
+[0;32mI (154366) addition_task_worker: The item is: 4[0m
+[0;32mI (154366) addition_task_worker: The item is: 5[0m
+[0;32mI (154366) app_main: Task has finished its execution.[0m
+[0;32mI (155366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (155366) addition_task_worker: The item is: 1[0m
+[0;32mI (155366) addition_task_worker: The item is: 2[0m
+[0;32mI (155366) addition_task_worker: The item is: 3[0m
+[0;32mI (155386) addition_task_worker: The item is: 4[0m
+[0;32mI (155386) addition_task_worker: The item is: 5[0m
+[0;32mI (155386) app_main: Task has finished its execution.[0m
+[0;32mI (156386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (156386) addition_task_worker: The item is: 1[0m
+[0;32mI (156386) addition_task_worker: The item is: 2[0m
+[0;32mI (156386) addition_task_worker: The item is: 3[0m
+[0;32mI (156406) addition_task_worker: The item is: 4[0m
+[0;32mI (156406) addition_task_worker: The item is: 5[0m
+[0;32mI (156406) app_main: Task has finished its execution.[0m
+[0;32mI (157406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (157406) addition_task_worker: The item is: 1[0m
+[0;32mI (157406) addition_task_worker: The item is: 2[0m
+[0;32mI (157406) addition_task_worker: The item is: 3[0m
+[0;32mI (157426) addition_task_worker: The item is: 4[0m
+[0;32mI (157426) addition_task_worker: The item is: 5[0m
+[0;32mI (157426) app_main: Task has finished its execution.[0m
+[0;32mI (158426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (158426) addition_task_worker: The item is: 1[0m
+[0;32mI (158426) addition_task_worker: The item is: 2[0m
+[0;32mI (158426) addition_task_worker: The item is: 3[0m
+[0;32mI (158446) addition_task_worker: The item is: 4[0m
+[0;32mI (158446) addition_task_worker: The item is: 5[0m
+[0;32mI (158446) app_main: Task has finished its execution.[0m
+[0;32mI (159446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (159446) addition_task_worker: The item is: 1[0m
+[0;32mI (159446) addition_task_worker: The item is: 2[0m
+[0;32mI (159446) addition_task_worker: The item is: 3[0m
+[0;32mI (159466) addition_task_worker: The item is: 4[0m
+[0;32mI (159466) addition_task_worker: The item is: 5[0m
+[0;32mI (159466) app_main: Task has finished its execution.[0m
+[0;32mI (160466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (160466) addition_task_worker: The item is: 1[0m
+[0;32mI (160466) addition_task_worker: The item is: 2[0m
+[0;32mI (160466) addition_task_worker: The item is: 3[0m
+[0;32mI (160486) addition_task_worker: The item is: 4[0m
+[0;32mI (160486) addition_task_worker: The item is: 5[0m
+[0;32mI (160486) app_main: Task has finished its execution.[0m
+[0;32mI (161486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (161486) addition_task_worker: The item is: 1[0m
+[0;32mI (161486) addition_task_worker: The item is: 2[0m
+[0;32mI (161486) addition_task_worker: The item is: 3[0m
+[0;32mI (161506) addition_task_worker: The item is: 4[0m
+[0;32mI (161506) addition_task_worker: The item is: 5[0m
+[0;32mI (161506) app_main: Task has finished its execution.[0m
+[0;32mI (162506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (162506) addition_task_worker: The item is: 1[0m
+[0;32mI (162506) addition_task_worker: The item is: 2[0m
+[0;32mI (162506) addition_task_worker: The item is: 3[0m
+[0;32mI (162526) addition_task_worker: The item is: 4[0m
+[0;32mI (162526) addition_task_worker: The item is: 5[0m
+[0;32mI (162526) app_main: Task has finished its execution.[0m
+[0;32mI (163526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (163526) addition_task_worker: The item is: 1[0m
+[0;32mI (163526) addition_task_worker: The item is: 2[0m
+[0;32mI (163526) addition_task_worker: The item is: 3[0m
+[0;32mI (163546) addition_task_worker: The item is: 4[0m
+[0;32mI (163546) addition_task_worker: The item is: 5[0m
+[0;32mI (163546) app_main: Task has finished its execution.[0m
+[0;32mI (164546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (164546) addition_task_worker: The item is: 1[0m
+[0;32mI (164546) addition_task_worker: The item is: 2[0m
+[0;32mI (164546) addition_task_worker: The item is: 3[0m
+[0;32mI (164566) addition_task_worker: The item is: 4[0m
+[0;32mI (164566) addition_task_worker: The item is: 5[0m
+[0;32mI (164566) app_main: Task has finished its execution.[0m
+[0;32mI (165566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (165566) addition_task_worker: The item is: 1[0m
+[0;32mI (165566) addition_task_worker: The item is: 2[0m
+[0;32mI (165566) addition_task_worker: The item is: 3[0m
+[0;32mI (165586) addition_task_worker: The item is: 4[0m
+[0;32mI (165586) addition_task_worker: The item is: 5[0m
+[0;32mI (165586) app_main: Task has finished its execution.[0m
+[0;32mI (166586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (166586) addition_task_worker: The item is: 1[0m
+[0;32mI (166586) addition_task_worker: The item is: 2[0m
+[0;32mI (166586) addition_task_worker: The item is: 3[0m
+[0;32mI (166606) addition_task_worker: The item is: 4[0m
+[0;32mI (166606) addition_task_worker: The item is: 5[0m
+[0;32mI (166606) app_main: Task has finished its execution.[0m
+[0;32mI (167606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (167606) addition_task_worker: The item is: 1[0m
+[0;32mI (167606) addition_task_worker: The item is: 2[0m
+[0;32mI (167606) addition_task_worker: The item is: 3[0m
+[0;32mI (167626) addition_task_worker: The item is: 4[0m
+[0;32mI (167626) addition_task_worker: The item is: 5[0m
+[0;32mI (167626) app_main: Task has finished its execution.[0m
+[0;32mI (168626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (168626) addition_task_worker: The item is: 1[0m
+[0;32mI (168626) addition_task_worker: The item is: 2[0m
+[0;32mI (168626) addition_task_worker: The item is: 3[0m
+[0;32mI (168646) addition_task_worker: The item is: 4[0m
+[0;32mI (168646) addition_task_worker: The item is: 5[0m
+[0;32mI (168646) app_main: Task has finished its execution.[0m
+[0;32mI (169646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (169646) addition_task_worker: The item is: 1[0m
+[0;32mI (169646) addition_task_worker: The item is: 2[0m
+[0;32mI (169646) addition_task_worker: The item is: 3[0m
+[0;32mI (169666) addition_task_worker: The item is: 4[0m
+[0;32mI (169666) addition_task_worker: The item is: 5[0m
+[0;32mI (169666) app_main: Task has finished its execution.[0m
+[0;32mI (170666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (170666) addition_task_worker: The item is: 1[0m
+[0;32mI (170666) addition_task_worker: The item is: 2[0m
+[0;32mI (170666) addition_task_worker: The item is: 3[0m
+[0;32mI (170686) addition_task_worker: The item is: 4[0m
+[0;32mI (170686) addition_task_worker: The item is: 5[0m
+[0;32mI (170686) app_main: Task has finished its execution.[0m
+[0;32mI (171686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (171686) addition_task_worker: The item is: 1[0m
+[0;32mI (171686) addition_task_worker: The item is: 2[0m
+[0;32mI (171686) addition_task_worker: The item is: 3[0m
+[0;32mI (171706) addition_task_worker: The item is: 4[0m
+[0;32mI (171706) addition_task_worker: The item is: 5[0m
+[0;32mI (171706) app_main: Task has finished its execution.[0m
+[0;32mI (172706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (172706) addition_task_worker: The item is: 1[0m
+[0;32mI (172706) addition_task_worker: The item is: 2[0m
+[0;32mI (172706) addition_task_worker: The item is: 3[0m
+[0;32mI (172726) addition_task_worker: The item is: 4[0m
+[0;32mI (172726) addition_task_worker: The item is: 5[0m
+[0;32mI (172726) app_main: Task has finished its execution.[0m
+[0;32mI (173726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (173726) addition_task_worker: The item is: 1[0m
+[0;32mI (173726) addition_task_worker: The item is: 2[0m
+[0;32mI (173726) addition_task_worker: The item is: 3[0m
+[0;32mI (173746) addition_task_worker: The item is: 4[0m
+[0;32mI (173746) addition_task_worker: The item is: 5[0m
+[0;32mI (173746) app_main: Task has finished its execution.[0m
+[0;32mI (174746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (174746) addition_task_worker: The item is: 1[0m
+[0;32mI (174746) addition_task_worker: The item is: 2[0m
+[0;32mI (174746) addition_task_worker: The item is: 3[0m
+[0;32mI (174766) addition_task_worker: The item is: 4[0m
+[0;32mI (174766) addition_task_worker: The item is: 5[0m
+[0;32mI (174766) app_main: Task has finished its execution.[0m
+[0;32mI (175766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (175766) addition_task_worker: The item is: 1[0m
+[0;32mI (175766) addition_task_worker: The item is: 2[0m
+[0;32mI (175766) addition_task_worker: The item is: 3[0m
+[0;32mI (175786) addition_task_worker: The item is: 4[0m
+[0;32mI (175786) addition_task_worker: The item is: 5[0m
+[0;32mI (175786) app_main: Task has finished its execution.[0m
+[0;32mI (176786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (176786) addition_task_worker: The item is: 1[0m
+[0;32mI (176786) addition_task_worker: The item is: 2[0m
+[0;32mI (176786) addition_task_worker: The item is: 3[0m
+[0;32mI (176806) addition_task_worker: The item is: 4[0m
+[0;32mI (176806) addition_task_worker: The item is: 5[0m
+[0;32mI (176806) app_main: Task has finished its execution.[0m
+[0;32mI (177806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (177806) addition_task_worker: The item is: 1[0m
+[0;32mI (177806) addition_task_worker: The item is: 2[0m
+[0;32mI (177806) addition_task_worker: The item is: 3[0m
+[0;32mI (177826) addition_task_worker: The item is: 4[0m
+[0;32mI (177826) addition_task_worker: The item is: 5[0m
+[0;32mI (177826) app_main: Task has finished its execution.[0m
+[0;32mI (178826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (178826) addition_task_worker: The item is: 1[0m
+[0;32mI (178826) addition_task_worker: The item is: 2[0m
+[0;32mI (178826) addition_task_worker: The item is: 3[0m
+[0;32mI (178846) addition_task_worker: The item is: 4[0m
+[0;32mI (178846) addition_task_worker: The item is: 5[0m
+[0;32mI (178846) app_main: Task has finished its execution.[0m
+[0;32mI (179846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (179846) addition_task_worker: The item is: 1[0m
+[0;32mI (179846) addition_task_worker: The item is: 2[0m
+[0;32mI (179846) addition_task_worker: The item is: 3[0m
+[0;32mI (179866) addition_task_worker: The item is: 4[0m
+[0;32mI (179866) addition_task_worker: The item is: 5[0m
+[0;32mI (179866) app_main: Task has finished its execution.[0m
+[0;32mI (180866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (180866) addition_task_worker: The item is: 1[0m
+[0;32mI (180866) addition_task_worker: The item is: 2[0m
+[0;32mI (180866) addition_task_worker: The item is: 3[0m
+[0;32mI (180886) addition_task_worker: The item is: 4[0m
+[0;32mI (180886) addition_task_worker: The item is: 5[0m
+[0;32mI (180886) app_main: Task has finished its execution.[0m
+[0;32mI (181886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (181886) addition_task_worker: The item is: 1[0m
+[0;32mI (181886) addition_task_worker: The item is: 2[0m
+[0;32mI (181886) addition_task_worker: The item is: 3[0m
+[0;32mI (181906) addition_task_worker: The item is: 4[0m
+[0;32mI (181906) addition_task_worker: The item is: 5[0m
+[0;32mI (181906) app_main: Task has finished its execution.[0m
+[0;32mI (182906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (182906) addition_task_worker: The item is: 1[0m
+[0;32mI (182906) addition_task_worker: The item is: 2[0m
+[0;32mI (182906) addition_task_worker: The item is: 3[0m
+[0;32mI (182926) addition_task_worker: The item is: 4[0m
+[0;32mI (182926) addition_task_worker: The item is: 5[0m
+[0;32mI (182926) app_main: Task has finished its execution.[0m
+[0;32mI (183926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (183926) addition_task_worker: The item is: 1[0m
+[0;32mI (183926) addition_task_worker: The item is: 2[0m
+[0;32mI (183926) addition_task_worker: The item is: 3[0m
+[0;32mI (183946) addition_task_worker: The item is: 4[0m
+[0;32mI (183946) addition_task_worker: The item is: 5[0m
+[0;32mI (183946) app_main: Task has finished its execution.[0m
+[0;32mI (184946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (184946) addition_task_worker: The item is: 1[0m
+[0;32mI (184946) addition_task_worker: The item is: 2[0m
+[0;32mI (184946) addition_task_worker: The item is: 3[0m
+[0;32mI (184966) addition_task_worker: The item is: 4[0m
+[0;32mI (184966) addition_task_worker: The item is: 5[0m
+[0;32mI (184966) app_main: Task has finished its execution.[0m
+[0;32mI (185966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (185966) addition_task_worker: The item is: 1[0m
+[0;32mI (185966) addition_task_worker: The item is: 2[0m
+[0;32mI (185966) addition_task_worker: The item is: 3[0m
+[0;32mI (185986) addition_task_worker: The item is: 4[0m
+[0;32mI (185986) addition_task_worker: The item is: 5[0m
+[0;32mI (185986) app_main: Task has finished its execution.[0m
+[0;32mI (186986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (186986) addition_task_worker: The item is: 1[0m
+[0;32mI (186986) addition_task_worker: The item is: 2[0m
+[0;32mI (186986) addition_task_worker: The item is: 3[0m
+[0;32mI (187006) addition_task_worker: The item is: 4[0m
+[0;32mI (187006) addition_task_worker: The item is: 5[0m
+[0;32mI (187006) app_main: Task has finished its execution.[0m
+[0;32mI (188006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (188006) addition_task_worker: The item is: 1[0m
+[0;32mI (188006) addition_task_worker: The item is: 2[0m
+[0;32mI (188006) addition_task_worker: The item is: 3[0m
+[0;32mI (188026) addition_task_worker: The item is: 4[0m
+[0;32mI (188026) addition_task_worker: The item is: 5[0m
+[0;32mI (188026) app_main: Task has finished its execution.[0m
+[0;32mI (189026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (189026) addition_task_worker: The item is: 1[0m
+[0;32mI (189026) addition_task_worker: The item is: 2[0m
+[0;32mI (189026) addition_task_worker: The item is: 3[0m
+[0;32mI (189046) addition_task_worker: The item is: 4[0m
+[0;32mI (189046) addition_task_worker: The item is: 5[0m
+[0;32mI (189046) app_main: Task has finished its execution.[0m
+[0;32mI (190046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (190046) addition_task_worker: The item is: 1[0m
+[0;32mI (190046) addition_task_worker: The item is: 2[0m
+[0;32mI (190046) addition_task_worker: The item is: 3[0m
+[0;32mI (190066) addition_task_worker: The item is: 4[0m
+[0;32mI (190066) addition_task_worker: The item is: 5[0m
+[0;32mI (190066) app_main: Task has finished its execution.[0m
+[0;32mI (191066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (191066) addition_task_worker: The item is: 1[0m
+[0;32mI (191066) addition_task_worker: The item is: 2[0m
+[0;32mI (191066) addition_task_worker: The item is: 3[0m
+[0;32mI (191086) addition_task_worker: The item is: 4[0m
+[0;32mI (191086) addition_task_worker: The item is: 5[0m
+[0;32mI (191086) app_main: Task has finished its execution.[0m
+[0;32mI (192086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (192086) addition_task_worker: The item is: 1[0m
+[0;32mI (192086) addition_task_worker: The item is: 2[0m
+[0;32mI (192086) addition_task_worker: The item is: 3[0m
+[0;32mI (192106) addition_task_worker: The item is: 4[0m
+[0;32mI (192106) addition_task_worker: The item is: 5[0m
+[0;32mI (192106) app_main: Task has finished its execution.[0m
+[0;32mI (193106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (193106) addition_task_worker: The item is: 1[0m
+[0;32mI (193106) addition_task_worker: The item is: 2[0m
+[0;32mI (193106) addition_task_worker: The item is: 3[0m
+[0;32mI (193126) addition_task_worker: The item is: 4[0m
+[0;32mI (193126) addition_task_worker: The item is: 5[0m
+[0;32mI (193126) app_main: Task has finished its execution.[0m
+[0;32mI (194126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (194126) addition_task_worker: The item is: 1[0m
+[0;32mI (194126) addition_task_worker: The item is: 2[0m
+[0;32mI (194126) addition_task_worker: The item is: 3[0m
+[0;32mI (194146) addition_task_worker: The item is: 4[0m
+[0;32mI (194146) addition_task_worker: The item is: 5[0m
+[0;32mI (194146) app_main: Task has finished its execution.[0m
+[0;32mI (195146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (195146) addition_task_worker: The item is: 1[0m
+[0;32mI (195146) addition_task_worker: The item is: 2[0m
+[0;32mI (195146) addition_task_worker: The item is: 3[0m
+[0;32mI (195166) addition_task_worker: The item is: 4[0m
+[0;32mI (195166) addition_task_worker: The item is: 5[0m
+[0;32mI (195166) app_main: Task has finished its execution.[0m
+[0;32mI (196166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (196166) addition_task_worker: The item is: 1[0m
+[0;32mI (196166) addition_task_worker: The item is: 2[0m
+[0;32mI (196166) addition_task_worker: The item is: 3[0m
+[0;32mI (196186) addition_task_worker: The item is: 4[0m
+[0;32mI (196186) addition_task_worker: The item is: 5[0m
+[0;32mI (196186) app_main: Task has finished its execution.[0m
+[0;32mI (197186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (197186) addition_task_worker: The item is: 1[0m
+[0;32mI (197186) addition_task_worker: The item is: 2[0m
+[0;32mI (197186) addition_task_worker: The item is: 3[0m
+[0;32mI (197206) addition_task_worker: The item is: 4[0m
+[0;32mI (197206) addition_task_worker: The item is: 5[0m
+[0;32mI (197206) app_main: Task has finished its execution.[0m
+[0;32mI (198206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (198206) addition_task_worker: The item is: 1[0m
+[0;32mI (198206) addition_task_worker: The item is: 2[0m
+[0;32mI (198206) addition_task_worker: The item is: 3[0m
+[0;32mI (198226) addition_task_worker: The item is: 4[0m
+[0;32mI (198226) addition_task_worker: The item is: 5[0m
+[0;32mI (198226) app_main: Task has finished its execution.[0m
+[0;32mI (199226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (199226) addition_task_worker: The item is: 1[0m
+[0;32mI (199226) addition_task_worker: The item is: 2[0m
+[0;32mI (199226) addition_task_worker: The item is: 3[0m
+[0;32mI (199246) addition_task_worker: The item is: 4[0m
+[0;32mI (199246) addition_task_worker: The item is: 5[0m
+[0;32mI (199246) app_main: Task has finished its execution.[0m
+[0;32mI (200246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (200246) addition_task_worker: The item is: 1[0m
+[0;32mI (200246) addition_task_worker: The item is: 2[0m
+[0;32mI (200246) addition_task_worker: The item is: 3[0m
+[0;32mI (200266) addition_task_worker: The item is: 4[0m
+[0;32mI (200266) addition_task_worker: The item is: 5[0m
+[0;32mI (200266) app_main: Task has finished its execution.[0m
+[0;32mI (201266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (201266) addition_task_worker: The item is: 1[0m
+[0;32mI (201266) addition_task_worker: The item is: 2[0m
+[0;32mI (201266) addition_task_worker: The item is: 3[0m
+[0;32mI (201286) addition_task_worker: The item is: 4[0m
+[0;32mI (201286) addition_task_worker: The item is: 5[0m
+[0;32mI (201286) app_main: Task has finished its execution.[0m
+[0;32mI (202286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (202286) addition_task_worker: The item is: 1[0m
+[0;32mI (202286) addition_task_worker: The item is: 2[0m
+[0;32mI (202286) addition_task_worker: The item is: 3[0m
+[0;32mI (202306) addition_task_worker: The item is: 4[0m
+[0;32mI (202306) addition_task_worker: The item is: 5[0m
+[0;32mI (202306) app_main: Task has finished its execution.[0m
+[0;32mI (203306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (203306) addition_task_worker: The item is: 1[0m
+[0;32mI (203306) addition_task_worker: The item is: 2[0m
+[0;32mI (203306) addition_task_worker: The item is: 3[0m
+[0;32mI (203326) addition_task_worker: The item is: 4[0m
+[0;32mI (203326) addition_task_worker: The item is: 5[0m
+[0;32mI (203326) app_main: Task has finished its execution.[0m
+[0;32mI (204326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (204326) addition_task_worker: The item is: 1[0m
+[0;32mI (204326) addition_task_worker: The item is: 2[0m
+[0;32mI (204326) addition_task_worker: The item is: 3[0m
+[0;32mI (204346) addition_task_worker: The item is: 4[0m
+[0;32mI (204346) addition_task_worker: The item is: 5[0m
+[0;32mI (204346) app_main: Task has finished its execution.[0m
+[0;32mI (205346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (205346) addition_task_worker: The item is: 1[0m
+[0;32mI (205346) addition_task_worker: The item is: 2[0m
+[0;32mI (205346) addition_task_worker: The item is: 3[0m
+[0;32mI (205366) addition_task_worker: The item is: 4[0m
+[0;32mI (205366) addition_task_worker: The item is: 5[0m
+[0;32mI (205366) app_main: Task has finished its execution.[0m
+[0;32mI (206366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (206366) addition_task_worker: The item is: 1[0m
+[0;32mI (206366) addition_task_worker: The item is: 2[0m
+[0;32mI (206366) addition_task_worker: The item is: 3[0m
+[0;32mI (206386) addition_task_worker: The item is: 4[0m
+[0;32mI (206386) addition_task_worker: The item is: 5[0m
+[0;32mI (206386) app_main: Task has finished its execution.[0m
+[0;32mI (207386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (207386) addition_task_worker: The item is: 1[0m
+[0;32mI (207386) addition_task_worker: The item is: 2[0m
+[0;32mI (207386) addition_task_worker: The item is: 3[0m
+[0;32mI (207406) addition_task_worker: The item is: 4[0m
+[0;32mI (207406) addition_task_worker: The item is: 5[0m
+[0;32mI (207406) app_main: Task has finished its execution.[0m
+[0;32mI (208406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (208406) addition_task_worker: The item is: 1[0m
+[0;32mI (208406) addition_task_worker: The item is: 2[0m
+[0;32mI (208406) addition_task_worker: The item is: 3[0m
+[0;32mI (208426) addition_task_worker: The item is: 4[0m
+[0;32mI (208426) addition_task_worker: The item is: 5[0m
+[0;32mI (208426) app_main: Task has finished its execution.[0m
+[0;32mI (209426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (209426) addition_task_worker: The item is: 1[0m
+[0;32mI (209426) addition_task_worker: The item is: 2[0m
+[0;32mI (209426) addition_task_worker: The item is: 3[0m
+[0;32mI (209446) addition_task_worker: The item is: 4[0m
+[0;32mI (209446) addition_task_worker: The item is: 5[0m
+[0;32mI (209446) app_main: Task has finished its execution.[0m
+[0;32mI (210446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (210446) addition_task_worker: The item is: 1[0m
+[0;32mI (210446) addition_task_worker: The item is: 2[0m
+[0;32mI (210446) addition_task_worker: The item is: 3[0m
+[0;32mI (210466) addition_task_worker: The item is: 4[0m
+[0;32mI (210466) addition_task_worker: The item is: 5[0m
+[0;32mI (210466) app_main: Task has finished its execution.[0m
+[0;32mI (211466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (211466) addition_task_worker: The item is: 1[0m
+[0;32mI (211466) addition_task_worker: The item is: 2[0m
+[0;32mI (211466) addition_task_worker: The item is: 3[0m
+[0;32mI (211486) addition_task_worker: The item is: 4[0m
+[0;32mI (211486) addition_task_worker: The item is: 5[0m
+[0;32mI (211486) app_main: Task has finished its execution.[0m
+[0;32mI (212486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (212486) addition_task_worker: The item is: 1[0m
+[0;32mI (212486) addition_task_worker: The item is: 2[0m
+[0;32mI (212486) addition_task_worker: The item is: 3[0m
+[0;32mI (212506) addition_task_worker: The item is: 4[0m
+[0;32mI (212506) addition_task_worker: The item is: 5[0m
+[0;32mI (212506) app_main: Task has finished its execution.[0m
+[0;32mI (213506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (213506) addition_task_worker: The item is: 1[0m
+[0;32mI (213506) addition_task_worker: The item is: 2[0m
+[0;32mI (213506) addition_task_worker: The item is: 3[0m
+[0;32mI (213526) addition_task_worker: The item is: 4[0m
+[0;32mI (213526) addition_task_worker: The item is: 5[0m
+[0;32mI (213526) app_main: Task has finished its execution.[0m
+[0;32mI (214526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (214526) addition_task_worker: The item is: 1[0m
+[0;32mI (214526) addition_task_worker: The item is: 2[0m
+[0;32mI (214526) addition_task_worker: The item is: 3[0m
+[0;32mI (214546) addition_task_worker: The item is: 4[0m
+[0;32mI (214546) addition_task_worker: The item is: 5[0m
+[0;32mI (214546) app_main: Task has finished its execution.[0m
+[0;32mI (215546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (215546) addition_task_worker: The item is: 1[0m
+[0;32mI (215546) addition_task_worker: The item is: 2[0m
+[0;32mI (215546) addition_task_worker: The item is: 3[0m
+[0;32mI (215566) addition_task_worker: The item is: 4[0m
+[0;32mI (215566) addition_task_worker: The item is: 5[0m
+[0;32mI (215566) app_main: Task has finished its execution.[0m
+[0;32mI (216566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (216566) addition_task_worker: The item is: 1[0m
+[0;32mI (216566) addition_task_worker: The item is: 2[0m
+[0;32mI (216566) addition_task_worker: The item is: 3[0m
+[0;32mI (216586) addition_task_worker: The item is: 4[0m
+[0;32mI (216586) addition_task_worker: The item is: 5[0m
+[0;32mI (216586) app_main: Task has finished its execution.[0m
+[0;32mI (217586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (217586) addition_task_worker: The item is: 1[0m
+[0;32mI (217586) addition_task_worker: The item is: 2[0m
+[0;32mI (217586) addition_task_worker: The item is: 3[0m
+[0;32mI (217606) addition_task_worker: The item is: 4[0m
+[0;32mI (217606) addition_task_worker: The item is: 5[0m
+[0;32mI (217606) app_main: Task has finished its execution.[0m
+[0;32mI (218606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (218606) addition_task_worker: The item is: 1[0m
+[0;32mI (218606) addition_task_worker: The item is: 2[0m
+[0;32mI (218606) addition_task_worker: The item is: 3[0m
+[0;32mI (218626) addition_task_worker: The item is: 4[0m
+[0;32mI (218626) addition_task_worker: The item is: 5[0m
+[0;32mI (218626) app_main: Task has finished its execution.[0m
+[0;32mI (219626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (219626) addition_task_worker: The item is: 1[0m
+[0;32mI (219626) addition_task_worker: The item is: 2[0m
+[0;32mI (219626) addition_task_worker: The item is: 3[0m
+[0;32mI (219646) addition_task_worker: The item is: 4[0m
+[0;32mI (219646) addition_task_worker: The item is: 5[0m
+[0;32mI (219646) app_main: Task has finished its execution.[0m
+[0;32mI (220646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (220646) addition_task_worker: The item is: 1[0m
+[0;32mI (220646) addition_task_worker: The item is: 2[0m
+[0;32mI (220646) addition_task_worker: The item is: 3[0m
+[0;32mI (220666) addition_task_worker: The item is: 4[0m
+[0;32mI (220666) addition_task_worker: The item is: 5[0m
+[0;32mI (220666) app_main: Task has finished its execution.[0m
+[0;32mI (221666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (221666) addition_task_worker: The item is: 1[0m
+[0;32mI (221666) addition_task_worker: The item is: 2[0m
+[0;32mI (221666) addition_task_worker: The item is: 3[0m
+[0;32mI (221686) addition_task_worker: The item is: 4[0m
+[0;32mI (221686) addition_task_worker: The item is: 5[0m
+[0;32mI (221686) app_main: Task has finished its execution.[0m
+[0;32mI (222686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (222686) addition_task_worker: The item is: 1[0m
+[0;32mI (222686) addition_task_worker: The item is: 2[0m
+[0;32mI (222686) addition_task_worker: The item is: 3[0m
+[0;32mI (222706) addition_task_worker: The item is: 4[0m
+[0;32mI (222706) addition_task_worker: The item is: 5[0m
+[0;32mI (222706) app_main: Task has finished its execution.[0m
+[0;32mI (223706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (223706) addition_task_worker: The item is: 1[0m
+[0;32mI (223706) addition_task_worker: The item is: 2[0m
+[0;32mI (223706) addition_task_worker: The item is: 3[0m
+[0;32mI (223726) addition_task_worker: The item is: 4[0m
+[0;32mI (223726) addition_task_worker: The item is: 5[0m
+[0;32mI (223726) app_main: Task has finished its execution.[0m
+[0;32mI (224726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (224726) addition_task_worker: The item is: 1[0m
+[0;32mI (224726) addition_task_worker: The item is: 2[0m
+[0;32mI (224726) addition_task_worker: The item is: 3[0m
+[0;32mI (224746) addition_task_worker: The item is: 4[0m
+[0;32mI (224746) addition_task_worker: The item is: 5[0m
+[0;32mI (224746) app_main: Task has finished its execution.[0m
+[0;32mI (225746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (225746) addition_task_worker: The item is: 1[0m
+[0;32mI (225746) addition_task_worker: The item is: 2[0m
+[0;32mI (225746) addition_task_worker: The item is: 3[0m
+[0;32mI (225766) addition_task_worker: The item is: 4[0m
+[0;32mI (225766) addition_task_worker: The item is: 5[0m
+[0;32mI (225766) app_main: Task has finished its execution.[0m
+[0;32mI (226766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (226766) addition_task_worker: The item is: 1[0m
+[0;32mI (226766) addition_task_worker: The item is: 2[0m
+[0;32mI (226766) addition_task_worker: The item is: 3[0m
+[0;32mI (226786) addition_task_worker: The item is: 4[0m
+[0;32mI (226786) addition_task_worker: The item is: 5[0m
+[0;32mI (226786) app_main: Task has finished its execution.[0m
+[0;32mI (227786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (227786) addition_task_worker: The item is: 1[0m
+[0;32mI (227786) addition_task_worker: The item is: 2[0m
+[0;32mI (227786) addition_task_worker: The item is: 3[0m
+[0;32mI (227806) addition_task_worker: The item is: 4[0m
+[0;32mI (227806) addition_task_worker: The item is: 5[0m
+[0;32mI (227806) app_main: Task has finished its execution.[0m
+[0;32mI (228806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (228806) addition_task_worker: The item is: 1[0m
+[0;32mI (228806) addition_task_worker: The item is: 2[0m
+[0;32mI (228806) addition_task_worker: The item is: 3[0m
+[0;32mI (228826) addition_task_worker: The item is: 4[0m
+[0;32mI (228826) addition_task_worker: The item is: 5[0m
+[0;32mI (228826) app_main: Task has finished its execution.[0m
+[0;32mI (229826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (229826) addition_task_worker: The item is: 1[0m
+[0;32mI (229826) addition_task_worker: The item is: 2[0m
+[0;32mI (229826) addition_task_worker: The item is: 3[0m
+[0;32mI (229846) addition_task_worker: The item is: 4[0m
+[0;32mI (229846) addition_task_worker: The item is: 5[0m
+[0;32mI (229846) app_main: Task has finished its execution.[0m
+[0;32mI (230846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (230846) addition_task_worker: The item is: 1[0m
+[0;32mI (230846) addition_task_worker: The item is: 2[0m
+[0;32mI (230846) addition_task_worker: The item is: 3[0m
+[0;32mI (230866) addition_task_worker: The item is: 4[0m
+[0;32mI (230866) addition_task_worker: The item is: 5[0m
+[0;32mI (230866) app_main: Task has finished its execution.[0m
+[0;32mI (231866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (231866) addition_task_worker: The item is: 1[0m
+[0;32mI (231866) addition_task_worker: The item is: 2[0m
+[0;32mI (231866) addition_task_worker: The item is: 3[0m
+[0;32mI (231886) addition_task_worker: The item is: 4[0m
+[0;32mI (231886) addition_task_worker: The item is: 5[0m
+[0;32mI (231886) app_main: Task has finished its execution.[0m
+[0;32mI (232886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (232886) addition_task_worker: The item is: 1[0m
+[0;32mI (232886) addition_task_worker: The item is: 2[0m
+[0;32mI (232886) addition_task_worker: The item is: 3[0m
+[0;32mI (232906) addition_task_worker: The item is: 4[0m
+[0;32mI (232906) addition_task_worker: The item is: 5[0m
+[0;32mI (232906) app_main: Task has finished its execution.[0m
+[0;32mI (233906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (233906) addition_task_worker: The item is: 1[0m
+[0;32mI (233906) addition_task_worker: The item is: 2[0m
+[0;32mI (233906) addition_task_worker: The item is: 3[0m
+[0;32mI (233926) addition_task_worker: The item is: 4[0m
+[0;32mI (233926) addition_task_worker: The item is: 5[0m
+[0;32mI (233926) app_main: Task has finished its execution.[0m
+[0;32mI (234926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (234926) addition_task_worker: The item is: 1[0m
+[0;32mI (234926) addition_task_worker: The item is: 2[0m
+[0;32mI (234926) addition_task_worker: The item is: 3[0m
+[0;32mI (234946) addition_task_worker: The item is: 4[0m
+[0;32mI (234946) addition_task_worker: The item is: 5[0m
+[0;32mI (234946) app_main: Task has finished its execution.[0m
+[0;32mI (235946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (235946) addition_task_worker: The item is: 1[0m
+[0;32mI (235946) addition_task_worker: The item is: 2[0m
+[0;32mI (235946) addition_task_worker: The item is: 3[0m
+[0;32mI (235966) addition_task_worker: The item is: 4[0m
+[0;32mI (235966) addition_task_worker: The item is: 5[0m
+[0;32mI (235966) app_main: Task has finished its execution.[0m
+[0;32mI (236966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (236966) addition_task_worker: The item is: 1[0m
+[0;32mI (236966) addition_task_worker: The item is: 2[0m
+[0;32mI (236966) addition_task_worker: The item is: 3[0m
+[0;32mI (236986) addition_task_worker: The item is: 4[0m
+[0;32mI (236986) addition_task_worker: The item is: 5[0m
+[0;32mI (236986) app_main: Task has finished its execution.[0m
+[0;32mI (237986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (237986) addition_task_worker: The item is: 1[0m
+[0;32mI (237986) addition_task_worker: The item is: 2[0m
+[0;32mI (237986) addition_task_worker: The item is: 3[0m
+[0;32mI (238006) addition_task_worker: The item is: 4[0m
+[0;32mI (238006) addition_task_worker: The item is: 5[0m
+[0;32mI (238006) app_main: Task has finished its execution.[0m
+[0;32mI (239006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (239006) addition_task_worker: The item is: 1[0m
+[0;32mI (239006) addition_task_worker: The item is: 2[0m
+[0;32mI (239006) addition_task_worker: The item is: 3[0m
+[0;32mI (239026) addition_task_worker: The item is: 4[0m
+[0;32mI (239026) addition_task_worker: The item is: 5[0m
+[0;32mI (239026) app_main: Task has finished its execution.[0m
+[0;32mI (240026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (240026) addition_task_worker: The item is: 1[0m
+[0;32mI (240026) addition_task_worker: The item is: 2[0m
+[0;32mI (240026) addition_task_worker: The item is: 3[0m
+[0;32mI (240046) addition_task_worker: The item is: 4[0m
+[0;32mI (240046) addition_task_worker: The item is: 5[0m
+[0;32mI (240046) app_main: Task has finished its execution.[0m
+[0;32mI (241046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (241046) addition_task_worker: The item is: 1[0m
+[0;32mI (241046) addition_task_worker: The item is: 2[0m
+[0;32mI (241046) addition_task_worker: The item is: 3[0m
+[0;32mI (241066) addition_task_worker: The item is: 4[0m
+[0;32mI (241066) addition_task_worker: The item is: 5[0m
+[0;32mI (241066) app_main: Task has finished its execution.[0m
+[0;32mI (242066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (242066) addition_task_worker: The item is: 1[0m
+[0;32mI (242066) addition_task_worker: The item is: 2[0m
+[0;32mI (242066) addition_task_worker: The item is: 3[0m
+[0;32mI (242086) addition_task_worker: The item is: 4[0m
+[0;32mI (242086) addition_task_worker: The item is: 5[0m
+[0;32mI (242086) app_main: Task has finished its execution.[0m
+[0;32mI (243086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (243086) addition_task_worker: The item is: 1[0m
+[0;32mI (243086) addition_task_worker: The item is: 2[0m
+[0;32mI (243086) addition_task_worker: The item is: 3[0m
+[0;32mI (243106) addition_task_worker: The item is: 4[0m
+[0;32mI (243106) addition_task_worker: The item is: 5[0m
+[0;32mI (243106) app_main: Task has finished its execution.[0m
+[0;32mI (244106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (244106) addition_task_worker: The item is: 1[0m
+[0;32mI (244106) addition_task_worker: The item is: 2[0m
+[0;32mI (244106) addition_task_worker: The item is: 3[0m
+[0;32mI (244126) addition_task_worker: The item is: 4[0m
+[0;32mI (244126) addition_task_worker: The item is: 5[0m
+[0;32mI (244126) app_main: Task has finished its execution.[0m
+[0;32mI (245126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (245126) addition_task_worker: The item is: 1[0m
+[0;32mI (245126) addition_task_worker: The item is: 2[0m
+[0;32mI (245126) addition_task_worker: The item is: 3[0m
+[0;32mI (245146) addition_task_worker: The item is: 4[0m
+[0;32mI (245146) addition_task_worker: The item is: 5[0m
+[0;32mI (245146) app_main: Task has finished its execution.[0m
+[0;32mI (246146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (246146) addition_task_worker: The item is: 1[0m
+[0;32mI (246146) addition_task_worker: The item is: 2[0m
+[0;32mI (246146) addition_task_worker: The item is: 3[0m
+[0;32mI (246166) addition_task_worker: The item is: 4[0m
+[0;32mI (246166) addition_task_worker: The item is: 5[0m
+[0;32mI (246166) app_main: Task has finished its execution.[0m
+[0;32mI (247166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (247166) addition_task_worker: The item is: 1[0m
+[0;32mI (247166) addition_task_worker: The item is: 2[0m
+[0;32mI (247166) addition_task_worker: The item is: 3[0m
+[0;32mI (247186) addition_task_worker: The item is: 4[0m
+[0;32mI (247186) addition_task_worker: The item is: 5[0m
+[0;32mI (247186) app_main: Task has finished its execution.[0m
+[0;32mI (248186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (248186) addition_task_worker: The item is: 1[0m
+[0;32mI (248186) addition_task_worker: The item is: 2[0m
+[0;32mI (248186) addition_task_worker: The item is: 3[0m
+[0;32mI (248206) addition_task_worker: The item is: 4[0m
+[0;32mI (248206) addition_task_worker: The item is: 5[0m
+[0;32mI (248206) app_main: Task has finished its execution.[0m
+[0;32mI (249206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (249206) addition_task_worker: The item is: 1[0m
+[0;32mI (249206) addition_task_worker: The item is: 2[0m
+[0;32mI (249206) addition_task_worker: The item is: 3[0m
+[0;32mI (249226) addition_task_worker: The item is: 4[0m
+[0;32mI (249226) addition_task_worker: The item is: 5[0m
+[0;32mI (249226) app_main: Task has finished its execution.[0m
+[0;32mI (250226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (250226) addition_task_worker: The item is: 1[0m
+[0;32mI (250226) addition_task_worker: The item is: 2[0m
+[0;32mI (250226) addition_task_worker: The item is: 3[0m
+[0;32mI (250246) addition_task_worker: The item is: 4[0m
+[0;32mI (250246) addition_task_worker: The item is: 5[0m
+[0;32mI (250246) app_main: Task has finished its execution.[0m
+[0;32mI (251246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (251246) addition_task_worker: The item is: 1[0m
+[0;32mI (251246) addition_task_worker: The item is: 2[0m
+[0;32mI (251246) addition_task_worker: The item is: 3[0m
+[0;32mI (251266) addition_task_worker: The item is: 4[0m
+[0;32mI (251266) addition_task_worker: The item is: 5[0m
+[0;32mI (251266) app_main: Task has finished its execution.[0m
+[0;32mI (252266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (252266) addition_task_worker: The item is: 1[0m
+[0;32mI (252266) addition_task_worker: The item is: 2[0m
+[0;32mI (252266) addition_task_worker: The item is: 3[0m
+[0;32mI (252286) addition_task_worker: The item is: 4[0m
+[0;32mI (252286) addition_task_worker: The item is: 5[0m
+[0;32mI (252286) app_main: Task has finished its execution.[0m
+[0;32mI (253286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (253286) addition_task_worker: The item is: 1[0m
+[0;32mI (253286) addition_task_worker: The item is: 2[0m
+[0;32mI (253286) addition_task_worker: The item is: 3[0m
+[0;32mI (253306) addition_task_worker: The item is: 4[0m
+[0;32mI (253306) addition_task_worker: The item is: 5[0m
+[0;32mI (253306) app_main: Task has finished its execution.[0m
+[0;32mI (254306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (254306) addition_task_worker: The item is: 1[0m
+[0;32mI (254306) addition_task_worker: The item is: 2[0m
+[0;32mI (254306) addition_task_worker: The item is: 3[0m
+[0;32mI (254326) addition_task_worker: The item is: 4[0m
+[0;32mI (254326) addition_task_worker: The item is: 5[0m
+[0;32mI (254326) app_main: Task has finished its execution.[0m
+[0;32mI (255326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (255326) addition_task_worker: The item is: 1[0m
+[0;32mI (255326) addition_task_worker: The item is: 2[0m
+[0;32mI (255326) addition_task_worker: The item is: 3[0m
+[0;32mI (255346) addition_task_worker: The item is: 4[0m
+[0;32mI (255346) addition_task_worker: The item is: 5[0m
+[0;32mI (255346) app_main: Task has finished its execution.[0m
+[0;32mI (256346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (256346) addition_task_worker: The item is: 1[0m
+[0;32mI (256346) addition_task_worker: The item is: 2[0m
+[0;32mI (256346) addition_task_worker: The item is: 3[0m
+[0;32mI (256366) addition_task_worker: The item is: 4[0m
+[0;32mI (256366) addition_task_worker: The item is: 5[0m
+[0;32mI (256366) app_main: Task has finished its execution.[0m
+[0;32mI (257366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (257366) addition_task_worker: The item is: 1[0m
+[0;32mI (257366) addition_task_worker: The item is: 2[0m
+[0;32mI (257366) addition_task_worker: The item is: 3[0m
+[0;32mI (257386) addition_task_worker: The item is: 4[0m
+[0;32mI (257386) addition_task_worker: The item is: 5[0m
+[0;32mI (257386) app_main: Task has finished its execution.[0m
+[0;32mI (258386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (258386) addition_task_worker: The item is: 1[0m
+[0;32mI (258386) addition_task_worker: The item is: 2[0m
+[0;32mI (258386) addition_task_worker: The item is: 3[0m
+[0;32mI (258406) addition_task_worker: The item is: 4[0m
+[0;32mI (258406) addition_task_worker: The item is: 5[0m
+[0;32mI (258406) app_main: Task has finished its execution.[0m
+[0;32mI (259406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (259406) addition_task_worker: The item is: 1[0m
+[0;32mI (259406) addition_task_worker: The item is: 2[0m
+[0;32mI (259406) addition_task_worker: The item is: 3[0m
+[0;32mI (259426) addition_task_worker: The item is: 4[0m
+[0;32mI (259426) addition_task_worker: The item is: 5[0m
+[0;32mI (259426) app_main: Task has finished its execution.[0m
+[0;32mI (260426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (260426) addition_task_worker: The item is: 1[0m
+[0;32mI (260426) addition_task_worker: The item is: 2[0m
+[0;32mI (260426) addition_task_worker: The item is: 3[0m
+[0;32mI (260446) addition_task_worker: The item is: 4[0m
+[0;32mI (260446) addition_task_worker: The item is: 5[0m
+[0;32mI (260446) app_main: Task has finished its execution.[0m
+[0;32mI (261446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (261446) addition_task_worker: The item is: 1[0m
+[0;32mI (261446) addition_task_worker: The item is: 2[0m
+[0;32mI (261446) addition_task_worker: The item is: 3[0m
+[0;32mI (261466) addition_task_worker: The item is: 4[0m
+[0;32mI (261466) addition_task_worker: The item is: 5[0m
+[0;32mI (261466) app_main: Task has finished its execution.[0m
+[0;32mI (262466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (262466) addition_task_worker: The item is: 1[0m
+[0;32mI (262466) addition_task_worker: The item is: 2[0m
+[0;32mI (262466) addition_task_worker: The item is: 3[0m
+[0;32mI (262486) addition_task_worker: The item is: 4[0m
+[0;32mI (262486) addition_task_worker: The item is: 5[0m
+[0;32mI (262486) app_main: Task has finished its execution.[0m
+[0;32mI (263486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (263486) addition_task_worker: The item is: 1[0m
+[0;32mI (263486) addition_task_worker: The item is: 2[0m
+[0;32mI (263486) addition_task_worker: The item is: 3[0m
+[0;32mI (263506) addition_task_worker: The item is: 4[0m
+[0;32mI (263506) addition_task_worker: The item is: 5[0m
+[0;32mI (263506) app_main: Task has finished its execution.[0m
+[0;32mI (264506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (264506) addition_task_worker: The item is: 1[0m
+[0;32mI (264506) addition_task_worker: The item is: 2[0m
+[0;32mI (264506) addition_task_worker: The item is: 3[0m
+[0;32mI (264526) addition_task_worker: The item is: 4[0m
+[0;32mI (264526) addition_task_worker: The item is: 5[0m
+[0;32mI (264526) app_main: Task has finished its execution.[0m
+[0;32mI (265526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (265526) addition_task_worker: The item is: 1[0m
+[0;32mI (265526) addition_task_worker: The item is: 2[0m
+[0;32mI (265526) addition_task_worker: The item is: 3[0m
+[0;32mI (265546) addition_task_worker: The item is: 4[0m
+[0;32mI (265546) addition_task_worker: The item is: 5[0m
+[0;32mI (265546) app_main: Task has finished its execution.[0m
+[0;32mI (266546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (266546) addition_task_worker: The item is: 1[0m
+[0;32mI (266546) addition_task_worker: The item is: 2[0m
+[0;32mI (266546) addition_task_worker: The item is: 3[0m
+[0;32mI (266566) addition_task_worker: The item is: 4[0m
+[0;32mI (266566) addition_task_worker: The item is: 5[0m
+[0;32mI (266566) app_main: Task has finished its execution.[0m
+[0;32mI (267566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (267566) addition_task_worker: The item is: 1[0m
+[0;32mI (267566) addition_task_worker: The item is: 2[0m
+[0;32mI (267566) addition_task_worker: The item is: 3[0m
+[0;32mI (267586) addition_task_worker: The item is: 4[0m
+[0;32mI (267586) addition_task_worker: The item is: 5[0m
+[0;32mI (267586) app_main: Task has finished its execution.[0m
+[0;32mI (268586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (268586) addition_task_worker: The item is: 1[0m
+[0;32mI (268586) addition_task_worker: The item is: 2[0m
+[0;32mI (268586) addition_task_worker: The item is: 3[0m
+[0;32mI (268606) addition_task_worker: The item is: 4[0m
+[0;32mI (268606) addition_task_worker: The item is: 5[0m
+[0;32mI (268606) app_main: Task has finished its execution.[0m
+[0;32mI (269606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (269606) addition_task_worker: The item is: 1[0m
+[0;32mI (269606) addition_task_worker: The item is: 2[0m
+[0;32mI (269606) addition_task_worker: The item is: 3[0m
+[0;32mI (269626) addition_task_worker: The item is: 4[0m
+[0;32mI (269626) addition_task_worker: The item is: 5[0m
+[0;32mI (269626) app_main: Task has finished its execution.[0m
+[0;32mI (270626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (270626) addition_task_worker: The item is: 1[0m
+[0;32mI (270626) addition_task_worker: The item is: 2[0m
+[0;32mI (270626) addition_task_worker: The item is: 3[0m
+[0;32mI (270646) addition_task_worker: The item is: 4[0m
+[0;32mI (270646) addition_task_worker: The item is: 5[0m
+[0;32mI (270646) app_main: Task has finished its execution.[0m
+[0;32mI (271646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (271646) addition_task_worker: The item is: 1[0m
+[0;32mI (271646) addition_task_worker: The item is: 2[0m
+[0;32mI (271646) addition_task_worker: The item is: 3[0m
+[0;32mI (271666) addition_task_worker: The item is: 4[0m
+[0;32mI (271666) addition_task_worker: The item is: 5[0m
+[0;32mI (271666) app_main: Task has finished its execution.[0m
+[0;32mI (272666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (272666) addition_task_worker: The item is: 1[0m
+[0;32mI (272666) addition_task_worker: The item is: 2[0m
+[0;32mI (272666) addition_task_worker: The item is: 3[0m
+[0;32mI (272686) addition_task_worker: The item is: 4[0m
+[0;32mI (272686) addition_task_worker: The item is: 5[0m
+[0;32mI (272686) app_main: Task has finished its execution.[0m
+[0;32mI (273686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (273686) addition_task_worker: The item is: 1[0m
+[0;32mI (273686) addition_task_worker: The item is: 2[0m
+[0;32mI (273686) addition_task_worker: The item is: 3[0m
+[0;32mI (273706) addition_task_worker: The item is: 4[0m
+[0;32mI (273706) addition_task_worker: The item is: 5[0m
+[0;32mI (273706) app_main: Task has finished its execution.[0m
+[0;32mI (274706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (274706) addition_task_worker: The item is: 1[0m
+[0;32mI (274706) addition_task_worker: The item is: 2[0m
+[0;32mI (274706) addition_task_worker: The item is: 3[0m
+[0;32mI (274726) addition_task_worker: The item is: 4[0m
+[0;32mI (274726) addition_task_worker: The item is: 5[0m
+[0;32mI (274726) app_main: Task has finished its execution.[0m
+[0;32mI (275726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (275726) addition_task_worker: The item is: 1[0m
+[0;32mI (275726) addition_task_worker: The item is: 2[0m
+[0;32mI (275726) addition_task_worker: The item is: 3[0m
+[0;32mI (275746) addition_task_worker: The item is: 4[0m
+[0;32mI (275746) addition_task_worker: The item is: 5[0m
+[0;32mI (275746) app_main: Task has finished its execution.[0m
+[0;32mI (276746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (276746) addition_task_worker: The item is: 1[0m
+[0;32mI (276746) addition_task_worker: The item is: 2[0m
+[0;32mI (276746) addition_task_worker: The item is: 3[0m
+[0;32mI (276766) addition_task_worker: The item is: 4[0m
+[0;32mI (276766) addition_task_worker: The item is: 5[0m
+[0;32mI (276766) app_main: Task has finished its execution.[0m
+[0;32mI (277766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (277766) addition_task_worker: The item is: 1[0m
+[0;32mI (277766) addition_task_worker: The item is: 2[0m
+[0;32mI (277766) addition_task_worker: The item is: 3[0m
+[0;32mI (277786) addition_task_worker: The item is: 4[0m
+[0;32mI (277786) addition_task_worker: The item is: 5[0m
+[0;32mI (277786) app_main: Task has finished its execution.[0m
+[0;32mI (278786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (278786) addition_task_worker: The item is: 1[0m
+[0;32mI (278786) addition_task_worker: The item is: 2[0m
+[0;32mI (278786) addition_task_worker: The item is: 3[0m
+[0;32mI (278806) addition_task_worker: The item is: 4[0m
+[0;32mI (278806) addition_task_worker: The item is: 5[0m
+[0;32mI (278806) app_main: Task has finished its execution.[0m
+[0;32mI (279806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (279806) addition_task_worker: The item is: 1[0m
+[0;32mI (279806) addition_task_worker: The item is: 2[0m
+[0;32mI (279806) addition_task_worker: The item is: 3[0m
+[0;32mI (279826) addition_task_worker: The item is: 4[0m
+[0;32mI (279826) addition_task_worker: The item is: 5[0m
+[0;32mI (279826) app_main: Task has finished its execution.[0m
+[0;32mI (280826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (280826) addition_task_worker: The item is: 1[0m
+[0;32mI (280826) addition_task_worker: The item is: 2[0m
+[0;32mI (280826) addition_task_worker: The item is: 3[0m
+[0;32mI (280846) addition_task_worker: The item is: 4[0m
+[0;32mI (280846) addition_task_worker: The item is: 5[0m
+[0;32mI (280846) app_main: Task has finished its execution.[0m
+[0;32mI (281846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (281846) addition_task_worker: The item is: 1[0m
+[0;32mI (281846) addition_task_worker: The item is: 2[0m
+[0;32mI (281846) addition_task_worker: The item is: 3[0m
+[0;32mI (281866) addition_task_worker: The item is: 4[0m
+[0;32mI (281866) addition_task_worker: The item is: 5[0m
+[0;32mI (281866) app_main: Task has finished its execution.[0m
+[0;32mI (282866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (282866) addition_task_worker: The item is: 1[0m
+[0;32mI (282866) addition_task_worker: The item is: 2[0m
+[0;32mI (282866) addition_task_worker: The item is: 3[0m
+[0;32mI (282886) addition_task_worker: The item is: 4[0m
+[0;32mI (282886) addition_task_worker: The item is: 5[0m
+[0;32mI (282886) app_main: Task has finished its execution.[0m
+[0;32mI (283886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (283886) addition_task_worker: The item is: 1[0m
+[0;32mI (283886) addition_task_worker: The item is: 2[0m
+[0;32mI (283886) addition_task_worker: The item is: 3[0m
+[0;32mI (283906) addition_task_worker: The item is: 4[0m
+[0;32mI (283906) addition_task_worker: The item is: 5[0m
+[0;32mI (283906) app_main: Task has finished its execution.[0m
+[0;32mI (284906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (284906) addition_task_worker: The item is: 1[0m
+[0;32mI (284906) addition_task_worker: The item is: 2[0m
+[0;32mI (284906) addition_task_worker: The item is: 3[0m
+[0;32mI (284926) addition_task_worker: The item is: 4[0m
+[0;32mI (284926) addition_task_worker: The item is: 5[0m
+[0;32mI (284926) app_main: Task has finished its execution.[0m
+[0;32mI (285926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (285926) addition_task_worker: The item is: 1[0m
+[0;32mI (285926) addition_task_worker: The item is: 2[0m
+[0;32mI (285926) addition_task_worker: The item is: 3[0m
+[0;32mI (285946) addition_task_worker: The item is: 4[0m
+[0;32mI (285946) addition_task_worker: The item is: 5[0m
+[0;32mI (285946) app_main: Task has finished its execution.[0m
+[0;32mI (286946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (286946) addition_task_worker: The item is: 1[0m
+[0;32mI (286946) addition_task_worker: The item is: 2[0m
+[0;32mI (286946) addition_task_worker: The item is: 3[0m
+[0;32mI (286966) addition_task_worker: The item is: 4[0m
+[0;32mI (286966) addition_task_worker: The item is: 5[0m
+[0;32mI (286966) app_main: Task has finished its execution.[0m
+[0;32mI (287966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (287966) addition_task_worker: The item is: 1[0m
+[0;32mI (287966) addition_task_worker: The item is: 2[0m
+[0;32mI (287966) addition_task_worker: The item is: 3[0m
+[0;32mI (287986) addition_task_worker: The item is: 4[0m
+[0;32mI (287986) addition_task_worker: The item is: 5[0m
+[0;32mI (287986) app_main: Task has finished its execution.[0m
+[0;32mI (288986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (288986) addition_task_worker: The item is: 1[0m
+[0;32mI (288986) addition_task_worker: The item is: 2[0m
+[0;32mI (288986) addition_task_worker: The item is: 3[0m
+[0;32mI (289006) addition_task_worker: The item is: 4[0m
+[0;32mI (289006) addition_task_worker: The item is: 5[0m
+[0;32mI (289006) app_main: Task has finished its execution.[0m
+[0;32mI (290006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (290006) addition_task_worker: The item is: 1[0m
+[0;32mI (290006) addition_task_worker: The item is: 2[0m
+[0;32mI (290006) addition_task_worker: The item is: 3[0m
+[0;32mI (290026) addition_task_worker: The item is: 4[0m
+[0;32mI (290026) addition_task_worker: The item is: 5[0m
+[0;32mI (290026) app_main: Task has finished its execution.[0m
+[0;32mI (291026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (291026) addition_task_worker: The item is: 1[0m
+[0;32mI (291026) addition_task_worker: The item is: 2[0m
+[0;32mI (291026) addition_task_worker: The item is: 3[0m
+[0;32mI (291046) addition_task_worker: The item is: 4[0m
+[0;32mI (291046) addition_task_worker: The item is: 5[0m
+[0;32mI (291046) app_main: Task has finished its execution.[0m
+[0;32mI (292046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (292046) addition_task_worker: The item is: 1[0m
+[0;32mI (292046) addition_task_worker: The item is: 2[0m
+[0;32mI (292046) addition_task_worker: The item is: 3[0m
+[0;32mI (292066) addition_task_worker: The item is: 4[0m
+[0;32mI (292066) addition_task_worker: The item is: 5[0m
+[0;32mI (292066) app_main: Task has finished its execution.[0m
+[0;32mI (293066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (293066) addition_task_worker: The item is: 1[0m
+[0;32mI (293066) addition_task_worker: The item is: 2[0m
+[0;32mI (293066) addition_task_worker: The item is: 3[0m
+[0;32mI (293086) addition_task_worker: The item is: 4[0m
+[0;32mI (293086) addition_task_worker: The item is: 5[0m
+[0;32mI (293086) app_main: Task has finished its execution.[0m
+[0;32mI (294086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (294086) addition_task_worker: The item is: 1[0m
+[0;32mI (294086) addition_task_worker: The item is: 2[0m
+[0;32mI (294086) addition_task_worker: The item is: 3[0m
+[0;32mI (294106) addition_task_worker: The item is: 4[0m
+[0;32mI (294106) addition_task_worker: The item is: 5[0m
+[0;32mI (294106) app_main: Task has finished its execution.[0m
+[0;32mI (295106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (295106) addition_task_worker: The item is: 1[0m
+[0;32mI (295106) addition_task_worker: The item is: 2[0m
+[0;32mI (295106) addition_task_worker: The item is: 3[0m
+[0;32mI (295126) addition_task_worker: The item is: 4[0m
+[0;32mI (295126) addition_task_worker: The item is: 5[0m
+[0;32mI (295126) app_main: Task has finished its execution.[0m
+[0;32mI (296126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (296126) addition_task_worker: The item is: 1[0m
+[0;32mI (296126) addition_task_worker: The item is: 2[0m
+[0;32mI (296126) addition_task_worker: The item is: 3[0m
+[0;32mI (296146) addition_task_worker: The item is: 4[0m
+[0;32mI (296146) addition_task_worker: The item is: 5[0m
+[0;32mI (296146) app_main: Task has finished its execution.[0m
+[0;32mI (297146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (297146) addition_task_worker: The item is: 1[0m
+[0;32mI (297146) addition_task_worker: The item is: 2[0m
+[0;32mI (297146) addition_task_worker: The item is: 3[0m
+[0;32mI (297166) addition_task_worker: The item is: 4[0m
+[0;32mI (297166) addition_task_worker: The item is: 5[0m
+[0;32mI (297166) app_main: Task has finished its execution.[0m
+[0;32mI (298166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (298166) addition_task_worker: The item is: 1[0m
+[0;32mI (298166) addition_task_worker: The item is: 2[0m
+[0;32mI (298166) addition_task_worker: The item is: 3[0m
+[0;32mI (298186) addition_task_worker: The item is: 4[0m
+[0;32mI (298186) addition_task_worker: The item is: 5[0m
+[0;32mI (298186) app_main: Task has finished its execution.[0m
+[0;32mI (299186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (299186) addition_task_worker: The item is: 1[0m
+[0;32mI (299186) addition_task_worker: The item is: 2[0m
+[0;32mI (299186) addition_task_worker: The item is: 3[0m
+[0;32mI (299206) addition_task_worker: The item is: 4[0m
+[0;32mI (299206) addition_task_worker: The item is: 5[0m
+[0;32mI (299206) app_main: Task has finished its execution.[0m
+[0;32mI (300206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (300206) addition_task_worker: The item is: 1[0m
+[0;32mI (300206) addition_task_worker: The item is: 2[0m
+[0;32mI (300206) addition_task_worker: The item is: 3[0m
+[0;32mI (300226) addition_task_worker: The item is: 4[0m
+[0;32mI (300226) addition_task_worker: The item is: 5[0m
+[0;32mI (300226) app_main: Task has finished its execution.[0m
+[0;32mI (301226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (301226) addition_task_worker: The item is: 1[0m
+[0;32mI (301226) addition_task_worker: The item is: 2[0m
+[0;32mI (301226) addition_task_worker: The item is: 3[0m
+[0;32mI (301246) addition_task_worker: The item is: 4[0m
+[0;32mI (301246) addition_task_worker: The item is: 5[0m
+[0;32mI (301246) app_main: Task has finished its execution.[0m
+[0;32mI (302246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (302246) addition_task_worker: The item is: 1[0m
+[0;32mI (302246) addition_task_worker: The item is: 2[0m
+[0;32mI (302246) addition_task_worker: The item is: 3[0m
+[0;32mI (302266) addition_task_worker: The item is: 4[0m
+[0;32mI (302266) addition_task_worker: The item is: 5[0m
+[0;32mI (302266) app_main: Task has finished its execution.[0m
+[0;32mI (303266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (303266) addition_task_worker: The item is: 1[0m
+[0;32mI (303266) addition_task_worker: The item is: 2[0m
+[0;32mI (303266) addition_task_worker: The item is: 3[0m
+[0;32mI (303286) addition_task_worker: The item is: 4[0m
+[0;32mI (303286) addition_task_worker: The item is: 5[0m
+[0;32mI (303286) app_main: Task has finished its execution.[0m
+[0;32mI (304286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (304286) addition_task_worker: The item is: 1[0m
+[0;32mI (304286) addition_task_worker: The item is: 2[0m
+[0;32mI (304286) addition_task_worker: The item is: 3[0m
+[0;32mI (304306) addition_task_worker: The item is: 4[0m
+[0;32mI (304306) addition_task_worker: The item is: 5[0m
+[0;32mI (304306) app_main: Task has finished its execution.[0m
+[0;32mI (305306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (305306) addition_task_worker: The item is: 1[0m
+[0;32mI (305306) addition_task_worker: The item is: 2[0m
+[0;32mI (305306) addition_task_worker: The item is: 3[0m
+[0;32mI (305326) addition_task_worker: The item is: 4[0m
+[0;32mI (305326) addition_task_worker: The item is: 5[0m
+[0;32mI (305326) app_main: Task has finished its execution.[0m
+[0;32mI (306326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (306326) addition_task_worker: The item is: 1[0m
+[0;32mI (306326) addition_task_worker: The item is: 2[0m
+[0;32mI (306326) addition_task_worker: The item is: 3[0m
+[0;32mI (306346) addition_task_worker: The item is: 4[0m
+[0;32mI (306346) addition_task_worker: The item is: 5[0m
+[0;32mI (306346) app_main: Task has finished its execution.[0m
+[0;32mI (307346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (307346) addition_task_worker: The item is: 1[0m
+[0;32mI (307346) addition_task_worker: The item is: 2[0m
+[0;32mI (307346) addition_task_worker: The item is: 3[0m
+[0;32mI (307366) addition_task_worker: The item is: 4[0m
+[0;32mI (307366) addition_task_worker: The item is: 5[0m
+[0;32mI (307366) app_main: Task has finished its execution.[0m
+[0;32mI (308366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (308366) addition_task_worker: The item is: 1[0m
+[0;32mI (308366) addition_task_worker: The item is: 2[0m
+[0;32mI (308366) addition_task_worker: The item is: 3[0m
+[0;32mI (308386) addition_task_worker: The item is: 4[0m
+[0;32mI (308386) addition_task_worker: The item is: 5[0m
+[0;32mI (308386) app_main: Task has finished its execution.[0m
+[0;32mI (309386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (309386) addition_task_worker: The item is: 1[0m
+[0;32mI (309386) addition_task_worker: The item is: 2[0m
+[0;32mI (309386) addition_task_worker: The item is: 3[0m
+[0;32mI (309406) addition_task_worker: The item is: 4[0m
+[0;32mI (309406) addition_task_worker: The item is: 5[0m
+[0;32mI (309406) app_main: Task has finished its execution.[0m
+[0;32mI (310406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (310406) addition_task_worker: The item is: 1[0m
+[0;32mI (310406) addition_task_worker: The item is: 2[0m
+[0;32mI (310406) addition_task_worker: The item is: 3[0m
+[0;32mI (310426) addition_task_worker: The item is: 4[0m
+[0;32mI (310426) addition_task_worker: The item is: 5[0m
+[0;32mI (310426) app_main: Task has finished its execution.[0m
+[0;32mI (311426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (311426) addition_task_worker: The item is: 1[0m
+[0;32mI (311426) addition_task_worker: The item is: 2[0m
+[0;32mI (311426) addition_task_worker: The item is: 3[0m
+[0;32mI (311446) addition_task_worker: The item is: 4[0m
+[0;32mI (311446) addition_task_worker: The item is: 5[0m
+[0;32mI (311446) app_main: Task has finished its execution.[0m
+[0;32mI (312446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (312446) addition_task_worker: The item is: 1[0m
+[0;32mI (312446) addition_task_worker: The item is: 2[0m
+[0;32mI (312446) addition_task_worker: The item is: 3[0m
+[0;32mI (312466) addition_task_worker: The item is: 4[0m
+[0;32mI (312466) addition_task_worker: The item is: 5[0m
+[0;32mI (312466) app_main: Task has finished its execution.[0m
+[0;32mI (313466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (313466) addition_task_worker: The item is: 1[0m
+[0;32mI (313466) addition_task_worker: The item is: 2[0m
+[0;32mI (313466) addition_task_worker: The item is: 3[0m
+[0;32mI (313486) addition_task_worker: The item is: 4[0m
+[0;32mI (313486) addition_task_worker: The item is: 5[0m
+[0;32mI (313486) app_main: Task has finished its execution.[0m
+[0;32mI (314486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (314486) addition_task_worker: The item is: 1[0m
+[0;32mI (314486) addition_task_worker: The item is: 2[0m
+[0;32mI (314486) addition_task_worker: The item is: 3[0m
+[0;32mI (314506) addition_task_worker: The item is: 4[0m
+[0;32mI (314506) addition_task_worker: The item is: 5[0m
+[0;32mI (314506) app_main: Task has finished its execution.[0m
+[0;32mI (315506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (315506) addition_task_worker: The item is: 1[0m
+[0;32mI (315506) addition_task_worker: The item is: 2[0m
+[0;32mI (315506) addition_task_worker: The item is: 3[0m
+[0;32mI (315526) addition_task_worker: The item is: 4[0m
+[0;32mI (315526) addition_task_worker: The item is: 5[0m
+[0;32mI (315526) app_main: Task has finished its execution.[0m
+[0;32mI (316526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (316526) addition_task_worker: The item is: 1[0m
+[0;32mI (316526) addition_task_worker: The item is: 2[0m
+[0;32mI (316526) addition_task_worker: The item is: 3[0m
+[0;32mI (316546) addition_task_worker: The item is: 4[0m
+[0;32mI (316546) addition_task_worker: The item is: 5[0m
+[0;32mI (316546) app_main: Task has finished its execution.[0m
+[0;32mI (317546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (317546) addition_task_worker: The item is: 1[0m
+[0;32mI (317546) addition_task_worker: The item is: 2[0m
+[0;32mI (317546) addition_task_worker: The item is: 3[0m
+[0;32mI (317566) addition_task_worker: The item is: 4[0m
+[0;32mI (317566) addition_task_worker: The item is: 5[0m
+[0;32mI (317566) app_main: Task has finished its execution.[0m
+[0;32mI (318566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (318566) addition_task_worker: The item is: 1[0m
+[0;32mI (318566) addition_task_worker: The item is: 2[0m
+[0;32mI (318566) addition_task_worker: The item is: 3[0m
+[0;32mI (318586) addition_task_worker: The item is: 4[0m
+[0;32mI (318586) addition_task_worker: The item is: 5[0m
+[0;32mI (318586) app_main: Task has finished its execution.[0m
+[0;32mI (319586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (319586) addition_task_worker: The item is: 1[0m
+[0;32mI (319586) addition_task_worker: The item is: 2[0m
+[0;32mI (319586) addition_task_worker: The item is: 3[0m
+[0;32mI (319606) addition_task_worker: The item is: 4[0m
+[0;32mI (319606) addition_task_worker: The item is: 5[0m
+[0;32mI (319606) app_main: Task has finished its execution.[0m
+[0;32mI (320606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (320606) addition_task_worker: The item is: 1[0m
+[0;32mI (320606) addition_task_worker: The item is: 2[0m
+[0;32mI (320606) addition_task_worker: The item is: 3[0m
+[0;32mI (320626) addition_task_worker: The item is: 4[0m
+[0;32mI (320626) addition_task_worker: The item is: 5[0m
+[0;32mI (320626) app_main: Task has finished its execution.[0m
+[0;32mI (321626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (321626) addition_task_worker: The item is: 1[0m
+[0;32mI (321626) addition_task_worker: The item is: 2[0m
+[0;32mI (321626) addition_task_worker: The item is: 3[0m
+[0;32mI (321646) addition_task_worker: The item is: 4[0m
+[0;32mI (321646) addition_task_worker: The item is: 5[0m
+[0;32mI (321646) app_main: Task has finished its execution.[0m
+[0;32mI (322646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (322646) addition_task_worker: The item is: 1[0m
+[0;32mI (322646) addition_task_worker: The item is: 2[0m
+[0;32mI (322646) addition_task_worker: The item is: 3[0m
+[0;32mI (322666) addition_task_worker: The item is: 4[0m
+[0;32mI (322666) addition_task_worker: The item is: 5[0m
+[0;32mI (322666) app_main: Task has finished its execution.[0m
+[0;32mI (323666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (323666) addition_task_worker: The item is: 1[0m
+[0;32mI (323666) addition_task_worker: The item is: 2[0m
+[0;32mI (323666) addition_task_worker: The item is: 3[0m
+[0;32mI (323686) addition_task_worker: The item is: 4[0m
+[0;32mI (323686) addition_task_worker: The item is: 5[0m
+[0;32mI (323686) app_main: Task has finished its execution.[0m
+[0;32mI (324686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (324686) addition_task_worker: The item is: 1[0m
+[0;32mI (324686) addition_task_worker: The item is: 2[0m
+[0;32mI (324686) addition_task_worker: The item is: 3[0m
+[0;32mI (324706) addition_task_worker: The item is: 4[0m
+[0;32mI (324706) addition_task_worker: The item is: 5[0m
+[0;32mI (324706) app_main: Task has finished its execution.[0m
+[0;32mI (325706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (325706) addition_task_worker: The item is: 1[0m
+[0;32mI (325706) addition_task_worker: The item is: 2[0m
+[0;32mI (325706) addition_task_worker: The item is: 3[0m
+[0;32mI (325726) addition_task_worker: The item is: 4[0m
+[0;32mI (325726) addition_task_worker: The item is: 5[0m
+[0;32mI (325726) app_main: Task has finished its execution.[0m
+[0;32mI (326726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (326726) addition_task_worker: The item is: 1[0m
+[0;32mI (326726) addition_task_worker: The item is: 2[0m
+[0;32mI (326726) addition_task_worker: The item is: 3[0m
+[0;32mI (326746) addition_task_worker: The item is: 4[0m
+[0;32mI (326746) addition_task_worker: The item is: 5[0m
+[0;32mI (326746) app_main: Task has finished its execution.[0m
+[0;32mI (327746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (327746) addition_task_worker: The item is: 1[0m
+[0;32mI (327746) addition_task_worker: The item is: 2[0m
+[0;32mI (327746) addition_task_worker: The item is: 3[0m
+[0;32mI (327766) addition_task_worker: The item is: 4[0m
+[0;32mI (327766) addition_task_worker: The item is: 5[0m
+[0;32mI (327766) app_main: Task has finished its execution.[0m
+[0;32mI (328766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (328766) addition_task_worker: The item is: 1[0m
+[0;32mI (328766) addition_task_worker: The item is: 2[0m
+[0;32mI (328766) addition_task_worker: The item is: 3[0m
+[0;32mI (328786) addition_task_worker: The item is: 4[0m
+[0;32mI (328786) addition_task_worker: The item is: 5[0m
+[0;32mI (328786) app_main: Task has finished its execution.[0m
+[0;32mI (329786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (329786) addition_task_worker: The item is: 1[0m
+[0;32mI (329786) addition_task_worker: The item is: 2[0m
+[0;32mI (329786) addition_task_worker: The item is: 3[0m
+[0;32mI (329806) addition_task_worker: The item is: 4[0m
+[0;32mI (329806) addition_task_worker: The item is: 5[0m
+[0;32mI (329806) app_main: Task has finished its execution.[0m
+[0;32mI (330806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (330806) addition_task_worker: The item is: 1[0m
+[0;32mI (330806) addition_task_worker: The item is: 2[0m
+[0;32mI (330806) addition_task_worker: The item is: 3[0m
+[0;32mI (330826) addition_task_worker: The item is: 4[0m
+[0;32mI (330826) addition_task_worker: The item is: 5[0m
+[0;32mI (330826) app_main: Task has finished its execution.[0m
+[0;32mI (331826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (331826) addition_task_worker: The item is: 1[0m
+[0;32mI (331826) addition_task_worker: The item is: 2[0m
+[0;32mI (331826) addition_task_worker: The item is: 3[0m
+[0;32mI (331846) addition_task_worker: The item is: 4[0m
+[0;32mI (331846) addition_task_worker: The item is: 5[0m
+[0;32mI (331846) app_main: Task has finished its execution.[0m
+[0;32mI (332846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (332846) addition_task_worker: The item is: 1[0m
+[0;32mI (332846) addition_task_worker: The item is: 2[0m
+[0;32mI (332846) addition_task_worker: The item is: 3[0m
+[0;32mI (332866) addition_task_worker: The item is: 4[0m
+[0;32mI (332866) addition_task_worker: The item is: 5[0m
+[0;32mI (332866) app_main: Task has finished its execution.[0m
+[0;32mI (333866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (333866) addition_task_worker: The item is: 1[0m
+[0;32mI (333866) addition_task_worker: The item is: 2[0m
+[0;32mI (333866) addition_task_worker: The item is: 3[0m
+[0;32mI (333886) addition_task_worker: The item is: 4[0m
+[0;32mI (333886) addition_task_worker: The item is: 5[0m
+[0;32mI (333886) app_main: Task has finished its execution.[0m
+[0;32mI (334886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (334886) addition_task_worker: The item is: 1[0m
+[0;32mI (334886) addition_task_worker: The item is: 2[0m
+[0;32mI (334886) addition_task_worker: The item is: 3[0m
+[0;32mI (334906) addition_task_worker: The item is: 4[0m
+[0;32mI (334906) addition_task_worker: The item is: 5[0m
+[0;32mI (334906) app_main: Task has finished its execution.[0m
+[0;32mI (335906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (335906) addition_task_worker: The item is: 1[0m
+[0;32mI (335906) addition_task_worker: The item is: 2[0m
+[0;32mI (335906) addition_task_worker: The item is: 3[0m
+[0;32mI (335926) addition_task_worker: The item is: 4[0m
+[0;32mI (335926) addition_task_worker: The item is: 5[0m
+[0;32mI (335926) app_main: Task has finished its execution.[0m
+[0;32mI (336926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (336926) addition_task_worker: The item is: 1[0m
+[0;32mI (336926) addition_task_worker: The item is: 2[0m
+[0;32mI (336926) addition_task_worker: The item is: 3[0m
+[0;32mI (336946) addition_task_worker: The item is: 4[0m
+[0;32mI (336946) addition_task_worker: The item is: 5[0m
+[0;32mI (336946) app_main: Task has finished its execution.[0m
+[0;32mI (337946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (337946) addition_task_worker: The item is: 1[0m
+[0;32mI (337946) addition_task_worker: The item is: 2[0m
+[0;32mI (337946) addition_task_worker: The item is: 3[0m
+[0;32mI (337966) addition_task_worker: The item is: 4[0m
+[0;32mI (337966) addition_task_worker: The item is: 5[0m
+[0;32mI (337966) app_main: Task has finished its execution.[0m
+[0;32mI (338966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (338966) addition_task_worker: The item is: 1[0m
+[0;32mI (338966) addition_task_worker: The item is: 2[0m
+[0;32mI (338966) addition_task_worker: The item is: 3[0m
+[0;32mI (338986) addition_task_worker: The item is: 4[0m
+[0;32mI (338986) addition_task_worker: The item is: 5[0m
+[0;32mI (338986) app_main: Task has finished its execution.[0m
+[0;32mI (339986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (339986) addition_task_worker: The item is: 1[0m
+[0;32mI (339986) addition_task_worker: The item is: 2[0m
+[0;32mI (339986) addition_task_worker: The item is: 3[0m
+[0;32mI (340006) addition_task_worker: The item is: 4[0m
+[0;32mI (340006) addition_task_worker: The item is: 5[0m
+[0;32mI (340006) app_main: Task has finished its execution.[0m
+[0;32mI (341006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (341006) addition_task_worker: The item is: 1[0m
+[0;32mI (341006) addition_task_worker: The item is: 2[0m
+[0;32mI (341006) addition_task_worker: The item is: 3[0m
+[0;32mI (341026) addition_task_worker: The item is: 4[0m
+[0;32mI (341026) addition_task_worker: The item is: 5[0m
+[0;32mI (341026) app_main: Task has finished its execution.[0m
+[0;32mI (342026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (342026) addition_task_worker: The item is: 1[0m
+[0;32mI (342026) addition_task_worker: The item is: 2[0m
+[0;32mI (342026) addition_task_worker: The item is: 3[0m
+[0;32mI (342046) addition_task_worker: The item is: 4[0m
+[0;32mI (342046) addition_task_worker: The item is: 5[0m
+[0;32mI (342046) app_main: Task has finished its execution.[0m
+[0;32mI (343046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (343046) addition_task_worker: The item is: 1[0m
+[0;32mI (343046) addition_task_worker: The item is: 2[0m
+[0;32mI (343046) addition_task_worker: The item is: 3[0m
+[0;32mI (343066) addition_task_worker: The item is: 4[0m
+[0;32mI (343066) addition_task_worker: The item is: 5[0m
+[0;32mI (343066) app_main: Task has finished its execution.[0m
+[0;32mI (344066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (344066) addition_task_worker: The item is: 1[0m
+[0;32mI (344066) addition_task_worker: The item is: 2[0m
+[0;32mI (344066) addition_task_worker: The item is: 3[0m
+[0;32mI (344086) addition_task_worker: The item is: 4[0m
+[0;32mI (344086) addition_task_worker: The item is: 5[0m
+[0;32mI (344086) app_main: Task has finished its execution.[0m
+[0;32mI (345086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (345086) addition_task_worker: The item is: 1[0m
+[0;32mI (345086) addition_task_worker: The item is: 2[0m
+[0;32mI (345086) addition_task_worker: The item is: 3[0m
+[0;32mI (345106) addition_task_worker: The item is: 4[0m
+[0;32mI (345106) addition_task_worker: The item is: 5[0m
+[0;32mI (345106) app_main: Task has finished its execution.[0m
+[0;32mI (346106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (346106) addition_task_worker: The item is: 1[0m
+[0;32mI (346106) addition_task_worker: The item is: 2[0m
+[0;32mI (346106) addition_task_worker: The item is: 3[0m
+[0;32mI (346126) addition_task_worker: The item is: 4[0m
+[0;32mI (346126) addition_task_worker: The item is: 5[0m
+[0;32mI (346126) app_main: Task has finished its execution.[0m
+[0;32mI (347126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (347126) addition_task_worker: The item is: 1[0m
+[0;32mI (347126) addition_task_worker: The item is: 2[0m
+[0;32mI (347126) addition_task_worker: The item is: 3[0m
+[0;32mI (347146) addition_task_worker: The item is: 4[0m
+[0;32mI (347146) addition_task_worker: The item is: 5[0m
+[0;32mI (347146) app_main: Task has finished its execution.[0m
+[0;32mI (348146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (348146) addition_task_worker: The item is: 1[0m
+[0;32mI (348146) addition_task_worker: The item is: 2[0m
+[0;32mI (348146) addition_task_worker: The item is: 3[0m
+[0;32mI (348166) addition_task_worker: The item is: 4[0m
+[0;32mI (348166) addition_task_worker: The item is: 5[0m
+[0;32mI (348166) app_main: Task has finished its execution.[0m
+[0;32mI (349166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (349166) addition_task_worker: The item is: 1[0m
+[0;32mI (349166) addition_task_worker: The item is: 2[0m
+[0;32mI (349166) addition_task_worker: The item is: 3[0m
+[0;32mI (349186) addition_task_worker: The item is: 4[0m
+[0;32mI (349186) addition_task_worker: The item is: 5[0m
+[0;32mI (349186) app_main: Task has finished its execution.[0m
+[0;32mI (350186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (350186) addition_task_worker: The item is: 1[0m
+[0;32mI (350186) addition_task_worker: The item is: 2[0m
+[0;32mI (350186) addition_task_worker: The item is: 3[0m
+[0;32mI (350206) addition_task_worker: The item is: 4[0m
+[0;32mI (350206) addition_task_worker: The item is: 5[0m
+[0;32mI (350206) app_main: Task has finished its execution.[0m
+[0;32mI (351206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (351206) addition_task_worker: The item is: 1[0m
+[0;32mI (351206) addition_task_worker: The item is: 2[0m
+[0;32mI (351206) addition_task_worker: The item is: 3[0m
+[0;32mI (351226) addition_task_worker: The item is: 4[0m
+[0;32mI (351226) addition_task_worker: The item is: 5[0m
+[0;32mI (351226) app_main: Task has finished its execution.[0m
+[0;32mI (352226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (352226) addition_task_worker: The item is: 1[0m
+[0;32mI (352226) addition_task_worker: The item is: 2[0m
+[0;32mI (352226) addition_task_worker: The item is: 3[0m
+[0;32mI (352246) addition_task_worker: The item is: 4[0m
+[0;32mI (352246) addition_task_worker: The item is: 5[0m
+[0;32mI (352246) app_main: Task has finished its execution.[0m
+[0;32mI (353246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (353246) addition_task_worker: The item is: 1[0m
+[0;32mI (353246) addition_task_worker: The item is: 2[0m
+[0;32mI (353246) addition_task_worker: The item is: 3[0m
+[0;32mI (353266) addition_task_worker: The item is: 4[0m
+[0;32mI (353266) addition_task_worker: The item is: 5[0m
+[0;32mI (353266) app_main: Task has finished its execution.[0m
+[0;32mI (354266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (354266) addition_task_worker: The item is: 1[0m
+[0;32mI (354266) addition_task_worker: The item is: 2[0m
+[0;32mI (354266) addition_task_worker: The item is: 3[0m
+[0;32mI (354286) addition_task_worker: The item is: 4[0m
+[0;32mI (354286) addition_task_worker: The item is: 5[0m
+[0;32mI (354286) app_main: Task has finished its execution.[0m
+[0;32mI (355286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (355286) addition_task_worker: The item is: 1[0m
+[0;32mI (355286) addition_task_worker: The item is: 2[0m
+[0;32mI (355286) addition_task_worker: The item is: 3[0m
+[0;32mI (355306) addition_task_worker: The item is: 4[0m
+[0;32mI (355306) addition_task_worker: The item is: 5[0m
+[0;32mI (355306) app_main: Task has finished its execution.[0m
+[0;32mI (356306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (356306) addition_task_worker: The item is: 1[0m
+[0;32mI (356306) addition_task_worker: The item is: 2[0m
+[0;32mI (356306) addition_task_worker: The item is: 3[0m
+[0;32mI (356326) addition_task_worker: The item is: 4[0m
+[0;32mI (356326) addition_task_worker: The item is: 5[0m
+[0;32mI (356326) app_main: Task has finished its execution.[0m
+[0;32mI (357326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (357326) addition_task_worker: The item is: 1[0m
+[0;32mI (357326) addition_task_worker: The item is: 2[0m
+[0;32mI (357326) addition_task_worker: The item is: 3[0m
+[0;32mI (357346) addition_task_worker: The item is: 4[0m
+[0;32mI (357346) addition_task_worker: The item is: 5[0m
+[0;32mI (357346) app_main: Task has finished its execution.[0m
+[0;32mI (358346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (358346) addition_task_worker: The item is: 1[0m
+[0;32mI (358346) addition_task_worker: The item is: 2[0m
+[0;32mI (358346) addition_task_worker: The item is: 3[0m
+[0;32mI (358366) addition_task_worker: The item is: 4[0m
+[0;32mI (358366) addition_task_worker: The item is: 5[0m
+[0;32mI (358366) app_main: Task has finished its execution.[0m
+[0;32mI (359366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (359366) addition_task_worker: The item is: 1[0m
+[0;32mI (359366) addition_task_worker: The item is: 2[0m
+[0;32mI (359366) addition_task_worker: The item is: 3[0m
+[0;32mI (359386) addition_task_worker: The item is: 4[0m
+[0;32mI (359386) addition_task_worker: The item is: 5[0m
+[0;32mI (359386) app_main: Task has finished its execution.[0m
+[0;32mI (360386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (360386) addition_task_worker: The item is: 1[0m
+[0;32mI (360386) addition_task_worker: The item is: 2[0m
+[0;32mI (360386) addition_task_worker: The item is: 3[0m
+[0;32mI (360406) addition_task_worker: The item is: 4[0m
+[0;32mI (360406) addition_task_worker: The item is: 5[0m
+[0;32mI (360406) app_main: Task has finished its execution.[0m
+[0;32mI (361406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (361406) addition_task_worker: The item is: 1[0m
+[0;32mI (361406) addition_task_worker: The item is: 2[0m
+[0;32mI (361406) addition_task_worker: The item is: 3[0m
+[0;32mI (361426) addition_task_worker: The item is: 4[0m
+[0;32mI (361426) addition_task_worker: The item is: 5[0m
+[0;32mI (361426) app_main: Task has finished its execution.[0m
+[0;32mI (362426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (362426) addition_task_worker: The item is: 1[0m
+[0;32mI (362426) addition_task_worker: The item is: 2[0m
+[0;32mI (362426) addition_task_worker: The item is: 3[0m
+[0;32mI (362446) addition_task_worker: The item is: 4[0m
+[0;32mI (362446) addition_task_worker: The item is: 5[0m
+[0;32mI (362446) app_main: Task has finished its execution.[0m
+[0;32mI (363446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (363446) addition_task_worker: The item is: 1[0m
+[0;32mI (363446) addition_task_worker: The item is: 2[0m
+[0;32mI (363446) addition_task_worker: The item is: 3[0m
+[0;32mI (363466) addition_task_worker: The item is: 4[0m
+[0;32mI (363466) addition_task_worker: The item is: 5[0m
+[0;32mI (363466) app_main: Task has finished its execution.[0m
+[0;32mI (364466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (364466) addition_task_worker: The item is: 1[0m
+[0;32mI (364466) addition_task_worker: The item is: 2[0m
+[0;32mI (364466) addition_task_worker: The item is: 3[0m
+[0;32mI (364486) addition_task_worker: The item is: 4[0m
+[0;32mI (364486) addition_task_worker: The item is: 5[0m
+[0;32mI (364486) app_main: Task has finished its execution.[0m
+[0;32mI (365486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (365486) addition_task_worker: The item is: 1[0m
+[0;32mI (365486) addition_task_worker: The item is: 2[0m
+[0;32mI (365486) addition_task_worker: The item is: 3[0m
+[0;32mI (365506) addition_task_worker: The item is: 4[0m
+[0;32mI (365506) addition_task_worker: The item is: 5[0m
+[0;32mI (365506) app_main: Task has finished its execution.[0m
+[0;32mI (366506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (366506) addition_task_worker: The item is: 1[0m
+[0;32mI (366506) addition_task_worker: The item is: 2[0m
+[0;32mI (366506) addition_task_worker: The item is: 3[0m
+[0;32mI (366526) addition_task_worker: The item is: 4[0m
+[0;32mI (366526) addition_task_worker: The item is: 5[0m
+[0;32mI (366526) app_main: Task has finished its execution.[0m
+[0;32mI (367526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (367526) addition_task_worker: The item is: 1[0m
+[0;32mI (367526) addition_task_worker: The item is: 2[0m
+[0;32mI (367526) addition_task_worker: The item is: 3[0m
+[0;32mI (367546) addition_task_worker: The item is: 4[0m
+[0;32mI (367546) addition_task_worker: The item is: 5[0m
+[0;32mI (367546) app_main: Task has finished its execution.[0m
+[0;32mI (368546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (368546) addition_task_worker: The item is: 1[0m
+[0;32mI (368546) addition_task_worker: The item is: 2[0m
+[0;32mI (368546) addition_task_worker: The item is: 3[0m
+[0;32mI (368566) addition_task_worker: The item is: 4[0m
+[0;32mI (368566) addition_task_worker: The item is: 5[0m
+[0;32mI (368566) app_main: Task has finished its execution.[0m
+[0;32mI (369566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (369566) addition_task_worker: The item is: 1[0m
+[0;32mI (369566) addition_task_worker: The item is: 2[0m
+[0;32mI (369566) addition_task_worker: The item is: 3[0m
+[0;32mI (369586) addition_task_worker: The item is: 4[0m
+[0;32mI (369586) addition_task_worker: The item is: 5[0m
+[0;32mI (369586) app_main: Task has finished its execution.[0m
+[0;32mI (370586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (370586) addition_task_worker: The item is: 1[0m
+[0;32mI (370586) addition_task_worker: The item is: 2[0m
+[0;32mI (370586) addition_task_worker: The item is: 3[0m
+[0;32mI (370606) addition_task_worker: The item is: 4[0m
+[0;32mI (370606) addition_task_worker: The item is: 5[0m
+[0;32mI (370606) app_main: Task has finished its execution.[0m
+[0;32mI (371606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (371606) addition_task_worker: The item is: 1[0m
+[0;32mI (371606) addition_task_worker: The item is: 2[0m
+[0;32mI (371606) addition_task_worker: The item is: 3[0m
+[0;32mI (371626) addition_task_worker: The item is: 4[0m
+[0;32mI (371626) addition_task_worker: The item is: 5[0m
+[0;32mI (371626) app_main: Task has finished its execution.[0m
+[0;32mI (372626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (372626) addition_task_worker: The item is: 1[0m
+[0;32mI (372626) addition_task_worker: The item is: 2[0m
+[0;32mI (372626) addition_task_worker: The item is: 3[0m
+[0;32mI (372646) addition_task_worker: The item is: 4[0m
+[0;32mI (372646) addition_task_worker: The item is: 5[0m
+[0;32mI (372646) app_main: Task has finished its execution.[0m
+[0;32mI (373646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (373646) addition_task_worker: The item is: 1[0m
+[0;32mI (373646) addition_task_worker: The item is: 2[0m
+[0;32mI (373646) addition_task_worker: The item is: 3[0m
+[0;32mI (373666) addition_task_worker: The item is: 4[0m
+[0;32mI (373666) addition_task_worker: The item is: 5[0m
+[0;32mI (373666) app_main: Task has finished its execution.[0m
+[0;32mI (374666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (374666) addition_task_worker: The item is: 1[0m
+[0;32mI (374666) addition_task_worker: The item is: 2[0m
+[0;32mI (374666) addition_task_worker: The item is: 3[0m
+[0;32mI (374686) addition_task_worker: The item is: 4[0m
+[0;32mI (374686) addition_task_worker: The item is: 5[0m
+[0;32mI (374686) app_main: Task has finished its execution.[0m
+[0;32mI (375686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (375686) addition_task_worker: The item is: 1[0m
+[0;32mI (375686) addition_task_worker: The item is: 2[0m
+[0;32mI (375686) addition_task_worker: The item is: 3[0m
+[0;32mI (375706) addition_task_worker: The item is: 4[0m
+[0;32mI (375706) addition_task_worker: The item is: 5[0m
+[0;32mI (375706) app_main: Task has finished its execution.[0m
+[0;32mI (376706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (376706) addition_task_worker: The item is: 1[0m
+[0;32mI (376706) addition_task_worker: The item is: 2[0m
+[0;32mI (376706) addition_task_worker: The item is: 3[0m
+[0;32mI (376726) addition_task_worker: The item is: 4[0m
+[0;32mI (376726) addition_task_worker: The item is: 5[0m
+[0;32mI (376726) app_main: Task has finished its execution.[0m
+[0;32mI (377726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (377726) addition_task_worker: The item is: 1[0m
+[0;32mI (377726) addition_task_worker: The item is: 2[0m
+[0;32mI (377726) addition_task_worker: The item is: 3[0m
+[0;32mI (377746) addition_task_worker: The item is: 4[0m
+[0;32mI (377746) addition_task_worker: The item is: 5[0m
+[0;32mI (377746) app_main: Task has finished its execution.[0m
+[0;32mI (378746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (378746) addition_task_worker: The item is: 1[0m
+[0;32mI (378746) addition_task_worker: The item is: 2[0m
+[0;32mI (378746) addition_task_worker: The item is: 3[0m
+[0;32mI (378766) addition_task_worker: The item is: 4[0m
+[0;32mI (378766) addition_task_worker: The item is: 5[0m
+[0;32mI (378766) app_main: Task has finished its execution.[0m
+[0;32mI (379766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (379766) addition_task_worker: The item is: 1[0m
+[0;32mI (379766) addition_task_worker: The item is: 2[0m
+[0;32mI (379766) addition_task_worker: The item is: 3[0m
+[0;32mI (379786) addition_task_worker: The item is: 4[0m
+[0;32mI (379786) addition_task_worker: The item is: 5[0m
+[0;32mI (379786) app_main: Task has finished its execution.[0m
+[0;32mI (380786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (380786) addition_task_worker: The item is: 1[0m
+[0;32mI (380786) addition_task_worker: The item is: 2[0m
+[0;32mI (380786) addition_task_worker: The item is: 3[0m
+[0;32mI (380806) addition_task_worker: The item is: 4[0m
+[0;32mI (380806) addition_task_worker: The item is: 5[0m
+[0;32mI (380806) app_main: Task has finished its execution.[0m
+[0;32mI (381806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (381806) addition_task_worker: The item is: 1[0m
+[0;32mI (381806) addition_task_worker: The item is: 2[0m
+[0;32mI (381806) addition_task_worker: The item is: 3[0m
+[0;32mI (381826) addition_task_worker: The item is: 4[0m
+[0;32mI (381826) addition_task_worker: The item is: 5[0m
+[0;32mI (381826) app_main: Task has finished its execution.[0m
+[0;32mI (382826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (382826) addition_task_worker: The item is: 1[0m
+[0;32mI (382826) addition_task_worker: The item is: 2[0m
+[0;32mI (382826) addition_task_worker: The item is: 3[0m
+[0;32mI (382846) addition_task_worker: The item is: 4[0m
+[0;32mI (382846) addition_task_worker: The item is: 5[0m
+[0;32mI (382846) app_main: Task has finished its execution.[0m
+[0;32mI (383846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (383846) addition_task_worker: The item is: 1[0m
+[0;32mI (383846) addition_task_worker: The item is: 2[0m
+[0;32mI (383846) addition_task_worker: The item is: 3[0m
+[0;32mI (383866) addition_task_worker: The item is: 4[0m
+[0;32mI (383866) addition_task_worker: The item is: 5[0m
+[0;32mI (383866) app_main: Task has finished its execution.[0m
+[0;32mI (384866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (384866) addition_task_worker: The item is: 1[0m
+[0;32mI (384866) addition_task_worker: The item is: 2[0m
+[0;32mI (384866) addition_task_worker: The item is: 3[0m
+[0;32mI (384886) addition_task_worker: The item is: 4[0m
+[0;32mI (384886) addition_task_worker: The item is: 5[0m
+[0;32mI (384886) app_main: Task has finished its execution.[0m
+[0;32mI (385886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (385886) addition_task_worker: The item is: 1[0m
+[0;32mI (385886) addition_task_worker: The item is: 2[0m
+[0;32mI (385886) addition_task_worker: The item is: 3[0m
+[0;32mI (385906) addition_task_worker: The item is: 4[0m
+[0;32mI (385906) addition_task_worker: The item is: 5[0m
+[0;32mI (385906) app_main: Task has finished its execution.[0m
+[0;32mI (386906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (386906) addition_task_worker: The item is: 1[0m
+[0;32mI (386906) addition_task_worker: The item is: 2[0m
+[0;32mI (386906) addition_task_worker: The item is: 3[0m
+[0;32mI (386926) addition_task_worker: The item is: 4[0m
+[0;32mI (386926) addition_task_worker: The item is: 5[0m
+[0;32mI (386926) app_main: Task has finished its execution.[0m
+[0;32mI (387926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (387926) addition_task_worker: The item is: 1[0m
+[0;32mI (387926) addition_task_worker: The item is: 2[0m
+[0;32mI (387926) addition_task_worker: The item is: 3[0m
+[0;32mI (387946) addition_task_worker: The item is: 4[0m
+[0;32mI (387946) addition_task_worker: The item is: 5[0m
+[0;32mI (387946) app_main: Task has finished its execution.[0m
+[0;32mI (388946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (388946) addition_task_worker: The item is: 1[0m
+[0;32mI (388946) addition_task_worker: The item is: 2[0m
+[0;32mI (388946) addition_task_worker: The item is: 3[0m
+[0;32mI (388966) addition_task_worker: The item is: 4[0m
+[0;32mI (388966) addition_task_worker: The item is: 5[0m
+[0;32mI (388966) app_main: Task has finished its execution.[0m
+[0;32mI (389966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (389966) addition_task_worker: The item is: 1[0m
+[0;32mI (389966) addition_task_worker: The item is: 2[0m
+[0;32mI (389966) addition_task_worker: The item is: 3[0m
+[0;32mI (389986) addition_task_worker: The item is: 4[0m
+[0;32mI (389986) addition_task_worker: The item is: 5[0m
+[0;32mI (389986) app_main: Task has finished its execution.[0m
+[0;32mI (390986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (390986) addition_task_worker: The item is: 1[0m
+[0;32mI (390986) addition_task_worker: The item is: 2[0m
+[0;32mI (390986) addition_task_worker: The item is: 3[0m
+[0;32mI (391006) addition_task_worker: The item is: 4[0m
+[0;32mI (391006) addition_task_worker: The item is: 5[0m
+[0;32mI (391006) app_main: Task has finished its execution.[0m
+[0;32mI (392006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (392006) addition_task_worker: The item is: 1[0m
+[0;32mI (392006) addition_task_worker: The item is: 2[0m
+[0;32mI (392006) addition_task_worker: The item is: 3[0m
+[0;32mI (392026) addition_task_worker: The item is: 4[0m
+[0;32mI (392026) addition_task_worker: The item is: 5[0m
+[0;32mI (392026) app_main: Task has finished its execution.[0m
+[0;32mI (393026) app_main: Task has been dispatched for execution.[0m
+[0;32mI (393026) addition_task_worker: The item is: 1[0m
+[0;32mI (393026) addition_task_worker: The item is: 2[0m
+[0;32mI (393026) addition_task_worker: The item is: 3[0m
+[0;32mI (393046) addition_task_worker: The item is: 4[0m
+[0;32mI (393046) addition_task_worker: The item is: 5[0m
+[0;32mI (393046) app_main: Task has finished its execution.[0m
+[0;32mI (394046) app_main: Task has been dispatched for execution.[0m
+[0;32mI (394046) addition_task_worker: The item is: 1[0m
+[0;32mI (394046) addition_task_worker: The item is: 2[0m
+[0;32mI (394046) addition_task_worker: The item is: 3[0m
+[0;32mI (394066) addition_task_worker: The item is: 4[0m
+[0;32mI (394066) addition_task_worker: The item is: 5[0m
+[0;32mI (394066) app_main: Task has finished its execution.[0m
+[0;32mI (395066) app_main: Task has been dispatched for execution.[0m
+[0;32mI (395066) addition_task_worker: The item is: 1[0m
+[0;32mI (395066) addition_task_worker: The item is: 2[0m
+[0;32mI (395066) addition_task_worker: The item is: 3[0m
+[0;32mI (395086) addition_task_worker: The item is: 4[0m
+[0;32mI (395086) addition_task_worker: The item is: 5[0m
+[0;32mI (395086) app_main: Task has finished its execution.[0m
+[0;32mI (396086) app_main: Task has been dispatched for execution.[0m
+[0;32mI (396086) addition_task_worker: The item is: 1[0m
+[0;32mI (396086) addition_task_worker: The item is: 2[0m
+[0;32mI (396086) addition_task_worker: The item is: 3[0m
+[0;32mI (396106) addition_task_worker: The item is: 4[0m
+[0;32mI (396106) addition_task_worker: The item is: 5[0m
+[0;32mI (396106) app_main: Task has finished its execution.[0m
+[0;32mI (397106) app_main: Task has been dispatched for execution.[0m
+[0;32mI (397106) addition_task_worker: The item is: 1[0m
+[0;32mI (397106) addition_task_worker: The item is: 2[0m
+[0;32mI (397106) addition_task_worker: The item is: 3[0m
+[0;32mI (397126) addition_task_worker: The item is: 4[0m
+[0;32mI (397126) addition_task_worker: The item is: 5[0m
+[0;32mI (397126) app_main: Task has finished its execution.[0m
+[0;32mI (398126) app_main: Task has been dispatched for execution.[0m
+[0;32mI (398126) addition_task_worker: The item is: 1[0m
+[0;32mI (398126) addition_task_worker: The item is: 2[0m
+[0;32mI (398126) addition_task_worker: The item is: 3[0m
+[0;32mI (398146) addition_task_worker: The item is: 4[0m
+[0;32mI (398146) addition_task_worker: The item is: 5[0m
+[0;32mI (398146) app_main: Task has finished its execution.[0m
+[0;32mI (399146) app_main: Task has been dispatched for execution.[0m
+[0;32mI (399146) addition_task_worker: The item is: 1[0m
+[0;32mI (399146) addition_task_worker: The item is: 2[0m
+[0;32mI (399146) addition_task_worker: The item is: 3[0m
+[0;32mI (399166) addition_task_worker: The item is: 4[0m
+[0;32mI (399166) addition_task_worker: The item is: 5[0m
+[0;32mI (399166) app_main: Task has finished its execution.[0m
+[0;32mI (400166) app_main: Task has been dispatched for execution.[0m
+[0;32mI (400166) addition_task_worker: The item is: 1[0m
+[0;32mI (400166) addition_task_worker: The item is: 2[0m
+[0;32mI (400166) addition_task_worker: The item is: 3[0m
+[0;32mI (400186) addition_task_worker: The item is: 4[0m
+[0;32mI (400186) addition_task_worker: The item is: 5[0m
+[0;32mI (400186) app_main: Task has finished its execution.[0m
+[0;32mI (401186) app_main: Task has been dispatched for execution.[0m
+[0;32mI (401186) addition_task_worker: The item is: 1[0m
+[0;32mI (401186) addition_task_worker: The item is: 2[0m
+[0;32mI (401186) addition_task_worker: The item is: 3[0m
+[0;32mI (401206) addition_task_worker: The item is: 4[0m
+[0;32mI (401206) addition_task_worker: The item is: 5[0m
+[0;32mI (401206) app_main: Task has finished its execution.[0m
+[0;32mI (402206) app_main: Task has been dispatched for execution.[0m
+[0;32mI (402206) addition_task_worker: The item is: 1[0m
+[0;32mI (402206) addition_task_worker: The item is: 2[0m
+[0;32mI (402206) addition_task_worker: The item is: 3[0m
+[0;32mI (402226) addition_task_worker: The item is: 4[0m
+[0;32mI (402226) addition_task_worker: The item is: 5[0m
+[0;32mI (402226) app_main: Task has finished its execution.[0m
+[0;32mI (403226) app_main: Task has been dispatched for execution.[0m
+[0;32mI (403226) addition_task_worker: The item is: 1[0m
+[0;32mI (403226) addition_task_worker: The item is: 2[0m
+[0;32mI (403226) addition_task_worker: The item is: 3[0m
+[0;32mI (403246) addition_task_worker: The item is: 4[0m
+[0;32mI (403246) addition_task_worker: The item is: 5[0m
+[0;32mI (403246) app_main: Task has finished its execution.[0m
+[0;32mI (404246) app_main: Task has been dispatched for execution.[0m
+[0;32mI (404246) addition_task_worker: The item is: 1[0m
+[0;32mI (404246) addition_task_worker: The item is: 2[0m
+[0;32mI (404246) addition_task_worker: The item is: 3[0m
+[0;32mI (404266) addition_task_worker: The item is: 4[0m
+[0;32mI (404266) addition_task_worker: The item is: 5[0m
+[0;32mI (404266) app_main: Task has finished its execution.[0m
+[0;32mI (405266) app_main: Task has been dispatched for execution.[0m
+[0;32mI (405266) addition_task_worker: The item is: 1[0m
+[0;32mI (405266) addition_task_worker: The item is: 2[0m
+[0;32mI (405266) addition_task_worker: The item is: 3[0m
+[0;32mI (405286) addition_task_worker: The item is: 4[0m
+[0;32mI (405286) addition_task_worker: The item is: 5[0m
+[0;32mI (405286) app_main: Task has finished its execution.[0m
+[0;32mI (406286) app_main: Task has been dispatched for execution.[0m
+[0;32mI (406286) addition_task_worker: The item is: 1[0m
+[0;32mI (406286) addition_task_worker: The item is: 2[0m
+[0;32mI (406286) addition_task_worker: The item is: 3[0m
+[0;32mI (406306) addition_task_worker: The item is: 4[0m
+[0;32mI (406306) addition_task_worker: The item is: 5[0m
+[0;32mI (406306) app_main: Task has finished its execution.[0m
+[0;32mI (407306) app_main: Task has been dispatched for execution.[0m
+[0;32mI (407306) addition_task_worker: The item is: 1[0m
+[0;32mI (407306) addition_task_worker: The item is: 2[0m
+[0;32mI (407306) addition_task_worker: The item is: 3[0m
+[0;32mI (407326) addition_task_worker: The item is: 4[0m
+[0;32mI (407326) addition_task_worker: The item is: 5[0m
+[0;32mI (407326) app_main: Task has finished its execution.[0m
+[0;32mI (408326) app_main: Task has been dispatched for execution.[0m
+[0;32mI (408326) addition_task_worker: The item is: 1[0m
+[0;32mI (408326) addition_task_worker: The item is: 2[0m
+[0;32mI (408326) addition_task_worker: The item is: 3[0m
+[0;32mI (408346) addition_task_worker: The item is: 4[0m
+[0;32mI (408346) addition_task_worker: The item is: 5[0m
+[0;32mI (408346) app_main: Task has finished its execution.[0m
+[0;32mI (409346) app_main: Task has been dispatched for execution.[0m
+[0;32mI (409346) addition_task_worker: The item is: 1[0m
+[0;32mI (409346) addition_task_worker: The item is: 2[0m
+[0;32mI (409346) addition_task_worker: The item is: 3[0m
+[0;32mI (409366) addition_task_worker: The item is: 4[0m
+[0;32mI (409366) addition_task_worker: The item is: 5[0m
+[0;32mI (409366) app_main: Task has finished its execution.[0m
+[0;32mI (410366) app_main: Task has been dispatched for execution.[0m
+[0;32mI (410366) addition_task_worker: The item is: 1[0m
+[0;32mI (410366) addition_task_worker: The item is: 2[0m
+[0;32mI (410366) addition_task_worker: The item is: 3[0m
+[0;32mI (410386) addition_task_worker: The item is: 4[0m
+[0;32mI (410386) addition_task_worker: The item is: 5[0m
+[0;32mI (410386) app_main: Task has finished its execution.[0m
+[0;32mI (411386) app_main: Task has been dispatched for execution.[0m
+[0;32mI (411386) addition_task_worker: The item is: 1[0m
+[0;32mI (411386) addition_task_worker: The item is: 2[0m
+[0;32mI (411386) addition_task_worker: The item is: 3[0m
+[0;32mI (411406) addition_task_worker: The item is: 4[0m
+[0;32mI (411406) addition_task_worker: The item is: 5[0m
+[0;32mI (411406) app_main: Task has finished its execution.[0m
+[0;32mI (412406) app_main: Task has been dispatched for execution.[0m
+[0;32mI (412406) addition_task_worker: The item is: 1[0m
+[0;32mI (412406) addition_task_worker: The item is: 2[0m
+[0;32mI (412406) addition_task_worker: The item is: 3[0m
+[0;32mI (412426) addition_task_worker: The item is: 4[0m
+[0;32mI (412426) addition_task_worker: The item is: 5[0m
+[0;32mI (412426) app_main: Task has finished its execution.[0m
+[0;32mI (413426) app_main: Task has been dispatched for execution.[0m
+[0;32mI (413426) addition_task_worker: The item is: 1[0m
+[0;32mI (413426) addition_task_worker: The item is: 2[0m
+[0;32mI (413426) addition_task_worker: The item is: 3[0m
+[0;32mI (413446) addition_task_worker: The item is: 4[0m
+[0;32mI (413446) addition_task_worker: The item is: 5[0m
+[0;32mI (413446) app_main: Task has finished its execution.[0m
+[0;32mI (414446) app_main: Task has been dispatched for execution.[0m
+[0;32mI (414446) addition_task_worker: The item is: 1[0m
+[0;32mI (414446) addition_task_worker: The item is: 2[0m
+[0;32mI (414446) addition_task_worker: The item is: 3[0m
+[0;32mI (414466) addition_task_worker: The item is: 4[0m
+[0;32mI (414466) addition_task_worker: The item is: 5[0m
+[0;32mI (414466) app_main: Task has finished its execution.[0m
+[0;32mI (415466) app_main: Task has been dispatched for execution.[0m
+[0;32mI (415466) addition_task_worker: The item is: 1[0m
+[0;32mI (415466) addition_task_worker: The item is: 2[0m
+[0;32mI (415466) addition_task_worker: The item is: 3[0m
+[0;32mI (415486) addition_task_worker: The item is: 4[0m
+[0;32mI (415486) addition_task_worker: The item is: 5[0m
+[0;32mI (415486) app_main: Task has finished its execution.[0m
+[0;32mI (416486) app_main: Task has been dispatched for execution.[0m
+[0;32mI (416486) addition_task_worker: The item is: 1[0m
+[0;32mI (416486) addition_task_worker: The item is: 2[0m
+[0;32mI (416486) addition_task_worker: The item is: 3[0m
+[0;32mI (416506) addition_task_worker: The item is: 4[0m
+[0;32mI (416506) addition_task_worker: The item is: 5[0m
+[0;32mI (416506) app_main: Task has finished its execution.[0m
+[0;32mI (417506) app_main: Task has been dispatched for execution.[0m
+[0;32mI (417506) addition_task_worker: The item is: 1[0m
+[0;32mI (417506) addition_task_worker: The item is: 2[0m
+[0;32mI (417506) addition_task_worker: The item is: 3[0m
+[0;32mI (417526) addition_task_worker: The item is: 4[0m
+[0;32mI (417526) addition_task_worker: The item is: 5[0m
+[0;32mI (417526) app_main: Task has finished its execution.[0m
+[0;32mI (418526) app_main: Task has been dispatched for execution.[0m
+[0;32mI (418526) addition_task_worker: The item is: 1[0m
+[0;32mI (418526) addition_task_worker: The item is: 2[0m
+[0;32mI (418526) addition_task_worker: The item is: 3[0m
+[0;32mI (418546) addition_task_worker: The item is: 4[0m
+[0;32mI (418546) addition_task_worker: The item is: 5[0m
+[0;32mI (418546) app_main: Task has finished its execution.[0m
+[0;32mI (419546) app_main: Task has been dispatched for execution.[0m
+[0;32mI (419546) addition_task_worker: The item is: 1[0m
+[0;32mI (419546) addition_task_worker: The item is: 2[0m
+[0;32mI (419546) addition_task_worker: The item is: 3[0m
+[0;32mI (419566) addition_task_worker: The item is: 4[0m
+[0;32mI (419566) addition_task_worker: The item is: 5[0m
+[0;32mI (419566) app_main: Task has finished its execution.[0m
+[0;32mI (420566) app_main: Task has been dispatched for execution.[0m
+[0;32mI (420566) addition_task_worker: The item is: 1[0m
+[0;32mI (420566) addition_task_worker: The item is: 2[0m
+[0;32mI (420566) addition_task_worker: The item is: 3[0m
+[0;32mI (420586) addition_task_worker: The item is: 4[0m
+[0;32mI (420586) addition_task_worker: The item is: 5[0m
+[0;32mI (420586) app_main: Task has finished its execution.[0m
+[0;32mI (421586) app_main: Task has been dispatched for execution.[0m
+[0;32mI (421586) addition_task_worker: The item is: 1[0m
+[0;32mI (421586) addition_task_worker: The item is: 2[0m
+[0;32mI (421586) addition_task_worker: The item is: 3[0m
+[0;32mI (421606) addition_task_worker: The item is: 4[0m
+[0;32mI (421606) addition_task_worker: The item is: 5[0m
+[0;32mI (421606) app_main: Task has finished its execution.[0m
+[0;32mI (422606) app_main: Task has been dispatched for execution.[0m
+[0;32mI (422606) addition_task_worker: The item is: 1[0m
+[0;32mI (422606) addition_task_worker: The item is: 2[0m
+[0;32mI (422606) addition_task_worker: The item is: 3[0m
+[0;32mI (422626) addition_task_worker: The item is: 4[0m
+[0;32mI (422626) addition_task_worker: The item is: 5[0m
+[0;32mI (422626) app_main: Task has finished its execution.[0m
+[0;32mI (423626) app_main: Task has been dispatched for execution.[0m
+[0;32mI (423626) addition_task_worker: The item is: 1[0m
+[0;32mI (423626) addition_task_worker: The item is: 2[0m
+[0;32mI (423626) addition_task_worker: The item is: 3[0m
+[0;32mI (423646) addition_task_worker: The item is: 4[0m
+[0;32mI (423646) addition_task_worker: The item is: 5[0m
+[0;32mI (423646) app_main: Task has finished its execution.[0m
+[0;32mI (424646) app_main: Task has been dispatched for execution.[0m
+[0;32mI (424646) addition_task_worker: The item is: 1[0m
+[0;32mI (424646) addition_task_worker: The item is: 2[0m
+[0;32mI (424646) addition_task_worker: The item is: 3[0m
+[0;32mI (424666) addition_task_worker: The item is: 4[0m
+[0;32mI (424666) addition_task_worker: The item is: 5[0m
+[0;32mI (424666) app_main: Task has finished its execution.[0m
+[0;32mI (425666) app_main: Task has been dispatched for execution.[0m
+[0;32mI (425666) addition_task_worker: The item is: 1[0m
+[0;32mI (425666) addition_task_worker: The item is: 2[0m
+[0;32mI (425666) addition_task_worker: The item is: 3[0m
+[0;32mI (425686) addition_task_worker: The item is: 4[0m
+[0;32mI (425686) addition_task_worker: The item is: 5[0m
+[0;32mI (425686) app_main: Task has finished its execution.[0m
+[0;32mI (426686) app_main: Task has been dispatched for execution.[0m
+[0;32mI (426686) addition_task_worker: The item is: 1[0m
+[0;32mI (426686) addition_task_worker: The item is: 2[0m
+[0;32mI (426686) addition_task_worker: The item is: 3[0m
+[0;32mI (426706) addition_task_worker: The item is: 4[0m
+[0;32mI (426706) addition_task_worker: The item is: 5[0m
+[0;32mI (426706) app_main: Task has finished its execution.[0m
+[0;32mI (427706) app_main: Task has been dispatched for execution.[0m
+[0;32mI (427706) addition_task_worker: The item is: 1[0m
+[0;32mI (427706) addition_task_worker: The item is: 2[0m
+[0;32mI (427706) addition_task_worker: The item is: 3[0m
+[0;32mI (427726) addition_task_worker: The item is: 4[0m
+[0;32mI (427726) addition_task_worker: The item is: 5[0m
+[0;32mI (427726) app_main: Task has finished its execution.[0m
+[0;32mI (428726) app_main: Task has been dispatched for execution.[0m
+[0;32mI (428726) addition_task_worker: The item is: 1[0m
+[0;32mI (428726) addition_task_worker: The item is: 2[0m
+[0;32mI (428726) addition_task_worker: The item is: 3[0m
+[0;32mI (428746) addition_task_worker: The item is: 4[0m
+[0;32mI (428746) addition_task_worker: The item is: 5[0m
+[0;32mI (428746) app_main: Task has finished its execution.[0m
+[0;32mI (429746) app_main: Task has been dispatched for execution.[0m
+[0;32mI (429746) addition_task_worker: The item is: 1[0m
+[0;32mI (429746) addition_task_worker: The item is: 2[0m
+[0;32mI (429746) addition_task_worker: The item is: 3[0m
+[0;32mI (429766) addition_task_worker: The item is: 4[0m
+[0;32mI (429766) addition_task_worker: The item is: 5[0m
+[0;32mI (429766) app_main: Task has finished its execution.[0m
+[0;32mI (430766) app_main: Task has been dispatched for execution.[0m
+[0;32mI (430766) addition_task_worker: The item is: 1[0m
+[0;32mI (430766) addition_task_worker: The item is: 2[0m
+[0;32mI (430766) addition_task_worker: The item is: 3[0m
+[0;32mI (430786) addition_task_worker: The item is: 4[0m
+[0;32mI (430786) addition_task_worker: The item is: 5[0m
+[0;32mI (430786) app_main: Task has finished its execution.[0m
+[0;32mI (431786) app_main: Task has been dispatched for execution.[0m
+[0;32mI (431786) addition_task_worker: The item is: 1[0m
+[0;32mI (431786) addition_task_worker: The item is: 2[0m
+[0;32mI (431786) addition_task_worker: The item is: 3[0m
+[0;32mI (431806) addition_task_worker: The item is: 4[0m
+[0;32mI (431806) addition_task_worker: The item is: 5[0m
+[0;32mI (431806) app_main: Task has finished its execution.[0m
+[0;32mI (432806) app_main: Task has been dispatched for execution.[0m
+[0;32mI (432806) addition_task_worker: The item is: 1[0m
+[0;32mI (432806) addition_task_worker: The item is: 2[0m
+[0;32mI (432806) addition_task_worker: The item is: 3[0m
+[0;32mI (432826) addition_task_worker: The item is: 4[0m
+[0;32mI (432826) addition_task_worker: The item is: 5[0m
+[0;32mI (432826) app_main: Task has finished its execution.[0m
+[0;32mI (433826) app_main: Task has been dispatched for execution.[0m
+[0;32mI (433826) addition_task_worker: The item is: 1[0m
+[0;32mI (433826) addition_task_worker: The item is: 2[0m
+[0;32mI (433826) addition_task_worker: The item is: 3[0m
+[0;32mI (433846) addition_task_worker: The item is: 4[0m
+[0;32mI (433846) addition_task_worker: The item is: 5[0m
+[0;32mI (433846) app_main: Task has finished its execution.[0m
+[0;32mI (434846) app_main: Task has been dispatched for execution.[0m
+[0;32mI (434846) addition_task_worker: The item is: 1[0m
+[0;32mI (434846) addition_task_worker: The item is: 2[0m
+[0;32mI (434846) addition_task_worker: The item is: 3[0m
+[0;32mI (434866) addition_task_worker: The item is: 4[0m
+[0;32mI (434866) addition_task_worker: The item is: 5[0m
+[0;32mI (434866) app_main: Task has finished its execution.[0m
+[0;32mI (435866) app_main: Task has been dispatched for execution.[0m
+[0;32mI (435866) addition_task_worker: The item is: 1[0m
+[0;32mI (435866) addition_task_worker: The item is: 2[0m
+[0;32mI (435866) addition_task_worker: The item is: 3[0m
+[0;32mI (435886) addition_task_worker: The item is: 4[0m
+[0;32mI (435886) addition_task_worker: The item is: 5[0m
+[0;32mI (435886) app_main: Task has finished its execution.[0m
+[0;32mI (436886) app_main: Task has been dispatched for execution.[0m
+[0;32mI (436886) addition_task_worker: The item is: 1[0m
+[0;32mI (436886) addition_task_worker: The item is: 2[0m
+[0;32mI (436886) addition_task_worker: The item is: 3[0m
+[0;32mI (436906) addition_task_worker: The item is: 4[0m
+[0;32mI (436906) addition_task_worker: The item is: 5[0m
+[0;32mI (436906) app_main: Task has finished its execution.[0m
+[0;32mI (437906) app_main: Task has been dispatched for execution.[0m
+[0;32mI (437906) addition_task_worker: The item is: 1[0m
+[0;32mI (437906) addition_task_worker: The item is: 2[0m
+[0;32mI (437906) addition_task_worker: The item is: 3[0m
+[0;32mI (437926) addition_task_worker: The item is: 4[0m
+[0;32mI (437926) addition_task_worker: The item is: 5[0m
+[0;32mI (437926) app_main: Task has finished its execution.[0m
+[0;32mI (438926) app_main: Task has been dispatched for execution.[0m
+[0;32mI (438926) addition_task_worker: The item is: 1[0m
+[0;32mI (438926) addition_task_worker: The item is: 2[0m
+[0;32mI (438926) addition_task_worker: The item is: 3[0m
+[0;32mI (438946) addition_task_worker: The item is: 4[0m
+[0;32mI (438946) addition_task_worker: The item is: 5[0m
+[0;32mI (438946) app_main: Task has finished its execution.[0m
+[0;32mI (439946) app_main: Task has been dispatched for execution.[0m
+[0;32mI (439946) addition_task_worker: The item is: 1[0m
+[0;32mI (439946) addition_task_worker: The item is: 2[0m
+[0;32mI (439946) addition_task_worker: The item is: 3[0m
+[0;32mI (439966) addition_task_worker: The item is: 4[0m
+[0;32mI (439966) addition_task_worker: The item is: 5[0m
+[0;32mI (439966) app_main: Task has finished its execution.[0m
+[0;32mI (440966) app_main: Task has been dispatched for execution.[0m
+[0;32mI (440966) addition_task_worker: The item is: 1[0m
+[0;32mI (440966) addition_task_worker: The item is: 2[0m
+[0;32mI (440966) addition_task_worker: The item is: 3[0m
+[0;32mI (440986) addition_task_worker: The item is: 4[0m
+[0;32mI (440986) addition_task_worker: The item is: 5[0m
+[0;32mI (440986) app_main: Task has finished its execution.[0m
+[0;32mI (441986) app_main: Task has been dispatched for execution.[0m
+[0;32mI (441986) addition_task_worker: The item is: 1[0m
+[0;32mI (441986) addition_task_worker: The item is: 2[0m
+[0;32mI (441986) addition_task_worker: The item is: 3[0m
+[0;32mI (442006) addition_task_worker: The item is: 4[0m
+[0;32mI (442006) addition_task_worker: The item is: 5[0m
+[0;32mI (442006) app_main: Task has finished its execution.[0m
+[0;32mI (443006) app_main: Task has been dispatched for execution.[0m
+[0;32mI (443006) addition_task_worker: The item is: 1[0m
+[0;32mI (443006) addition_task_worker: The item is: 2[0m
+[0;32mI (443006) addition_task_worker: The item is: 3[0m
+[0;32mI (443026) addition_task_worker: The item is: 4[0m
+[0;32mI (443026) addition_task_worker: The item is: 5[0m
+[0;32mI (443026) app_main: Task has finished its execution.[0m
+[0;32mI (444026) app_main: Task has been dispatched for execution.[0m

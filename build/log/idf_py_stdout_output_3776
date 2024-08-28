@@ -1,0 +1,1178 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 27 2024 21:48:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0dcfch ( 56572) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0001dd24 vaddr=3ffb0000 size=022f4h (  8948) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=4322ch (274988) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=00063254 vaddr=3ffb22f4 size=00108h (   264) load[0m
+[0;32mI (224) esp_image: segment 4: paddr=00063364 vaddr=40080000 size=0cbech ( 52204) load[0m
+[0;32mI (257) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (257) boot: Disabling RNG early entropy source...[0m
+[0;32mI (269) cpu_start: Multicore app[0m
+[0;32mI (277) cpu_start: Pro cpu start user code[0m
+[0;32mI (277) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (277) app_init: Application information:[0m
+[0;32mI (280) app_init: Project name:     task-scheduling[0m
+[0;32mI (286) app_init: App version:      1[0m
+[0;32mI (290) app_init: Compile time:     Aug 27 2024 21:47:42[0m
+[0;32mI (296) app_init: ELF file SHA256:  85b1c17e9...[0m
+[0;32mI (301) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (306) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (311) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (316) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (334) heap_init: At 3FFB43D8 len 0002BC28 (175 KiB): DRAM[0m
+[0;32mI (340) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (347) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (353) heap_init: At 4008CBEC len 00013414 (77 KiB): IRAM[0m
+[0;32mI (361) spi_flash: detected chip: generic[0m
+[0;32mI (364) spi_flash: flash io: dio[0m
+[0;33mW (368) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (385) main_task: Started on CPU0[0m
+[0;32mI (395) main_task: Calling app_main()[0m
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+The item is: 
+End of iteration.

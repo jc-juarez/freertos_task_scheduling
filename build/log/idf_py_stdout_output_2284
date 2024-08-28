@@ -1,0 +1,974 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 27 2024 21:48:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09994h ( 39316) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000199bc vaddr=3ffb0000 size=0230ch (  8972) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001bcd0 vaddr=40080000 size=04348h ( 17224) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=148e8h ( 84200) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00034910 vaddr=40084348 size=08728h ( 34600) load[0m
+[0;32mI (181) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     task-scheduling[0m
+[0;32mI (210) app_init: App version:      1[0m
+[0;32mI (215) app_init: Compile time:     Aug 27 2024 21:47:42[0m
+[0;32mI (221) app_init: ELF file SHA256:  89d7f0c0b...[0m
+[0;32mI (226) app_init: ESP-IDF:          v5.3-dirty[0m
+[0;32mI (231) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (236) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (241) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FFB2C08 len 0002D3F8 (180 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (271) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 4008CA70 len 00013590 (77 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (289) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) app_main: Dispatching task for execution.[0m
+[0;32mI (317) app_main: Dispatching task for execution.[0m
+[0;32mI (317) app_main: Dispatching task for execution.[0m
+[0;32mI (327) app_main: Dispatching task for execution.[0m
+[0;32mI (317) addition_task_worker: Task[0] The item is: 1[0m
+[0;32mI (327) app_main: Dispatching task for execution.[0m
+[0;32mI (337) addition_task_worker: Task[2] The item is: 165[0m
+[0;32mI (347) addition_task_worker: Task[2] The item is: 1[0m
+[0;32mI (327) addition_task_worker: Task[1] The item is: 79[0m
+[0;32mI (367) addition_task_worker: Task[1] The item is: 63[0m
+[0;32mI (337) addition_task_worker: Task[3] The item is: 49[0m
+[0;32mI (377) addition_task_worker: Task[3] The item is: 158[0m
+[0;32mI (337) addition_task_worker: Task[0] The item is: 204[0m
+[0;32mI (357) addition_task_worker: Task[4] The item is: 172[0m
+[0;32mI (397) addition_task_worker: Task[4] The item is: 102[0m
+[0;32mI (397) app_main: Tasks have finished execution.[0m
+[0;32mI (397) app_main: Final result is: 994[0m
+[0;32mI (1407) app_main: Dispatching task for execution.[0m
+[0;32mI (1407) app_main: Dispatching task for execution.[0m
+[0;32mI (1407) app_main: Dispatching task for execution.[0m
+[0;32mI (1407) app_main: Dispatching task for execution.[0m
+[0;32mI (1417) app_main: Dispatching task for execution.[0m
+[0;32mI (1407) addition_task_worker: Task[1] The item is: 192[0m
+[0;32mI (1437) addition_task_worker: Task[1] The item is: 229[0m
+[0;32mI (1417) addition_task_worker: Task[2] The item is: 186[0m
+[0;32mI (1447) addition_task_worker: Task[2] The item is: 64[0m
+[0;32mI (1427) addition_task_worker: Task[3] The item is: 54[0m
+[0;32mI (1447) addition_task_worker: Task[3] The item is: 76[0m
+[0;32mI (1407) addition_task_worker: Task[0] The item is: 110[0m
+[0;32mI (1477) addition_task_worker: Task[0] The item is: 142[0m
+[0;32mI (1437) addition_task_worker: Task[4] The item is: 202[0m
+[0;32mI (1487) addition_task_worker: Task[4] The item is: 225[0m
+[0;32mI (1487) app_main: Tasks have finished execution.[0m
+[0;32mI (1487) app_main: Final result is: 1480[0m
+[0;32mI (2497) app_main: Dispatching task for execution.[0m
+[0;32mI (2497) app_main: Dispatching task for execution.[0m
+[0;32mI (2497) app_main: Dispatching task for execution.[0m
+[0;32mI (2497) app_main: Dispatching task for execution.[0m
+[0;32mI (2507) app_main: Dispatching task for execution.[0m
+[0;32mI (2497) addition_task_worker: Task[1] The item is: 108[0m
+[0;32mI (2527) addition_task_worker: Task[1] The item is: 78[0m
+[0;32mI (2507) addition_task_worker: Task[2] The item is: 249[0m
+[0;32mI (2537) addition_task_worker: Task[2] The item is: 131[0m
+[0;32mI (2517) addition_task_worker: Task[3] The item is: 44[0m
+[0;32mI (2537) addition_task_worker: Task[3] The item is: 25[0m
+[0;32mI (2497) addition_task_worker: Task[0] The item is: 213[0m
+[0;32mI (2567) addition_task_worker: Task[0] The item is: 233[0m
+[0;32mI (2527) addition_task_worker: Task[4] The item is: 103[0m
+[0;32mI (2577) addition_task_worker: Task[4] The item is: 25[0m
+[0;32mI (2577) app_main: Tasks have finished execution.[0m
+[0;32mI (2577) app_main: Final result is: 1209[0m
+[0;32mI (3587) app_main: Dispatching task for execution.[0m
+[0;32mI (3587) app_main: Dispatching task for execution.[0m
+[0;32mI (3587) app_main: Dispatching task for execution.[0m
+[0;32mI (3587) app_main: Dispatching task for execution.[0m
+[0;32mI (3597) app_main: Dispatching task for execution.[0m
+[0;32mI (3587) addition_task_worker: Task[1] The item is: 243[0m
+[0;32mI (3617) addition_task_worker: Task[1] The item is: 251[0m
+[0;32mI (3597) addition_task_worker: Task[2] The item is: 205[0m
+[0;32mI (3627) addition_task_worker: Task[2] The item is: 31[0m
+[0;32mI (3607) addition_task_worker: Task[3] The item is: 81[0m
+[0;32mI (3627) addition_task_worker: Task[3] The item is: 75[0m
+[0;32mI (3587) addition_task_worker: Task[0] The item is: 245[0m
+[0;32mI (3657) addition_task_worker: Task[0] The item is: 247[0m
+[0;32mI (3617) addition_task_worker: Task[4] The item is: 171[0m
+[0;32mI (3667) addition_task_worker: Task[4] The item is: 38[0m
+[0;32mI (3667) app_main: Tasks have finished execution.[0m
+[0;32mI (3667) app_main: Final result is: 1587[0m
+[0;32mI (4677) app_main: Dispatching task for execution.[0m
+[0;32mI (4677) app_main: Dispatching task for execution.[0m
+[0;32mI (4677) app_main: Dispatching task for execution.[0m
+[0;32mI (4677) app_main: Dispatching task for execution.[0m
+[0;32mI (4687) app_main: Dispatching task for execution.[0m
+[0;32mI (4677) addition_task_worker: Task[1] The item is: 157[0m
+[0;32mI (4707) addition_task_worker: Task[1] The item is: 91[0m
+[0;32mI (4687) addition_task_worker: Task[2] The item is: 37[0m
+[0;32mI (4717) addition_task_worker: Task[2] The item is: 62[0m
+[0;32mI (4697) addition_task_worker: Task[3] The item is: 157[0m
+[0;32mI (4717) addition_task_worker: Task[3] The item is: 130[0m
+[0;32mI (4677) addition_task_worker: Task[0] The item is: 90[0m
+[0;32mI (4747) addition_task_worker: Task[0] The item is: 199[0m
+[0;32mI (4707) addition_task_worker: Task[4] The item is: 158[0m
+[0;32mI (4757) addition_task_worker: Task[4] The item is: 131[0m
+[0;32mI (4757) app_main: Tasks have finished execution.[0m
+[0;32mI (4757) app_main: Final result is: 1212[0m
+[0;32mI (5767) app_main: Dispatching task for execution.[0m
+[0;32mI (5767) app_main: Dispatching task for execution.[0m
+[0;32mI (5767) app_main: Dispatching task for execution.[0m
+[0;32mI (5767) app_main: Dispatching task for execution.[0m
+[0;32mI (5777) app_main: Dispatching task for execution.[0m
+[0;32mI (5767) addition_task_worker: Task[1] The item is: 175[0m
+[0;32mI (5797) addition_task_worker: Task[1] The item is: 130[0m
+[0;32mI (5777) addition_task_worker: Task[2] The item is: 101[0m
+[0;32mI (5807) addition_task_worker: Task[2] The item is: 145[0m
+[0;32mI (5787) addition_task_worker: Task[3] The item is: 61[0m
+[0;32mI (5807) addition_task_worker: Task[3] The item is: 73[0m
+[0;32mI (5767) addition_task_worker: Task[0] The item is: 37[0m
+[0;32mI (5837) addition_task_worker: Task[0] The item is: 141[0m
+[0;32mI (5797) addition_task_worker: Task[4] The item is: 222[0m
+[0;32mI (5847) addition_task_worker: Task[4] The item is: 79[0m
+[0;32mI (5847) app_main: Tasks have finished execution.[0m
+[0;32mI (5847) app_main: Final result is: 1164[0m
+[0;32mI (6857) app_main: Dispatching task for execution.[0m
+[0;32mI (6857) app_main: Dispatching task for execution.[0m
+[0;32mI (6857) app_main: Dispatching task for execution.[0m
+[0;32mI (6857) app_main: Dispatching task for execution.[0m
+[0;32mI (6867) app_main: Dispatching task for execution.[0m
+[0;32mI (6857) addition_task_worker: Task[1] The item is: 41[0m
+[0;32mI (6887) addition_task_worker: Task[1] The item is: 165[0m
+[0;32mI (6867) addition_task_worker: Task[2] The item is: 186[0m
+[0;32mI (6897) addition_task_worker: Task[2] The item is: 107[0m
+[0;32mI (6877) addition_task_worker: Task[3] The item is: 33[0m
+[0;32mI (6897) addition_task_worker: Task[3] The item is: 128[0m
+[0;32mI (6857) addition_task_worker: Task[0] The item is: 20[0m
+[0;32mI (6927) addition_task_worker: Task[0] The item is: 175[0m
+[0;32mI (6887) addition_task_worker: Task[4] The item is: 9[0m
+[0;32mI (6937) addition_task_worker: Task[4] The item is: 11[0m
+[0;32mI (6937) app_main: Tasks have finished execution.[0m
+[0;32mI (6937) app_main: Final result is: 875[0m
+[0;32mI (7947) app_main: Dispatching task for execution.[0m
+[0;32mI (7947) app_main: Dispatching task for execution.[0m
+[0;32mI (7947) app_main: Dispatching task for execution.[0m
+[0;32mI (7947) app_main: Dispatching task for execution.[0m
+[0;32mI (7957) app_main: Dispatching task for execution.[0m
+[0;32mI (7947) addition_task_worker: Task[1] The item is: 136[0m
+[0;32mI (7977) addition_task_worker: Task[1] The item is: 241[0m
+[0;32mI (7957) addition_task_worker: Task[2] The item is: 225[0m
+[0;32mI (7987) addition_task_worker: Task[2] The item is: 28[0m
+[0;32mI (7967) addition_task_worker: Task[3] The item is: 35[0m
+[0;32mI (7987) addition_task_worker: Task[3] The item is: 153[0m
+[0;32mI (7947) addition_task_worker: Task[0] The item is: 90[0m
+[0;32mI (8017) addition_task_worker: Task[0] The item is: 165[0m
+[0;32mI (7977) addition_task_worker: Task[4] The item is: 225[0m
+[0;32mI (8027) addition_task_worker: Task[4] The item is: 67[0m
+[0;32mI (8027) app_main: Tasks have finished execution.[0m
+[0;32mI (8027) app_main: Final result is: 1365[0m
+[0;32mI (9037) app_main: Dispatching task for execution.[0m
+[0;32mI (9037) app_main: Dispatching task for execution.[0m
+[0;32mI (9037) app_main: Dispatching task for execution.[0m
+[0;32mI (9037) app_main: Dispatching task for execution.[0m
+[0;32mI (9047) app_main: Dispatching task for execution.[0m
+[0;32mI (9037) addition_task_worker: Task[1] The item is: 255[0m
+[0;32mI (9067) addition_task_worker: Task[1] The item is: 19[0m
+[0;32mI (9047) addition_task_worker: Task[2] The item is: 181[0m
+[0;32mI (9077) addition_task_worker: Task[2] The item is: 8[0m
+[0;32mI (9057) addition_task_worker: Task[3] The item is: 57[0m
+[0;32mI (9077) addition_task_worker: Task[3] The item is: 120[0m
+[0;32mI (9037) addition_task_worker: Task[0] The item is: 250[0m
+[0;32mI (9107) addition_task_worker: Task[0] The item is: 132[0m
+[0;32mI (9067) addition_task_worker: Task[4] The item is: 45[0m
+[0;32mI (9117) addition_task_worker: Task[4] The item is: 143[0m
+[0;32mI (9117) app_main: Tasks have finished execution.[0m
+[0;32mI (9117) app_main: Final result is: 1210[0m
+[0;32mI (10127) app_main: Dispatching task for execution.[0m
+[0;32mI (10127) app_main: Dispatching task for execution.[0m
+[0;32mI (10127) app_main: Dispatching task for execution.[0m
+[0;32mI (10127) app_main: Dispatching task for execution.[0m
+[0;32mI (10137) app_main: Dispatching task for execution.[0m
+[0;32mI (10127) addition_task_worker: Task[1] The item is: 199[0m
+[0;32mI (10157) addition_task_worker: Task[1] The item is: 212[0m
+[0;32mI (10137) addition_task_worker: Task[2] The item is: 116[0m
+[0;32mI (10167) addition_task_worker: Task[2] The item is: 61[0m
+[0;32mI (10147) addition_task_worker: Task[3] The item is: 218[0m
+[0;32mI (10167) addition_task_worker: Task[3] The item is: 71[0m
+[0;32mI (10127) addition_task_worker: Task[0] The item is: 81[0m
+[0;32mI (10197) addition_task_worker: Task[0] The item is: 234[0m
+[0;32mI (10157) addition_task_worker: Task[4] The item is: 47[0m
+[0;32mI (10207) addition_task_worker: Task[4] The item is: 114[0m
+[0;32mI (10207) app_main: Tasks have finished execution.[0m
+[0;32mI (10207) app_main: Final result is: 1353[0m
+[0;32mI (11217) app_main: Dispatching task for execution.[0m
+[0;32mI (11217) app_main: Dispatching task for execution.[0m
+[0;32mI (11217) app_main: Dispatching task for execution.[0m
+[0;32mI (11217) app_main: Dispatching task for execution.[0m
+[0;32mI (11227) app_main: Dispatching task for execution.[0m
+[0;32mI (11217) addition_task_worker: Task[1] The item is: 23[0m
+[0;32mI (11247) addition_task_worker: Task[1] The item is: 12[0m
+[0;32mI (11227) addition_task_worker: Task[2] The item is: 159[0m
+[0;32mI (11257) addition_task_worker: Task[2] The item is: 158[0m
+[0;32mI (11237) addition_task_worker: Task[3] The item is: 7[0m
+[0;32mI (11257) addition_task_worker: Task[3] The item is: 21[0m
+[0;32mI (11217) addition_task_worker: Task[0] The item is: 57[0m
+[0;32mI (11287) addition_task_worker: Task[0] The item is: 73[0m
+[0;32mI (11247) addition_task_worker: Task[4] The item is: 141[0m
+[0;32mI (11297) addition_task_worker: Task[4] The item is: 194[0m
+[0;32mI (11297) app_main: Tasks have finished execution.[0m
+[0;32mI (11297) app_main: Final result is: 845[0m
+[0;32mI (12307) app_main: Dispatching task for execution.[0m
+[0;32mI (12307) app_main: Dispatching task for execution.[0m
+[0;32mI (12307) app_main: Dispatching task for execution.[0m
+[0;32mI (12307) app_main: Dispatching task for execution.[0m
+[0;32mI (12317) app_main: Dispatching task for execution.[0m
+[0;32mI (12307) addition_task_worker: Task[1] The item is: 90[0m
+[0;32mI (12337) addition_task_worker: Task[1] The item is: 188[0m
+[0;32mI (12317) addition_task_worker: Task[2] The item is: 155[0m
+[0;32mI (12347) addition_task_worker: Task[2] The item is: 58[0m
+[0;32mI (12327) addition_task_worker: Task[3] The item is: 121[0m
+[0;32mI (12347) addition_task_worker: Task[3] The item is: 229[0m
+[0;32mI (12307) addition_task_worker: Task[0] The item is: 172[0m
+[0;32mI (12377) addition_task_worker: Task[0] The item is: 202[0m
+[0;32mI (12337) addition_task_worker: Task[4] The item is: 187[0m
+[0;32mI (12387) addition_task_worker: Task[4] The item is: 64[0m
+[0;32mI (12387) app_main: Tasks have finished execution.[0m
+[0;32mI (12387) app_main: Final result is: 1466[0m
+[0;32mI (13397) app_main: Dispatching task for execution.[0m
+[0;32mI (13397) app_main: Dispatching task for execution.[0m
+[0;32mI (13397) app_main: Dispatching task for execution.[0m
+[0;32mI (13397) app_main: Dispatching task for execution.[0m
+[0;32mI (13407) app_main: Dispatching task for execution.[0m
+[0;32mI (13397) addition_task_worker: Task[1] The item is: 53[0m
+[0;32mI (13427) addition_task_worker: Task[1] The item is: 109[0m
+[0;32mI (13407) addition_task_worker: Task[2] The item is: 255[0m
+[0;32mI (13437) addition_task_worker: Task[2] The item is: 166[0m
+[0;32mI (13417) addition_task_worker: Task[3] The item is: 46[0m
+[0;32mI (13437) addition_task_worker: Task[3] The item is: 141[0m
+[0;32mI (13397) addition_task_worker: Task[0] The item is: 118[0m
+[0;32mI (13467) addition_task_worker: Task[0] The item is: 157[0m
+[0;32mI (13427) addition_task_worker: Task[4] The item is: 114[0m
+[0;32mI (13477) addition_task_worker: Task[4] The item is: 128[0m
+[0;32mI (13477) app_main: Tasks have finished execution.[0m
+[0;32mI (13477) app_main: Final result is: 1287[0m
+[0;32mI (14487) app_main: Dispatching task for execution.[0m
+[0;32mI (14487) app_main: Dispatching task for execution.[0m
+[0;32mI (14487) app_main: Dispatching task for execution.[0m
+[0;32mI (14487) app_main: Dispatching task for execution.[0m
+[0;32mI (14497) app_main: Dispatching task for execution.[0m
+[0;32mI (14487) addition_task_worker: Task[1] The item is: 153[0m
+[0;32mI (14517) addition_task_worker: Task[1] The item is: 77[0m
+[0;32mI (14497) addition_task_worker: Task[2] The item is: 226[0m
+[0;32mI (14527) addition_task_worker: Task[2] The item is: 126[0m
+[0;32mI (14507) addition_task_worker: Task[3] The item is: 178[0m
+[0;32mI (14527) addition_task_worker: Task[3] The item is: 254[0m
+[0;32mI (14487) addition_task_worker: Task[0] The item is: 255[0m
+[0;32mI (14557) addition_task_worker: Task[0] The item is: 239[0m
+[0;32mI (14517) addition_task_worker: Task[4] The item is: 47[0m
+[0;32mI (14567) addition_task_worker: Task[4] The item is: 154[0m
+[0;32mI (14567) app_main: Tasks have finished execution.[0m
+[0;32mI (14567) app_main: Final result is: 1709[0m
+[0;32mI (15577) app_main: Dispatching task for execution.[0m
+[0;32mI (15577) app_main: Dispatching task for execution.[0m
+[0;32mI (15577) app_main: Dispatching task for execution.[0m
+[0;32mI (15577) app_main: Dispatching task for execution.[0m
+[0;32mI (15587) app_main: Dispatching task for execution.[0m
+[0;32mI (15577) addition_task_worker: Task[1] The item is: 109[0m
+[0;32mI (15607) addition_task_worker: Task[1] The item is: 149[0m
+[0;32mI (15587) addition_task_worker: Task[2] The item is: 249[0m
+[0;32mI (15617) addition_task_worker: Task[2] The item is: 131[0m
+[0;32mI (15597) addition_task_worker: Task[3] The item is: 4[0m
+[0;32mI (15617) addition_task_worker: Task[3] The item is: 49[0m
+[0;32mI (15577) addition_task_worker: Task[0] The item is: 153[0m
+[0;32mI (15647) addition_task_worker: Task[0] The item is: 79[0m
+[0;32mI (15607) addition_task_worker: Task[4] The item is: 121[0m
+[0;32mI (15657) addition_task_worker: Task[4] The item is: 12[0m
+[0;32mI (15657) app_main: Tasks have finished execution.[0m
+[0;32mI (15657) app_main: Final result is: 1056[0m
+[0;32mI (16667) app_main: Dispatching task for execution.[0m
+[0;32mI (16667) app_main: Dispatching task for execution.[0m
+[0;32mI (16667) app_main: Dispatching task for execution.[0m
+[0;32mI (16667) app_main: Dispatching task for execution.[0m
+[0;32mI (16677) app_main: Dispatching task for execution.[0m
+[0;32mI (16667) addition_task_worker: Task[1] The item is: 156[0m
+[0;32mI (16697) addition_task_worker: Task[1] The item is: 5[0m
+[0;32mI (16677) addition_task_worker: Task[2] The item is: 248[0m
+[0;32mI (16707) addition_task_worker: Task[2] The item is: 89[0m
+[0;32mI (16687) addition_task_worker: Task[3] The item is: 19[0m
+[0;32mI (16707) addition_task_worker: Task[3] The item is: 249[0m
+[0;32mI (16667) addition_task_worker: Task[0] The item is: 222[0m
+[0;32mI (16737) addition_task_worker: Task[0] The item is: 253[0m
+[0;32mI (16697) addition_task_worker: Task[4] The item is: 46[0m
+[0;32mI (16747) addition_task_worker: Task[4] The item is: 135[0m
+[0;32mI (16747) app_main: Tasks have finished execution.[0m
+[0;32mI (16747) app_main: Final result is: 1422[0m
+[0;32mI (17757) app_main: Dispatching task for execution.[0m
+[0;32mI (17757) app_main: Dispatching task for execution.[0m
+[0;32mI (17757) app_main: Dispatching task for execution.[0m
+[0;32mI (17757) app_main: Dispatching task for execution.[0m
+[0;32mI (17767) app_main: Dispatching task for execution.[0m
+[0;32mI (17757) addition_task_worker: Task[1] The item is: 53[0m
+[0;32mI (17787) addition_task_worker: Task[1] The item is: 101[0m
+[0;32mI (17767) addition_task_worker: Task[2] The item is: 218[0m
+[0;32mI (17797) addition_task_worker: Task[2] The item is: 188[0m
+[0;32mI (17777) addition_task_worker: Task[3] The item is: 236[0m
+[0;32mI (17797) addition_task_worker: Task[3] The item is: 211[0m
+[0;32mI (17757) addition_task_worker: Task[0] The item is: 171[0m
+[0;32mI (17827) addition_task_worker: Task[0] The item is: 189[0m
+[0;32mI (17787) addition_task_worker: Task[4] The item is: 241[0m
+[0;32mI (17837) addition_task_worker: Task[4] The item is: 241[0m
+[0;32mI (17837) app_main: Tasks have finished execution.[0m
+[0;32mI (17837) app_main: Final result is: 1849[0m
+[0;32mI (18847) app_main: Dispatching task for execution.[0m
+[0;32mI (18847) app_main: Dispatching task for execution.[0m
+[0;32mI (18847) app_main: Dispatching task for execution.[0m
+[0;32mI (18847) app_main: Dispatching task for execution.[0m
+[0;32mI (18857) app_main: Dispatching task for execution.[0m
+[0;32mI (18847) addition_task_worker: Task[1] The item is: 176[0m
+[0;32mI (18877) addition_task_worker: Task[1] The item is: 16[0m
+[0;32mI (18857) addition_task_worker: Task[2] The item is: 193[0m
+[0;32mI (18887) addition_task_worker: Task[2] The item is: 120[0m
+[0;32mI (18867) addition_task_worker: Task[3] The item is: 87[0m
+[0;32mI (18887) addition_task_worker: Task[3] The item is: 94[0m
+[0;32mI (18847) addition_task_worker: Task[0] The item is: 192[0m
+[0;32mI (18917) addition_task_worker: Task[0] The item is: 163[0m
+[0;32mI (18877) addition_task_worker: Task[4] The item is: 27[0m
+[0;32mI (18927) addition_task_worker: Task[4] The item is: 105[0m
+[0;32mI (18927) app_main: Tasks have finished execution.[0m
+[0;32mI (18927) app_main: Final result is: 1173[0m
+[0;32mI (19937) app_main: Dispatching task for execution.[0m
+[0;32mI (19937) app_main: Dispatching task for execution.[0m
+[0;32mI (19937) app_main: Dispatching task for execution.[0m
+[0;32mI (19937) app_main: Dispatching task for execution.[0m
+[0;32mI (19947) app_main: Dispatching task for execution.[0m
+[0;32mI (19937) addition_task_worker: Task[1] The item is: 226[0m
+[0;32mI (19967) addition_task_worker: Task[1] The item is: 173[0m
+[0;32mI (19947) addition_task_worker: Task[2] The item is: 35[0m
+[0;32mI (19977) addition_task_worker: Task[2] The item is: 62[0m
+[0;32mI (19957) addition_task_worker: Task[3] The item is: 207[0m
+[0;32mI (19977) addition_task_worker: Task[3] The item is: 218[0m
+[0;32mI (19937) addition_task_worker: Task[0] The item is: 61[0m
+[0;32mI (20007) addition_task_worker: Task[0] The item is: 236[0m
+[0;32mI (19967) addition_task_worker: Task[4] The item is: 174[0m
+[0;32mI (20017) addition_task_worker: Task[4] The item is: 26[0m
+[0;32mI (20017) app_main: Tasks have finished execution.[0m
+[0;32mI (20017) app_main: Final result is: 1418[0m
+[0;32mI (21027) app_main: Dispatching task for execution.[0m
+[0;32mI (21027) app_main: Dispatching task for execution.[0m
+[0;32mI (21027) app_main: Dispatching task for execution.[0m
+[0;32mI (21027) app_main: Dispatching task for execution.[0m
+[0;32mI (21037) app_main: Dispatching task for execution.[0m
+[0;32mI (21027) addition_task_worker: Task[1] The item is: 64[0m
+[0;32mI (21057) addition_task_worker: Task[1] The item is: 15[0m
+[0;32mI (21037) addition_task_worker: Task[2] The item is: 102[0m
+[0;32mI (21067) addition_task_worker: Task[2] The item is: 165[0m
+[0;32mI (21047) addition_task_worker: Task[3] The item is: 36[0m
+[0;32mI (21067) addition_task_worker: Task[3] The item is: 236[0m
+[0;32mI (21027) addition_task_worker: Task[0] The item is: 196[0m
+[0;32mI (21097) addition_task_worker: Task[0] The item is: 39[0m
+[0;32mI (21057) addition_task_worker: Task[4] The item is: 148[0m
+[0;32mI (21107) addition_task_worker: Task[4] The item is: 144[0m
+[0;32mI (21107) app_main: Tasks have finished execution.[0m
+[0;32mI (21107) app_main: Final result is: 1145[0m
+[0;32mI (22117) app_main: Dispatching task for execution.[0m
+[0;32mI (22117) app_main: Dispatching task for execution.[0m
+[0;32mI (22117) app_main: Dispatching task for execution.[0m
+[0;32mI (22117) app_main: Dispatching task for execution.[0m
+[0;32mI (22127) app_main: Dispatching task for execution.[0m
+[0;32mI (22117) addition_task_worker: Task[1] The item is: 251[0m
+[0;32mI (22147) addition_task_worker: Task[1] The item is: 204[0m
+[0;32mI (22127) addition_task_worker: Task[2] The item is: 161[0m
+[0;32mI (22157) addition_task_worker: Task[2] The item is: 191[0m
+[0;32mI (22137) addition_task_worker: Task[3] The item is: 101[0m
+[0;32mI (22157) addition_task_worker: Task[3] The item is: 1[0m
+[0;32mI (22117) addition_task_worker: Task[0] The item is: 25[0m
+[0;32mI (22187) addition_task_worker: Task[0] The item is: 81[0m
+[0;32mI (22147) addition_task_worker: Task[4] The item is: 46[0m
+[0;32mI (22197) addition_task_worker: Task[4] The item is: 200[0m
+[0;32mI (22197) app_main: Tasks have finished execution.[0m
+[0;32mI (22197) app_main: Final result is: 1261[0m
+[0;32mI (23207) app_main: Dispatching task for execution.[0m
+[0;32mI (23207) app_main: Dispatching task for execution.[0m
+[0;32mI (23207) app_main: Dispatching task for execution.[0m
+[0;32mI (23207) app_main: Dispatching task for execution.[0m
+[0;32mI (23217) app_main: Dispatching task for execution.[0m
+[0;32mI (23207) addition_task_worker: Task[1] The item is: 124[0m
+[0;32mI (23237) addition_task_worker: Task[1] The item is: 215[0m
+[0;32mI (23217) addition_task_worker: Task[2] The item is: 51[0m
+[0;32mI (23247) addition_task_worker: Task[2] The item is: 222[0m
+[0;32mI (23227) addition_task_worker: Task[3] The item is: 47[0m
+[0;32mI (23247) addition_task_worker: Task[3] The item is: 100[0m
+[0;32mI (23207) addition_task_worker: Task[0] The item is: 4[0m
+[0;32mI (23277) addition_task_worker: Task[0] The item is: 219[0m
+[0;32mI (23237) addition_task_worker: Task[4] The item is: 64[0m
+[0;32mI (23287) addition_task_worker: Task[4] The item is: 176[0m
+[0;32mI (23287) app_main: Tasks have finished execution.[0m
+[0;32mI (23287) app_main: Final result is: 1222[0m
+[0;32mI (24297) app_main: Dispatching task for execution.[0m
+[0;32mI (24297) app_main: Dispatching task for execution.[0m
+[0;32mI (24297) app_main: Dispatching task for execution.[0m
+[0;32mI (24297) app_main: Dispatching task for execution.[0m
+[0;32mI (24307) app_main: Dispatching task for execution.[0m
+[0;32mI (24297) addition_task_worker: Task[1] The item is: 11[0m
+[0;32mI (24327) addition_task_worker: Task[1] The item is: 5[0m
+[0;32mI (24307) addition_task_worker: Task[2] The item is: 255[0m
+[0;32mI (24337) addition_task_worker: Task[2] The item is: 141[0m
+[0;32mI (24317) addition_task_worker: Task[3] The item is: 43[0m
+[0;32mI (24337) addition_task_worker: Task[3] The item is: 103[0m
+[0;32mI (24297) addition_task_worker: Task[0] The item is: 238[0m
+[0;32mI (24367) addition_task_worker: Task[0] The item is: 255[0m
+[0;32mI (24327) addition_task_worker: Task[4] The item is: 1[0m
+[0;32mI (24377) addition_task_worker: Task[4] The item is: 173[0m
+[0;32mI (24377) app_main: Tasks have finished execution.[0m
+[0;32mI (24377) app_main: Final result is: 1225[0m
+[0;32mI (25387) app_main: Dispatching task for execution.[0m
+[0;32mI (25387) app_main: Dispatching task for execution.[0m
+[0;32mI (25387) app_main: Dispatching task for execution.[0m
+[0;32mI (25387) app_main: Dispatching task for execution.[0m
+[0;32mI (25397) app_main: Dispatching task for execution.[0m
+[0;32mI (25387) addition_task_worker: Task[1] The item is: 126[0m
+[0;32mI (25417) addition_task_worker: Task[1] The item is: 148[0m
+[0;32mI (25397) addition_task_worker: Task[2] The item is: 123[0m
+[0;32mI (25427) addition_task_worker: Task[2] The item is: 1[0m
+[0;32mI (25407) addition_task_worker: Task[3] The item is: 49[0m
+[0;32mI (25427) addition_task_worker: Task[3] The item is: 209[0m
+[0;32mI (25387) addition_task_worker: Task[0] The item is: 74[0m
+[0;32mI (25457) addition_task_worker: Task[0] The item is: 217[0m
+[0;32mI (25417) addition_task_worker: Task[4] The item is: 4[0m
+[0;32mI (25467) addition_task_worker: Task[4] The item is: 88[0m
+[0;32mI (25467) app_main: Tasks have finished execution.[0m
+[0;32mI (25467) app_main: Final result is: 1039[0m
+[0;32mI (26477) app_main: Dispatching task for execution.[0m
+[0;32mI (26477) app_main: Dispatching task for execution.[0m
+[0;32mI (26477) app_main: Dispatching task for execution.[0m
+[0;32mI (26477) app_main: Dispatching task for execution.[0m
+[0;32mI (26487) app_main: Dispatching task for execution.[0m
+[0;32mI (26477) addition_task_worker: Task[1] The item is: 217[0m
+[0;32mI (26507) addition_task_worker: Task[1] The item is: 3[0m
+[0;32mI (26487) addition_task_worker: Task[2] The item is: 87[0m
+[0;32mI (26517) addition_task_worker: Task[2] The item is: 225[0m
+[0;32mI (26497) addition_task_worker: Task[3] The item is: 90[0m
+[0;32mI (26517) addition_task_worker: Task[3] The item is: 9[0m
+[0;32mI (26477) addition_task_worker: Task[0] The item is: 81[0m
+[0;32mI (26547) addition_task_worker: Task[0] The item is: 218[0m
+[0;32mI (26507) addition_task_worker: Task[4] The item is: 243[0m
+[0;32mI (26557) addition_task_worker: Task[4] The item is: 2[0m
+[0;32mI (26557) app_main: Tasks have finished execution.[0m
+[0;32mI (26557) app_main: Final result is: 1175[0m
+[0;32mI (27567) app_main: Dispatching task for execution.[0m
+[0;32mI (27567) app_main: Dispatching task for execution.[0m
+[0;32mI (27567) app_main: Dispatching task for execution.[0m
+[0;32mI (27567) app_main: Dispatching task for execution.[0m
+[0;32mI (27577) app_main: Dispatching task for execution.[0m
+[0;32mI (27567) addition_task_worker: Task[1] The item is: 52[0m
+[0;32mI (27597) addition_task_worker: Task[1] The item is: 140[0m
+[0;32mI (27577) addition_task_worker: Task[2] The item is: 237[0m
+[0;32mI (27607) addition_task_worker: Task[2] The item is: 46[0m
+[0;32mI (27587) addition_task_worker: Task[3] The item is: 211[0m
+[0;32mI (27607) addition_task_worker: Task[3] The item is: 140[0m
+[0;32mI (27567) addition_task_worker: Task[0] The item is: 151[0m
+[0;32mI (27637) addition_task_worker: Task[0] The item is: 196[0m
+[0;32mI (27597) addition_task_worker: Task[4] The item is: 112[0m
+[0;32mI (27647) addition_task_worker: Task[4] The item is: 20[0m
+[0;32mI (27647) app_main: Tasks have finished execution.[0m
+[0;32mI (27647) app_main: Final result is: 1305[0m
+[0;32mI (28657) app_main: Dispatching task for execution.[0m
+[0;32mI (28657) app_main: Dispatching task for execution.[0m
+[0;32mI (28657) app_main: Dispatching task for execution.[0m
+[0;32mI (28657) app_main: Dispatching task for execution.[0m
+[0;32mI (28667) app_main: Dispatching task for execution.[0m
+[0;32mI (28657) addition_task_worker: Task[1] The item is: 30[0m
+[0;32mI (28687) addition_task_worker: Task[1] The item is: 248[0m
+[0;32mI (28667) addition_task_worker: Task[2] The item is: 76[0m
+[0;32mI (28697) addition_task_worker: Task[2] The item is: 164[0m
+[0;32mI (28677) addition_task_worker: Task[3] The item is: 158[0m
+[0;32mI (28697) addition_task_worker: Task[3] The item is: 107[0m
+[0;32mI (28657) addition_task_worker: Task[0] The item is: 73[0m
+[0;32mI (28727) addition_task_worker: Task[0] The item is: 170[0m
+[0;32mI (28687) addition_task_worker: Task[4] The item is: 238[0m
+[0;32mI (28737) addition_task_worker: Task[4] The item is: 154[0m
+[0;32mI (28737) app_main: Tasks have finished execution.[0m
+[0;32mI (28737) app_main: Final result is: 1418[0m
+[0;32mI (29747) app_main: Dispatching task for execution.[0m
+[0;32mI (29747) app_main: Dispatching task for execution.[0m
+[0;32mI (29747) app_main: Dispatching task for execution.[0m
+[0;32mI (29747) app_main: Dispatching task for execution.[0m
+[0;32mI (29757) app_main: Dispatching task for execution.[0m
+[0;32mI (29747) addition_task_worker: Task[1] The item is: 39[0m
+[0;32mI (29777) addition_task_worker: Task[1] The item is: 151[0m
+[0;32mI (29757) addition_task_worker: Task[2] The item is: 218[0m
+[0;32mI (29787) addition_task_worker: Task[2] The item is: 27[0m
+[0;32mI (29767) addition_task_worker: Task[3] The item is: 32[0m
+[0;32mI (29787) addition_task_worker: Task[3] The item is: 95[0m
+[0;32mI (29747) addition_task_worker: Task[0] The item is: 8[0m
+[0;32mI (29817) addition_task_worker: Task[0] The item is: 163[0m
+[0;32mI (29777) addition_task_worker: Task[4] The item is: 214[0m
+[0;32mI (29827) addition_task_worker: Task[4] The item is: 177[0m
+[0;32mI (29827) app_main: Tasks have finished execution.[0m
+[0;32mI (29827) app_main: Final result is: 1124[0m
+[0;32mI (30837) app_main: Dispatching task for execution.[0m
+[0;32mI (30837) app_main: Dispatching task for execution.[0m
+[0;32mI (30837) app_main: Dispatching task for execution.[0m
+[0;32mI (30837) app_main: Dispatching task for execution.[0m
+[0;32mI (30847) app_main: Dispatching task for execution.[0m
+[0;32mI (30837) addition_task_worker: Task[1] The item is: 116[0m
+[0;32mI (30867) addition_task_worker: Task[1] The item is: 149[0m
+[0;32mI (30847) addition_task_worker: Task[2] The item is: 194[0m
+[0;32mI (30877) addition_task_worker: Task[2] The item is: 190[0m
+[0;32mI (30857) addition_task_worker: Task[3] The item is: 121[0m
+[0;32mI (30877) addition_task_worker: Task[3] The item is: 3[0m
+[0;32mI (30837) addition_task_worker: Task[0] The item is: 128[0m
+[0;32mI (30907) addition_task_worker: Task[0] The item is: 252[0m
+[0;32mI (30867) addition_task_worker: Task[4] The item is: 19[0m
+[0;32mI (30917) addition_task_worker: Task[4] The item is: 76[0m
+[0;32mI (30917) app_main: Tasks have finished execution.[0m
+[0;32mI (30917) app_main: Final result is: 1248[0m
+[0;32mI (31927) app_main: Dispatching task for execution.[0m
+[0;32mI (31927) app_main: Dispatching task for execution.[0m
+[0;32mI (31927) app_main: Dispatching task for execution.[0m
+[0;32mI (31927) app_main: Dispatching task for execution.[0m
+[0;32mI (31937) app_main: Dispatching task for execution.[0m
+[0;32mI (31927) addition_task_worker: Task[1] The item is: 201[0m
+[0;32mI (31957) addition_task_worker: Task[1] The item is: 85[0m
+[0;32mI (31937) addition_task_worker: Task[2] The item is: 241[0m
+[0;32mI (31967) addition_task_worker: Task[2] The item is: 94[0m
+[0;32mI (31947) addition_task_worker: Task[3] The item is: 112[0m
+[0;32mI (31967) addition_task_worker: Task[3] The item is: 192[0m
+[0;32mI (31927) addition_task_worker: Task[0] The item is: 155[0m
+[0;32mI (31997) addition_task_worker: Task[0] The item is: 140[0m
+[0;32mI (31957) addition_task_worker: Task[4] The item is: 35[0m
+[0;32mI (32007) addition_task_worker: Task[4] The item is: 42[0m
+[0;32mI (32007) app_main: Tasks have finished execution.[0m
+[0;32mI (32007) app_main: Final result is: 1297[0m
+[0;32mI (33017) app_main: Dispatching task for execution.[0m
+[0;32mI (33017) app_main: Dispatching task for execution.[0m
+[0;32mI (33017) app_main: Dispatching task for execution.[0m
+[0;32mI (33017) app_main: Dispatching task for execution.[0m
+[0;32mI (33027) app_main: Dispatching task for execution.[0m
+[0;32mI (33017) addition_task_worker: Task[1] The item is: 228[0m
+[0;32mI (33047) addition_task_worker: Task[1] The item is: 115[0m
+[0;32mI (33027) addition_task_worker: Task[2] The item is: 6[0m
+[0;32mI (33057) addition_task_worker: Task[2] The item is: 212[0m
+[0;32mI (33037) addition_task_worker: Task[3] The item is: 104[0m
+[0;32mI (33057) addition_task_worker: Task[3] The item is: 66[0m
+[0;32mI (33017) addition_task_worker: Task[0] The item is: 83[0m
+[0;32mI (33087) addition_task_worker: Task[0] The item is: 168[0m
+[0;32mI (33047) addition_task_worker: Task[4] The item is: 194[0m
+[0;32mI (33097) addition_task_worker: Task[4] The item is: 22[0m
+[0;32mI (33097) app_main: Tasks have finished execution.[0m
+[0;32mI (33097) app_main: Final result is: 1198[0m
+[0;32mI (34107) app_main: Dispatching task for execution.[0m
+[0;32mI (34107) app_main: Dispatching task for execution.[0m
+[0;32mI (34107) app_main: Dispatching task for execution.[0m
+[0;32mI (34107) app_main: Dispatching task for execution.[0m
+[0;32mI (34117) app_main: Dispatching task for execution.[0m
+[0;32mI (34107) addition_task_worker: Task[1] The item is: 4[0m
+[0;32mI (34137) addition_task_worker: Task[1] The item is: 143[0m
+[0;32mI (34117) addition_task_worker: Task[2] The item is: 38[0m
+[0;32mI (34147) addition_task_worker: Task[2] The item is: 25[0m
+[0;32mI (34127) addition_task_worker: Task[3] The item is: 74[0m
+[0;32mI (34147) addition_task_worker: Task[3] The item is: 156[0m
+[0;32mI (34107) addition_task_worker: Task[0] The item is: 73[0m
+[0;32mI (34177) addition_task_worker: Task[0] The item is: 243[0m
+[0;32mI (34137) addition_task_worker: Task[4] The item is: 15[0m
+[0;32mI (34187) addition_task_worker: Task[4] The item is: 73[0m
+[0;32mI (34187) app_main: Tasks have finished execution.[0m
+[0;32mI (34187) app_main: Final result is: 844[0m
+[0;32mI (35197) app_main: Dispatching task for execution.[0m
+[0;32mI (35197) app_main: Dispatching task for execution.[0m
+[0;32mI (35197) app_main: Dispatching task for execution.[0m
+[0;32mI (35197) app_main: Dispatching task for execution.[0m
+[0;32mI (35207) app_main: Dispatching task for execution.[0m
+[0;32mI (35197) addition_task_worker: Task[1] The item is: 248[0m
+[0;32mI (35227) addition_task_worker: Task[1] The item is: 106[0m
+[0;32mI (35207) addition_task_worker: Task[2] The item is: 174[0m
+[0;32mI (35237) addition_task_worker: Task[2] The item is: 111[0m
+[0;32mI (35217) addition_task_worker: Task[3] The item is: 239[0m
+[0;32mI (35237) addition_task_worker: Task[3] The item is: 182[0m
+[0;32mI (35197) addition_task_worker: Task[0] The item is: 237[0m
+[0;32mI (35267) addition_task_worker: Task[0] The item is: 93[0m
+[0;32mI (35227) addition_task_worker: Task[4] The item is: 97[0m
+[0;32mI (35277) addition_task_worker: Task[4] The item is: 238[0m
+[0;32mI (35277) app_main: Tasks have finished execution.[0m
+[0;32mI (35277) app_main: Final result is: 1725[0m
+[0;32mI (36287) app_main: Dispatching task for execution.[0m
+[0;32mI (36287) app_main: Dispatching task for execution.[0m
+[0;32mI (36287) app_main: Dispatching task for execution.[0m
+[0;32mI (36287) app_main: Dispatching task for execution.[0m
+[0;32mI (36297) app_main: Dispatching task for execution.[0m
+[0;32mI (36287) addition_task_worker: Task[1] The item is: 124[0m
+[0;32mI (36317) addition_task_worker: Task[1] The item is: 121[0m
+[0;32mI (36297) addition_task_worker: Task[2] The item is: 65[0m
+[0;32mI (36327) addition_task_worker: Task[2] The item is: 91[0m
+[0;32mI (36307) addition_task_worker: Task[3] The item is: 176[0m
+[0;32mI (36327) addition_task_worker: Task[3] The item is: 2[0m
+[0;32mI (36287) addition_task_worker: Task[0] The item is: 193[0m
+[0;32mI (36357) addition_task_worker: Task[0] The item is: 218[0m
+[0;32mI (36317) addition_task_worker: Task[4] The item is: 82[0m
+[0;32mI (36367) addition_task_worker: Task[4] The item is: 184[0m
+[0;32mI (36367) app_main: Tasks have finished execution.[0m
+[0;32mI (36367) app_main: Final result is: 1256[0m
+[0;32mI (37377) app_main: Dispatching task for execution.[0m
+[0;32mI (37377) app_main: Dispatching task for execution.[0m
+[0;32mI (37377) app_main: Dispatching task for execution.[0m
+[0;32mI (37377) app_main: Dispatching task for execution.[0m
+[0;32mI (37387) app_main: Dispatching task for execution.[0m
+[0;32mI (37377) addition_task_worker: Task[1] The item is: 239[0m
+[0;32mI (37407) addition_task_worker: Task[1] The item is: 186[0m
+[0;32mI (37387) addition_task_worker: Task[2] The item is: 25[0m
+[0;32mI (37417) addition_task_worker: Task[2] The item is: 234[0m
+[0;32mI (37397) addition_task_worker: Task[3] The item is: 205[0m
+[0;32mI (37417) addition_task_worker: Task[3] The item is: 9[0m
+[0;32mI (37377) addition_task_worker: Task[0] The item is: 170[0m
+[0;32mI (37447) addition_task_worker: Task[0] The item is: 114[0m
+[0;32mI (37407) addition_task_worker: Task[4] The item is: 37[0m
+[0;32mI (37457) addition_task_worker: Task[4] The item is: 178[0m
+[0;32mI (37457) app_main: Tasks have finished execution.[0m
+[0;32mI (37457) app_main: Final result is: 1397[0m
+[0;32mI (38467) app_main: Dispatching task for execution.[0m
+[0;32mI (38467) app_main: Dispatching task for execution.[0m
+[0;32mI (38467) app_main: Dispatching task for execution.[0m
+[0;32mI (38467) app_main: Dispatching task for execution.[0m
+[0;32mI (38477) app_main: Dispatching task for execution.[0m
+[0;32mI (38467) addition_task_worker: Task[1] The item is: 170[0m
+[0;32mI (38497) addition_task_worker: Task[1] The item is: 119[0m
+[0;32mI (38477) addition_task_worker: Task[2] The item is: 131[0m
+[0;32mI (38507) addition_task_worker: Task[2] The item is: 120[0m
+[0;32mI (38487) addition_task_worker: Task[3] The item is: 151[0m
+[0;32mI (38507) addition_task_worker: Task[3] The item is: 48[0m
+[0;32mI (38467) addition_task_worker: Task[0] The item is: 72[0m
+[0;32mI (38537) addition_task_worker: Task[0] The item is: 70[0m
+[0;32mI (38497) addition_task_worker: Task[4] The item is: 219[0m
+[0;32mI (38547) addition_task_worker: Task[4] The item is: 162[0m
+[0;32mI (38547) app_main: Tasks have finished execution.[0m
+[0;32mI (38547) app_main: Final result is: 1262[0m
+[0;32mI (39557) app_main: Dispatching task for execution.[0m
+[0;32mI (39557) app_main: Dispatching task for execution.[0m
+[0;32mI (39557) app_main: Dispatching task for execution.[0m
+[0;32mI (39557) app_main: Dispatching task for execution.[0m
+[0;32mI (39567) app_main: Dispatching task for execution.[0m
+[0;32mI (39557) addition_task_worker: Task[1] The item is: 30[0m
+[0;32mI (39587) addition_task_worker: Task[1] The item is: 181[0m
+[0;32mI (39567) addition_task_worker: Task[2] The item is: 25[0m
+[0;32mI (39597) addition_task_worker: Task[2] The item is: 75[0m
+[0;32mI (39577) addition_task_worker: Task[3] The item is: 99[0m
+[0;32mI (39597) addition_task_worker: Task[3] The item is: 140[0m
+[0;32mI (39557) addition_task_worker: Task[0] The item is: 174[0m
+[0;32mI (39627) addition_task_worker: Task[0] The item is: 94[0m
+[0;32mI (39587) addition_task_worker: Task[4] The item is: 169[0m
+[0;32mI (39637) addition_task_worker: Task[4] The item is: 232[0m
+[0;32mI (39637) app_main: Tasks have finished execution.[0m
+[0;32mI (39637) app_main: Final result is: 1219[0m
+[0;32mI (40647) app_main: Dispatching task for execution.[0m
+[0;32mI (40647) app_main: Dispatching task for execution.[0m
+[0;32mI (40647) app_main: Dispatching task for execution.[0m
+[0;32mI (40647) app_main: Dispatching task for execution.[0m
+[0;32mI (40657) app_main: Dispatching task for execution.[0m
+[0;32mI (40647) addition_task_worker: Task[1] The item is: 40[0m
+[0;32mI (40677) addition_task_worker: Task[1] The item is: 253[0m
+[0;32mI (40657) addition_task_worker: Task[2] The item is: 223[0m
+[0;32mI (40687) addition_task_worker: Task[2] The item is: 236[0m
+[0;32mI (40667) addition_task_worker: Task[3] The item is: 242[0m
+[0;32mI (40687) addition_task_worker: Task[3] The item is: 73[0m
+[0;32mI (40647) addition_task_worker: Task[0] The item is: 202[0m
+[0;32mI (40717) addition_task_worker: Task[0] The item is: 82[0m
+[0;32mI (40677) addition_task_worker: Task[4] The item is: 108[0m
+[0;32mI (40727) addition_task_worker: Task[4] The item is: 78[0m
+[0;32mI (40727) app_main: Tasks have finished execution.[0m
+[0;32mI (40727) app_main: Final result is: 1537[0m
+[0;32mI (41737) app_main: Dispatching task for execution.[0m
+[0;32mI (41737) app_main: Dispatching task for execution.[0m
+[0;32mI (41737) app_main: Dispatching task for execution.[0m
+[0;32mI (41737) app_main: Dispatching task for execution.[0m
+[0;32mI (41747) app_main: Dispatching task for execution.[0m
+[0;32mI (41737) addition_task_worker: Task[1] The item is: 15[0m
+[0;32mI (41767) addition_task_worker: Task[1] The item is: 45[0m
+[0;32mI (41747) addition_task_worker: Task[2] The item is: 173[0m
+[0;32mI (41777) addition_task_worker: Task[2] The item is: 8[0m
+[0;32mI (41757) addition_task_worker: Task[3] The item is: 120[0m
+[0;32mI (41777) addition_task_worker: Task[3] The item is: 164[0m
+[0;32mI (41737) addition_task_worker: Task[0] The item is: 224[0m
+[0;32mI (41807) addition_task_worker: Task[0] The item is: 37[0m
+[0;32mI (41767) addition_task_worker: Task[4] The item is: 192[0m
+[0;32mI (41817) addition_task_worker: Task[4] The item is: 154[0m
+[0;32mI (41817) app_main: Tasks have finished execution.[0m
+[0;32mI (41817) app_main: Final result is: 1132[0m
+[0;32mI (42827) app_main: Dispatching task for execution.[0m
+[0;32mI (42827) app_main: Dispatching task for execution.[0m
+[0;32mI (42827) app_main: Dispatching task for execution.[0m
+[0;32mI (42827) app_main: Dispatching task for execution.[0m
+[0;32mI (42837) app_main: Dispatching task for execution.[0m
+[0;32mI (42827) addition_task_worker: Task[1] The item is: 160[0m
+[0;32mI (42857) addition_task_worker: Task[1] The item is: 252[0m
+[0;32mI (42837) addition_task_worker: Task[2] The item is: 42[0m
+[0;32mI (42867) addition_task_worker: Task[2] The item is: 75[0m
+[0;32mI (42847) addition_task_worker: Task[3] The item is: 69[0m
+[0;32mI (42867) addition_task_worker: Task[3] The item is: 79[0m
+[0;32mI (42827) addition_task_worker: Task[0] The item is: 61[0m
+[0;32mI (42897) addition_task_worker: Task[0] The item is: 252[0m
+[0;32mI (42857) addition_task_worker: Task[4] The item is: 193[0m
+[0;32mI (42907) addition_task_worker: Task[4] The item is: 25[0m
+[0;32mI (42907) app_main: Tasks have finished execution.[0m
+[0;32mI (42907) app_main: Final result is: 1208[0m
+[0;32mI (43917) app_main: Dispatching task for execution.[0m
+[0;32mI (43917) app_main: Dispatching task for execution.[0m
+[0;32mI (43917) app_main: Dispatching task for execution.[0m
+[0;32mI (43917) app_main: Dispatching task for execution.[0m
+[0;32mI (43927) app_main: Dispatching task for execution.[0m
+[0;32mI (43917) addition_task_worker: Task[1] The item is: 169[0m
+[0;32mI (43947) addition_task_worker: Task[1] The item is: 121[0m
+[0;32mI (43927) addition_task_worker: Task[2] The item is: 255[0m
+[0;32mI (43957) addition_task_worker: Task[2] The item is: 140[0m
+[0;32mI (43937) addition_task_worker: Task[3] The item is: 55[0m
+[0;32mI (43957) addition_task_worker: Task[3] The item is: 246[0m
+[0;32mI (43917) addition_task_worker: Task[0] The item is: 23[0m
+[0;32mI (43987) addition_task_worker: Task[0] The item is: 152[0m
+[0;32mI (43947) addition_task_worker: Task[4] The item is: 144[0m
+[0;32mI (43997) addition_task_worker: Task[4] The item is: 184[0m
+[0;32mI (43997) app_main: Tasks have finished execution.[0m
+[0;32mI (43997) app_main: Final result is: 1489[0m
+[0;32mI (45007) app_main: Dispatching task for execution.[0m
+[0;32mI (45007) app_main: Dispatching task for execution.[0m
+[0;32mI (45007) app_main: Dispatching task for execution.[0m
+[0;32mI (45007) app_main: Dispatching task for execution.[0m
+[0;32mI (45017) app_main: Dispatching task for execution.[0m
+[0;32mI (45007) addition_task_worker: Task[1] The item is: 18[0m
+[0;32mI (45037) addition_task_worker: Task[1] The item is: 48[0m
+[0;32mI (45017) addition_task_worker: Task[2] The item is: 202[0m
+[0;32mI (45047) addition_task_worker: Task[2] The item is: 175[0m
+[0;32mI (45027) addition_task_worker: Task[3] The item is: 248[0m
+[0;32mI (45047) addition_task_worker: Task[3] The item is: 244[0m
+[0;32mI (45007) addition_task_worker: Task[0] The item is: 240[0m
+[0;32mI (45077) addition_task_worker: Task[0] The item is: 233[0m
+[0;32mI (45037) addition_task_worker: Task[4] The item is: 220[0m
+[0;32mI (45087) addition_task_worker: Task[4] The item is: 194[0m
+[0;32mI (45087) app_main: Tasks have finished execution.[0m
+[0;32mI (45087) app_main: Final result is: 1822[0m
+[0;32mI (46097) app_main: Dispatching task for execution.[0m
+[0;32mI (46097) app_main: Dispatching task for execution.[0m
+[0;32mI (46097) app_main: Dispatching task for execution.[0m
+[0;32mI (46097) app_main: Dispatching task for execution.[0m
+[0;32mI (46107) app_main: Dispatching task for execution.[0m
+[0;32mI (46097) addition_task_worker: Task[1] The item is: 120[0m
+[0;32mI (46127) addition_task_worker: Task[1] The item is: 223[0m
+[0;32mI (46107) addition_task_worker: Task[2] The item is: 194[0m
+[0;32mI (46137) addition_task_worker: Task[2] The item is: 152[0m
+[0;32mI (46117) addition_task_worker: Task[3] The item is: 117[0m
+[0;32mI (46137) addition_task_worker: Task[3] The item is: 196[0m
+[0;32mI (46097) addition_task_worker: Task[0] The item is: 229[0m
+[0;32mI (46167) addition_task_worker: Task[0] The item is: 148[0m
+[0;32mI (46127) addition_task_worker: Task[4] The item is: 118[0m
+[0;32mI (46177) addition_task_worker: Task[4] The item is: 64[0m
+[0;32mI (46177) app_main: Tasks have finished execution.[0m
+[0;32mI (46177) app_main: Final result is: 1561[0m
+[0;32mI (47187) app_main: Dispatching task for execution.[0m
+[0;32mI (47187) app_main: Dispatching task for execution.[0m
+[0;32mI (47187) app_main: Dispatching task for execution.[0m
+[0;32mI (47187) app_main: Dispatching task for execution.[0m
+[0;32mI (47197) app_main: Dispatching task for execution.[0m
+[0;32mI (47187) addition_task_worker: Task[1] The item is: 194[0m
+[0;32mI (47217) addition_task_worker: Task[1] The item is: 201[0m
+[0;32mI (47197) addition_task_worker: Task[2] The item is: 245[0m
+[0;32mI (47227) addition_task_worker: Task[2] The item is: 185[0m
+[0;32mI (47207) addition_task_worker: Task[3] The item is: 79[0m
+[0;32mI (47227) addition_task_worker: Task[3] The item is: 242[0m
+[0;32mI (47187) addition_task_worker: Task[0] The item is: 114[0m
+[0;32mI (47257) addition_task_worker: Task[0] The item is: 149[0m
+[0;32mI (47217) addition_task_worker: Task[4] The item is: 150[0m
+[0;32mI (47267) addition_task_worker: Task[4] The item is: 122[0m
+[0;32mI (47267) app_main: Tasks have finished execution.[0m
+[0;32mI (47267) app_main: Final result is: 1681[0m
+[0;32mI (48277) app_main: Dispatching task for execution.[0m
+[0;32mI (48277) app_main: Dispatching task for execution.[0m
+[0;32mI (48277) app_main: Dispatching task for execution.[0m
+[0;32mI (48277) app_main: Dispatching task for execution.[0m
+[0;32mI (48287) app_main: Dispatching task for execution.[0m
+[0;32mI (48277) addition_task_worker: Task[1] The item is: 113[0m
+[0;32mI (48307) addition_task_worker: Task[1] The item is: 31[0m
+[0;32mI (48287) addition_task_worker: Task[2] The item is: 155[0m
+[0;32mI (48317) addition_task_worker: Task[2] The item is: 56[0m
+[0;32mI (48297) addition_task_worker: Task[3] The item is: 52[0m
+[0;32mI (48317) addition_task_worker: Task[3] The item is: 42[0m
+[0;32mI (48277) addition_task_worker: Task[0] The item is: 127[0m
+[0;32mI (48347) addition_task_worker: Task[0] The item is: 51[0m
+[0;32mI (48307) addition_task_worker: Task[4] The item is: 90[0m
+[0;32mI (48357) addition_task_worker: Task[4] The item is: 247[0m
+[0;32mI (48357) app_main: Tasks have finished execution.[0m
+[0;32mI (48357) app_main: Final result is: 964[0m
+[0;32mI (49367) app_main: Dispatching task for execution.[0m
+[0;32mI (49367) app_main: Dispatching task for execution.[0m
+[0;32mI (49367) app_main: Dispatching task for execution.[0m
+[0;32mI (49367) app_main: Dispatching task for execution.[0m
+[0;32mI (49377) app_main: Dispatching task for execution.[0m
+[0;32mI (49367) addition_task_worker: Task[1] The item is: 154[0m
+[0;32mI (49397) addition_task_worker: Task[1] The item is: 64[0m
+[0;32mI (49377) addition_task_worker: Task[2] The item is: 66[0m
+[0;32mI (49407) addition_task_worker: Task[2] The item is: 199[0m
+[0;32mI (49387) addition_task_worker: Task[3] The item is: 182[0m
+[0;32mI (49407) addition_task_worker: Task[3] The item is: 11[0m
+[0;32mI (49367) addition_task_worker: Task[0] The item is: 191[0m
+[0;32mI (49437) addition_task_worker: Task[0] The item is: 152[0m
+[0;32mI (49397) addition_task_worker: Task[4] The item is: 170[0m
+[0;32mI (49447) addition_task_worker: Task[4] The item is: 73[0m
+[0;32mI (49447) app_main: Tasks have finished execution.[0m
+[0;32mI (49447) app_main: Final result is: 1262[0m
+[0;32mI (50457) app_main: Dispatching task for execution.[0m
+[0;32mI (50457) app_main: Dispatching task for execution.[0m
+[0;32mI (50457) app_main: Dispatching task for execution.[0m
+[0;32mI (50457) app_main: Dispatching task for execution.[0m
+[0;32mI (50467) app_main: Dispatching task for execution.[0m
+[0;32mI (50457) addition_task_worker: Task[1] The item is: 53[0m
+[0;32mI (50487) addition_task_worker: Task[1] The item is: 73[0m
+[0;32mI (50467) addition_task_worker: Task[2] The item is: 23[0m
+[0;32mI (50497) addition_task_worker: Task[2] The item is: 205[0m
+[0;32mI (50477) addition_task_worker: Task[3] The item is: 132[0m
+[0;32mI (50497) addition_task_worker: Task[3] The item is: 223[0m
+[0;32mI (50457) addition_task_worker: Task[0] The item is: 13[0m
+[0;32mI (50527) addition_task_worker: Task[0] The item is: 202[0m
+[0;32mI (50487) addition_task_worker: Task[4] The item is: 25[0m
+[0;32mI (50537) addition_task_worker: Task[4] The item is: 11[0m
+[0;32mI (50537) app_main: Tasks have finished execution.[0m
+[0;32mI (50537) app_main: Final result is: 960[0m
+[0;32mI (51547) app_main: Dispatching task for execution.[0m
+[0;32mI (51547) app_main: Dispatching task for execution.[0m
+[0;32mI (51547) app_main: Dispatching task for execution.[0m
+[0;32mI (51547) app_main: Dispatching task for execution.[0m
+[0;32mI (51557) app_main: Dispatching task for execution.[0m
+[0;32mI (51547) addition_task_worker: Task[1] The item is: 88[0m
+[0;32mI (51577) addition_task_worker: Task[1] The item is: 114[0m
+[0;32mI (51557) addition_task_worker: Task[2] The item is: 66[0m
+[0;32mI (51587) addition_task_worker: Task[2] The item is: 21[0m
+[0;32mI (51567) addition_task_worker: Task[3] The item is: 142[0m
+[0;32mI (51587) addition_task_worker: Task[3] The item is: 63[0m
+[0;32mI (51547) addition_task_worker: Task[0] The item is: 222[0m
+[0;32mI (51617) addition_task_worker: Task[0] The item is: 237[0m
+[0;32mI (51577) addition_task_worker: Task[4] The item is: 37[0m
+[0;32mI (51627) addition_task_worker: Task[4] The item is: 165[0m
+[0;32mI (51627) app_main: Tasks have finished execution.[0m
+[0;32mI (51627) app_main: Final result is: 1155[0m
+[0;32mI (52637) app_main: Dispatching task for execution.[0m
+[0;32mI (52637) app_main: Dispatching task for execution.[0m
+[0;32mI (52637) app_main: Dispatching task for execution.[0m
+[0;32mI (52637) app_main: Dispatching task for execution.[0m
+[0;32mI (52647) app_main: Dispatching task for execution.[0m
+[0;32mI (52637) addition_task_worker: Task[1] The item is: 8[0m
+[0;32mI (52667) addition_task_worker: Task[1] The item is: 156[0m
+[0;32mI (52647) addition_task_worker: Task[2] The item is: 129[0m
+[0;32mI (52677) addition_task_worker: Task[2] The item is: 204[0m
+[0;32mI (52657) addition_task_worker: Task[3] The item is: 26[0m
+[0;32mI (52677) addition_task_worker: Task[3] The item is: 13[0m
+[0;32mI (52637) addition_task_worker: Task[0] The item is: 226[0m
+[0;32mI (52707) addition_task_worker: Task[0] The item is: 208[0m
+[0;32mI (52667) addition_task_worker: Task[4] The item is: 155[0m
+[0;32mI (52717) addition_task_worker: Task[4] The item is: 210[0m
+[0;32mI (52717) app_main: Tasks have finished execution.[0m
+[0;32mI (52717) app_main: Final result is: 1335[0m
+[0;32mI (53727) app_main: Dispatching task for execution.[0m
+[0;32mI (53727) app_main: Dispatching task for execution.[0m
+[0;32mI (53727) app_main: Dispatching task for execution.[0m
+[0;32mI (53727) app_main: Dispatching task for execution.[0m
+[0;32mI (53737) app_main: Dispatching task for execution.[0m
+[0;32mI (53727) addition_task_worker: Task[1] The item is: 101[0m
+[0;32mI (53757) addition_task_worker: Task[1] The item is: 16[0m
+[0;32mI (53737) addition_task_worker: Task[2] The item is: 227[0m
+[0;32mI (53767) addition_task_worker: Task[2] The item is: 125[0m
+[0;32mI (53747) addition_task_worker: Task[3] The item is: 93[0m
+[0;32mI (53767) addition_task_worker: Task[3] The item is: 22[0m
+[0;32mI (53727) addition_task_worker: Task[0] The item is: 237[0m
+[0;32mI (53797) addition_task_worker: Task[0] The item is: 23[0m
+[0;32mI (53757) addition_task_worker: Task[4] The item is: 166[0m
+[0;32mI (53807) addition_task_worker: Task[4] The item is: 152[0m
+[0;32mI (53807) app_main: Tasks have finished execution.[0m
+[0;32mI (53807) app_main: Final result is: 1162[0m
+[0;32mI (54817) app_main: Dispatching task for execution.[0m
+[0;32mI (54817) app_main: Dispatching task for execution.[0m
+[0;32mI (54817) app_main: Dispatching task for execution.[0m
+[0;32mI (54817) app_main: Dispatching task for execution.[0m
+[0;32mI (54827) app_main: Dispatching task for execution.[0m
+[0;32mI (54817) addition_task_worker: Task[1] The item is: 147[0m
+[0;32mI (54847) addition_task_worker: Task[1] The item is: 193[0m
+[0;32mI (54827) addition_task_worker: Task[2] The item is: 89[0m
+[0;32mI (54857) addition_task_worker: Task[2] The item is: 249[0m
+[0;32mI (54837) addition_task_worker: Task[3] The item is: 142[0m
+[0;32mI (54857) addition_task_worker: Task[3] The item is: 79[0m
+[0;32mI (54817) addition_task_worker: Task[0] The item is: 201[0m
+[0;32mI (54887) addition_task_worker: Task[0] The item is: 66[0m
+[0;32mI (54847) addition_task_worker: Task[4] The item is: 207[0m
+[0;32mI (54897) addition_task_worker: Task[4] The item is: 164[0m
+[0;32mI (54897) app_main: Tasks have finished execution.[0m
+[0;32mI (54897) app_main: Final result is: 1537[0m
+[0;32mI (55907) app_main: Dispatching task for execution.[0m
+[0;32mI (55907) app_main: Dispatching task for execution.[0m
+[0;32mI (55907) app_main: Dispatching task for execution.[0m
+[0;32mI (55907) app_main: Dispatching task for execution.[0m
+[0;32mI (55917) app_main: Dispatching task for execution.[0m
+[0;32mI (55907) addition_task_worker: Task[1] The item is: 134[0m
+[0;32mI (55937) addition_task_worker: Task[1] The item is: 78[0m
+[0;32mI (55917) addition_task_worker: Task[2] The item is: 252[0m
+[0;32mI (55947) addition_task_worker: Task[2] The item is: 49[0m
+[0;32mI (55927) addition_task_worker: Task[3] The item is: 119[0m
+[0;32mI (55947) addition_task_worker: Task[3] The item is: 43[0m
+[0;32mI (55907) addition_task_worker: Task[0] The item is: 15[0m
+[0;32mI (55977) addition_task_worker: Task[0] The item is: 234[0m
+[0;32mI (55937) addition_task_worker: Task[4] The item is: 122[0m
+[0;32mI (55987) addition_task_worker: Task[4] The item is: 130[0m
+[0;32mI (55987) app_main: Tasks have finished execution.[0m
+[0;32mI (55987) app_main: Final result is: 1176[0m
+[0;32mI (56997) app_main: Dispatching task for execution.[0m
+[0;32mI (56997) app_main: Dispatching task for execution.[0m
+[0;32mI (56997) app_main: Dispatching task for execution.[0m
+[0;32mI (56997) app_main: Dispatching task for execution.[0m
+[0;32mI (57007) app_main: Dispatching task for execution.[0m
+[0;32mI (56997) addition_task_worker: Task[1] The item is: 163[0m
+[0;32mI (57027) addition_task_worker: Task[1] The item is: 231[0m
+[0;32mI (57007) addition_task_worker: Task[2] The item is: 54[0m
+[0;32mI (57037) addition_task_worker: Task[2] The item is: 214[0m
+[0;32mI (57017) addition_task_worker: Task[3] The item is: 60[0m
+[0;32mI (57037) addition_task_worker: Task[3] The item is: 38[0m
+[0;32mI (56997) addition_task_worker: Task[0] The item is: 8[0m
+[0;32mI (57067) addition_task_worker: Task[0] The item is: 68[0m
+[0;32mI (57027) addition_task_worker: Task[4] The item is: 198[0m
+[0;32mI (57077) addition_task_worker: Task[4] The item is: 194[0m
+[0;32mI (57077) app_main: Tasks have finished execution.[0m
+[0;32mI (57077) app_main: Final result is: 1228[0m
+[0;32mI (58087) app_main: Dispatching task for execution.[0m
+[0;32mI (58087) app_main: Dispatching task for execution.[0m
+[0;32mI (58087) app_main: Dispatching task for execution.[0m
+[0;32mI (58087) app_main: Dispatching task for execution.[0m
+[0;32mI (58097) app_main: Dispatching task for execution.[0m
+[0;32mI (58087) addition_task_worker: Task[1] The item is: 183[0m
+[0;32mI (58117) addition_task_worker: Task[1] The item is: 214[0m
+[0;32mI (58097) addition_task_worker: Task[2] The item is: 228[0m
+[0;32mI (58127) addition_task_worker: Task[2] The item is: 200[0m
+[0;32mI (58107) addition_task_worker: Task[3] The item is: 47[0m
+[0;32mI (58127) addition_task_worker: Task[3] The item is: 76[0m
+[0;32mI (58087) addition_task_worker: Task[0] The item is: 142[0m
+[0;32mI (58157) addition_task_worker: Task[0] The item is: 53[0m
+[0;32mI (58117) addition_task_worker: Task[4] The item is: 86[0m
+[0;32mI (58167) addition_task_worker: Task[4] The item is: 151[0m
+[0;32mI (58167) app_main: Tasks have finished execution.[0m
+[0;32mI (58167) app_main: Final result is: 1380[0m

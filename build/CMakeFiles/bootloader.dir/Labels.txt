@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/CodeWithJc/espidf-task-scheduling/build/CMakeFiles/bootloader
+C:/CodeWithJc/espidf-task-scheduling/build/CMakeFiles/bootloader.rule
+C:/CodeWithJc/espidf-task-scheduling/build/CMakeFiles/bootloader-complete.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/CodeWithJc/espidf-task-scheduling/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

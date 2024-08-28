@@ -1,0 +1,250 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64ea: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e8: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e0: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e0: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64ea: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e0: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64ea: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e8: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64ec: __gnu_cxx::__normal_iterator<std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >*, std::vector<std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >, std::allocator<std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> > > > >::operator++() at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_iterator.h:1111
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e8: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e0: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e0: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e8: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64e3: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64da: app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:130
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74cb: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:434
+0x400d7890: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.3/components/esp_system/task_wdt/task_wdt.c:507
+0x40082d71: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.3/components/xtensa/xtensa_vectors.S:1240
+0x400d64dd: std::__uniq_ptr_impl<async_computational_result, std::default_delete<async_computational_result> >::_M_ptr() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:199 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::get() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:470 (discriminator 1)
+ (inlined by) std::unique_ptr<async_computational_result, std::default_delete<async_computational_result> >::operator->() const at C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/unique_ptr.h:463 (discriminator 1)
+ (inlined by) app_main at C:/CodeWithJc/espidf-task-scheduling/main/main.cc:132 (discriminator 1)
+0x400e40ac: main_task at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/app_startup.c:208
+0x40085dfd: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m
